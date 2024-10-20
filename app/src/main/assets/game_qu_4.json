@@ -1,0 +1,76 @@
+{
+  "title": "Quiz de Geografía Mexicana 4",
+  "id": 4,
+  "game": "game_qu",
+  "questions": [
+    {
+      "type": "open",
+      "question": "¿Cuál es el estado más pequeño de México?",
+      "answer": "Tlaxcala",
+      "tries": 3,
+      "points": 1
+    },
+    {
+      "type": "radio",
+      "question": "¿Cuál de los siguientes estados no tiene costas en ningún océano?",
+      "answer": 2,
+      "options": [
+        "Hidalgo",
+        "Zacatecas",
+        "Querétaro",
+        "Aguascalientes"
+      ],
+      "points": 1
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Cuáles de los siguientes estados tienen frontera con Guatemala?",
+      "answer": [2, 3],
+      "options": [
+        "Chiapas",
+        "Tabasco",
+        "Campeche",
+        "Quintana Roo"
+      ],
+      "points": 1
+    },
+    {
+      "type": "open",
+      "question": "¿Cuál es el cerro más alto de México?",
+      "answer": "Pico de Orizaba",
+      "tries": 3,
+      "points": 1
+    },
+    {
+      "type": "radio",
+      "question": "¿Cuál es el estado con la mayor cantidad de zonas arqueológicas en México?",
+      "answer": 0,
+      "options": [
+        "Yucatán",
+        "Chiapas",
+        "Oaxaca",
+        "Veracruz"
+      ],
+      "points": 1
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Cuáles de los siguientes estados tienen costas en el Golfo de Tehuantepec?",
+      "answer": [1, 2],
+      "options": [
+        "Chiapas",
+        "Oaxaca",
+        "Guerrero",
+        "Michoacán"
+      ],
+      "points": 1
+    },
+    {
+      "type": "open",
+      "question": "¿Cuál es el lago más grande de México?",
+      "answer": "Chapala",
+      "tries": 3,
+      "points": 1
+    }
+  ]
+}

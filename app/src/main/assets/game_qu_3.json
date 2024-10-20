@@ -1,0 +1,108 @@
+{
+  "title": "Quiz de Geografía Mexicana 3",
+  "id": 3,
+  "game": "game_qu",
+  "questions": [
+    {
+      "type": "open",
+      "question": "¿Cuál es el estado más poblado de México?",
+      "answer": "Estado de México",
+      "tries": 3,
+      "points": 1
+    },
+    {
+      "type": "radio",
+      "question": "¿Cuál de los siguientes estados tiene costas en el Golfo de México?",
+      "answer": 1,
+      "options": [
+        "Chiapas",
+        "Veracruz",
+        "Oaxaca",
+        "Tamaulipas"
+      ],
+      "points": 1
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Cuáles de los siguientes estados colindan con Estados Unidos?",
+      "answer": [0, 3, 4],
+      "options": [
+        "Chihuahua",
+        "Sonora",
+        "Nuevo León",
+        "Coahuila",
+        "Tamaulipas"
+      ],
+      "points": 1
+    },
+    {
+      "type": "open",
+      "question": "¿Cuál es el volcán más joven de México?",
+      "answer": "Paricutín",
+      "tries": 3,
+      "points": 1
+    },
+    {
+      "type": "radio",
+      "question": "¿Cuál es el estado con mayor extensión territorial de México?",
+      "answer": 0,
+      "options": [
+        "Chihuahua",
+        "Sonora",
+        "Durango",
+        "Coahuila"
+      ],
+      "points": 1
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Cuáles de los siguientes estados tienen costas en el Golfo de California?",
+      "answer": [0, 1, 2],
+      "options": [
+        "Baja California",
+        "Baja California Sur",
+        "Sonora",
+        "Sinaloa"
+      ],
+      "points": 1
+    },
+    {
+      "type": "open",
+      "question": "¿Cuál es el lago más grande de México?",
+      "answer": "Lago de Chapala",
+      "tries": 3,
+      "points": 1
+    },
+    {
+      "type": "radio",
+      "question": "¿Cuál es la capital de Jalisco?",
+      "answer": 1,
+      "options": [
+        "Guadalajara",
+        "Monterrey",
+        "León",
+        "Puebla"
+      ],
+      "points": 1
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Cuáles de los siguientes estados tienen costas en el Océano Atlántico?",
+      "answer": [2, 3],
+      "options": [
+        "Veracruz",
+        "Tabasco",
+        "Campeche",
+        "Quintana Roo"
+      ],
+      "points": 1
+    },
+    {
+      "type": "open",
+      "question": "¿Cuál es el río más caudaloso de México?",
+      "answer": "Usumacinta",
+      "tries": 3,
+      "points": 1
+    }
+  ]
+}

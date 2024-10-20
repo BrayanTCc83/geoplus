@@ -1,0 +1,67 @@
+{
+  "title": "Mi bello Mexico",
+  "id": 7,
+  "game": "game_ub",
+  "questions": [
+    {
+      "type": "find_text",
+      "question": "Identify the image that corresponds to a famous archaeological site located in the state of Guerrero:",
+      "image": 25,
+      "options": [ "Monte Albán", "Teotihuacan", "Tajin", "Xochicalco" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "This image shows a colonial-era city known for its well-preserved historic center and iconic aqueduct. What is its name?",
+      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Queretaro" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "Which image represents a famous natural landmark located in the state of Michoacán?",
+      "image": 23,
+      "options": [ "Hierve el Agua", "Agua Azul Waterfalls", "Barranca del Cobre", "Laguna de Bacalar" ],
+      "answer": 1,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "This image depicts an ancient city known for its ball courts and carved stone monuments. What is its name?",
+      "options": [ "Monte Albán", "Tajin", "Uxmal", "Chichen Itza" ],
+      "answer": 2,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "Identify the image that corresponds to a famous Mayan archaeological site located in the state of Tabasco:",
+      "image": 24,
+      "options": [ "Uxmal", "Chichen Itza", "Palenque", "La Venta" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "This image represents a renowned beach destination known for its laid-back atmosphere and stunning sunsets. Which beach is it?",
+      "options": [ "Puerto Vallarta", "Cancun", "Tulum", "Sayulita" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "Which image shows a famous ancient pyramid located in the state of Yucatan?",
+      "image": 21,
+      "options": [ "Pyramid of the Sun", "Pyramid of the Moon", "Great Pyramid of Cholula", "Tikal Temple" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "This image represents a colonial-era city famous for its pink quarry stone architecture. What is its name?",
+      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Taxco" ],
+      "answer": 4,
+      "points": 2
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "Mi bello Mexico",
+  "id": 2,
+  "game": "game_ub",
+  "questions": [
+    {
+      "type": "find_image",
+      "question": "Identify the image that corresponds to a famous archaeological site located in the state of Veracruz:",
+      "image": 29,
+      "options": [ "Tulum", "Chichen Itza", "El Tajin", "Teotihuacan" ],
+      "answer": 2,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "This image shows a colonial city known for its pink quarry stone architecture. Which city is it?",
+      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Taxco" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_image",
+      "question": "Which image represents an iconic monument located in Mexico City?",
+      "image": 24,
+      "options": [ "Monumento a la Independencia", "Monumento a la Revolución", "Angel de la Independencia", "Palacio de Bellas Artes" ],
+      "answer": 3,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "This image depicts a pre-Hispanic city known for its circular pyramids. What is its name?",
+      "options": [ "Tikal", "Chichen Itza", "Uxmal", "Teotihuacan" ],
+      "answer": 1,
+      "points": 2
+    },
+    {
+      "type": "find_image",
+      "question": "Which image shows a famous natural landmark located in the state of Chiapas?",
+      "image": 33,
+      "options": [ "Cenote Ik Kil", "Agua Azul Waterfalls", "Monte Alban", "Palenque" ],
+      "answer": 2,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "This image represents a colonial-era fortress located in which Mexican city?",
+      "options": [ "Veracruz", "Acapulco", "Campeche", "Mazatlan" ],
+      "answer": 1,
+      "points": 2
+    },
+    {
+      "type": "find_image",
+      "question": "Identify the image that corresponds to a famous Mayan archaeological site located in the Yucatan Peninsula:",
+      "image": 18,
+      "options": [ "Uxmal", "Chichen Itza", "Palenque", "Tulum" ],
+      "answer": 1,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "This image depicts a famous beach destination known for its crystal-clear waters and vibrant marine life. Which beach is it?",
+      "options": [ "Puerto Vallarta", "Cancun", "Playa del Carmen", "Puerto Escondido" ],
+      "answer": 3,
+      "points": 2
+    }
+  ]
+}

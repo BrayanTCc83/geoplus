@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GeoPlus" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/dark_principal</item>
+        <item name="colorSecondary">@color/dark_secondary</item>
+        <item name="textFillColor">@color/dark_text</item>
+    </style>
+</resources>

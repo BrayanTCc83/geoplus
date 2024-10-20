@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Ubícate",
+    "levels": 10,
+    "reference": "game_ub_",
+    "progress": {
+      "completed": 0,
+      "puntuations": null
+    }
+  },
+  {
+    "id": 2,
+    "title": "Quiz",
+    "levels": 10,
+    "reference": "game_qu_",
+    "progress": {
+      "completed": 0,
+      "puntuations": null
+    }
+  },
+  {
+    "id": 3,
+    "title": "Pinta estados",
+    "levels": 10,
+    "reference": "game_pe_",
+    "progress": {
+      "completed": 0,
+      "puntuations": null
+    }
+  },
+  {
+    "id": 4,
+    "title": "Rutas",
+    "levels": 10,
+    "reference": "game_ru_",
+    "progress": {
+      "completed": 0,
+      "puntuations": null
+    }
+  }
+]

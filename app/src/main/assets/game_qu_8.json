@@ -1,0 +1,76 @@
+{
+  "title": "Geografía de México: Quiz 8",
+  "id": 8,
+  "game": "game_qu",
+  "questions": [
+    {
+      "type": "open",
+      "question": "¿Cuál es el estado con la mayor cantidad de zonas arqueológicas en México?",
+      "answer": "Yucatán",
+      "tries": 3,
+      "points": 1
+    },
+    {
+      "type": "radio",
+      "question": "¿Cuál de los siguientes estados no tiene costas en el Golfo de California?",
+      "answer": 3,
+      "options": [
+        "Sonora",
+        "Baja California",
+        "Baja California Sur",
+        "Sinaloa"
+      ],
+      "points": 1
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Cuáles de los siguientes estados colindan con el Océano Pacífico?",
+      "answer": [0, 2, 3],
+      "options": [
+        "Sinaloa",
+        "Nayarit",
+        "Jalisco",
+        "Colima"
+      ],
+      "points": 1
+    },
+    {
+      "type": "open",
+      "question": "¿Cuál es el estado con el mayor número de islas en México?",
+      "answer": "Baja California Sur",
+      "tries": 3,
+      "points": 1
+    },
+    {
+      "type": "radio",
+      "question": "¿Cuál es la capital de Quintana Roo?",
+      "answer": 1,
+      "options": [
+        "Mérida",
+        "Chetumal",
+        "Cancún",
+        "Playa del Carmen"
+      ],
+      "points": 1
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Cuáles de los siguientes estados tienen frontera con Guatemala?",
+      "answer": [0, 3],
+      "options": [
+        "Chiapas",
+        "Tabasco",
+        "Campeche",
+        "Quintana Roo"
+      ],
+      "points": 1
+    },
+    {
+      "type": "open",
+      "question": "¿Cuál es el río más largo de México?",
+      "answer": "Usumacinta",
+      "tries": 3,
+      "points": 1
+    }
+  ]
+}

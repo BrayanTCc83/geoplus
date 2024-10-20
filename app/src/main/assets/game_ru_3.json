@@ -1,0 +1,46 @@
+{
+  "title": "Desafío de Monumentos y Playas",
+  "id": 3,
+  "game": "game_qu",
+  "questions": [
+    {
+      "type": "simple",
+      "question": "Indica una ruta desde el Palacio de Bellas Artes hasta la Playa del Carmen.",
+      "start": "Palacio de Bellas Artes",
+      "end": "Playa del Carmen",
+      "points": 2
+    },
+    {
+      "type": "complex",
+      "question": "Describe una ruta que pase por el Castillo de Chapultepec, el Parque Nacional de Tulum y el Mirador de la Torre Latinoamericana.",
+      "start": "Castillo de Chapultepec",
+      "end": "Mirador de la Torre Latinoamericana",
+      "nodes": ["Parque Nacional de Tulum"],
+      "nodesSize": 1,
+      "points": 4
+    },
+    {
+      "type": "simple",
+      "question": "Especifica un camino desde la Zona Arqueológica de Chichen Itzá hasta el Malecón de Puerto Vallarta.",
+      "start": "Zona Arqueológica de Chichen Itzá",
+      "end": "Malecón de Puerto Vallarta",
+      "points": 2
+    },
+    {
+      "type": "complex",
+      "question": "Proporciona una ruta que conecte el Ángel de la Independencia, el Acuario de Veracruz y el Palacio de Gobierno de Guadalajara.",
+      "start": "Ángel de la Independencia",
+      "end": "Palacio de Gobierno de Guadalajara",
+      "nodes": ["Acuario de Veracruz"],
+      "nodesSize": 1,
+      "points": 4
+    },
+    {
+      "type": "simple",
+      "question": "Encuentra una ruta desde la Catedral Metropolitana de la Ciudad de México hasta la Estatua de la Libertad en Tijuana.",
+      "start": "Catedral Metropolitana",
+      "end": "Estatua de la Libertad",
+      "points": 2
+    }
+  ]
+}

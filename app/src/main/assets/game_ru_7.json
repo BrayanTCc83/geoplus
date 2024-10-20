@@ -1,0 +1,46 @@
+{
+  "title": "Desafío de Atracciones Turísticas",
+  "id": 7,
+  "game": "game_qu",
+  "questions": [
+    {
+      "type": "simple",
+      "question": "Indica una ruta desde el Museo Frida Kahlo hasta el Zócalo.",
+      "start": "Museo Frida Kahlo",
+      "end": "Zócalo",
+      "points": 2
+    },
+    {
+      "type": "complex",
+      "question": "Describe una ruta que pase por la Catedral Metropolitana, el Malecón de Puerto Vallarta y el Templo Mayor.",
+      "start": "Catedral Metropolitana",
+      "end": "Templo Mayor",
+      "nodes": ["Malecón de Puerto Vallarta"],
+      "nodesSize": 1,
+      "points": 4
+    },
+    {
+      "type": "simple",
+      "question": "Especifica un camino desde el Ángel de la Independencia hasta la Isla Mujeres.",
+      "start": "Ángel de la Independencia",
+      "end": "Isla Mujeres",
+      "points": 2
+    },
+    {
+      "type": "complex",
+      "question": "Proporciona una ruta que conecte el Palacio de Bellas Artes, el Acuario de Veracruz y el Parque Nacional de Tulum.",
+      "start": "Palacio de Bellas Artes",
+      "end": "Parque Nacional de Tulum",
+      "nodes": ["Acuario de Veracruz"],
+      "nodesSize": 1,
+      "points": 4
+    },
+    {
+      "type": "simple",
+      "question": "Encuentra una ruta desde la Pirámide del Sol hasta la Catedral Metropolitana.",
+      "start": "Pirámide del Sol",
+      "end": "Catedral Metropolitana",
+      "points": 2
+    }
+  ]
+}

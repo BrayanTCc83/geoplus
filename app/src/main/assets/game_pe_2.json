@@ -1,0 +1,33 @@
+{
+  "title": "Geographical Zones",
+  "id": 3,
+  "game": "game_pe",
+  "questions": [
+    {
+      "type": "paint_once",
+      "question": "Color all states whose names start with the letter 'M' in pink.",
+      "answer": [ 14, 15, 18, 23 ],
+      "color": 5,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states whose names start with the letter 'Z' in orange and those starting with the letter 'Q' in purple.",
+      "answer": {
+        "3": [ 19, 22 ],
+        "4": [ 20 ]
+      },
+      "color": 6,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states that border the Gulf of Mexico in green and those that border the Pacific Ocean in blue.",
+      "answer": {
+        "4": [ 17, 23, 24, 26 ],
+        "2": [ 1, 6, 7, 8, 9, 11, 12, 16 ]
+      },
+      "points": 8
+    }
+  ]
+}

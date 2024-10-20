@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GeoPlus" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/light_principal</item>
+        <item name="colorSecondary">@color/light_secondary</item>
+        <item name="textFillColor">@color/light_text</item>
+    </style>
+
+    <style name="Theme.GeoPlus" parent="Base.Theme.GeoPlus" />
+</resources>

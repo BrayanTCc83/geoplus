@@ -1,0 +1,46 @@
+{
+  "title": "Aventura en Sitios Históricos",
+  "id": 10,
+  "game": "game_qu",
+  "questions": [
+    {
+      "type": "simple",
+      "question": "Indica una ruta desde la Zona Arqueológica de Tulum hasta el Palacio de Bellas Artes.",
+      "start": "Zona Arqueológica de Tulum",
+      "end": "Palacio de Bellas Artes",
+      "points": 2
+    },
+    {
+      "type": "complex",
+      "question": "Describe una ruta que pase por el Ángel de la Independencia, el Museo Frida Kahlo y la Catedral Metropolitana.",
+      "start": "Ángel de la Independencia",
+      "end": "Catedral Metropolitana",
+      "nodes": ["Museo Frida Kahlo"],
+      "nodesSize": 1,
+      "points": 4
+    },
+    {
+      "type": "simple",
+      "question": "Especifica un camino desde el Malecón de Puerto Vallarta hasta el Templo Mayor.",
+      "start": "Malecón de Puerto Vallarta",
+      "end": "Templo Mayor",
+      "points": 2
+    },
+    {
+      "type": "complex",
+      "question": "Proporciona una ruta que conecte el Palacio de Gobierno de Guadalajara, el Parque Nacional de Tulum y el Acuario de Veracruz.",
+      "start": "Palacio de Gobierno de Guadalajara",
+      "end": "Acuario de Veracruz",
+      "nodes": ["Parque Nacional de Tulum"],
+      "nodesSize": 1,
+      "points": 4
+    },
+    {
+      "type": "simple",
+      "question": "Encuentra una ruta desde la Pirámide del Sol hasta el Castillo de Chapultepec.",
+      "start": "Pirámide del Sol",
+      "end": "Castillo de Chapultepec",
+      "points": 2
+    }
+  ]
+}

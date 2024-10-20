@@ -1,0 +1,42 @@
+{
+  "title": "Mi hermoso México",
+  "id": 10,
+  "game": "game_ub",
+  "questions": [
+    {
+      "type": "find_text",
+      "question": "Identifica la ciudad conocida por su centro histórico bien conservado y su vibrante escena artística.",
+      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Oaxaca" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "¿Qué destino de playa es famoso por sus playas vírgenes y su animada vida nocturna?",
+      "options": [ "Puerto Vallarta", "Cancún", "Playa del Carmen", "Puerto Escondido" ],
+      "answer": 3,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "Identifica la ciudad colonial famosa por su arquitectura de cantera rosa bien conservada.",
+      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Taxco" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "¿Qué ciudad es conocida por su ambiente relajado y sus impresionantes atardeceres?",
+      "options": [ "Puerto Vallarta", "Cancún", "Tulum", "Sayulita" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "Identifica la ciudad colonial conocida por sus calles empedradas y sus artesanías tradicionales.",
+      "options": [ "San Cristóbal de las Casas", "Taxco", "Valladolid", "Campeche" ],
+      "answer": 1,
+      "points": 2
+    }
+  ]
+}

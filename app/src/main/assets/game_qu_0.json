@@ -1,0 +1,40 @@
+{
+  "title": "Quiz 1: Estados",
+  "id": 1,
+  "game": "game_qu",
+  "questions": [
+    {
+      "type": "open",
+      "question": "¿Nombre del estado donde se encuentran los 'Atlantes de Tula'?",
+      "answer": "hidalgo",
+      "tries": 3,
+      "points": 1
+    },
+    {
+      "type": "radio",
+      "question": "¿Nombre del estado cuya capital es 'Tepic'?",
+      "answer": 0,
+      "options": [
+        "Nayarit",
+        "Guadalajara",
+        "Hidalgo",
+        "Queretaro"
+      ],
+      "points": 1
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Son estados que colindan con el 'Rio Bravo'?",
+      "answer": [0, 3, 5],
+      "options": [
+        "Chihuahua",
+        "Veracruz",
+        "Yucatán",
+        "Coahuila",
+        "Sonora",
+        "Nuevo León"
+      ],
+      "points": 1
+    }
+  ]
+}

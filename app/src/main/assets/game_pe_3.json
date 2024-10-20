@@ -1,0 +1,33 @@
+{
+  "title": "Geographical Zones",
+  "id": 4,
+  "game": "game_pe",
+  "questions": [
+    {
+      "type": "paint_once",
+      "question": "Color all states whose names start with the letter 'P' in purple.",
+      "answer": [ 21, 25 ],
+      "color": 7,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states whose names start with the letter 'G' in brown and those starting with the letter 'E' in cyan.",
+      "answer": {
+        "3": [ 5 ],
+        "4": [ 4, 15 ]
+      },
+      "color": 8,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states that are part of the Yucatan Peninsula in yellow and those that are part of the Baja California Peninsula in red.",
+      "answer": {
+        "4": [ 29, 30, 31 ],
+        "1": [ 0, 1 ]
+      },
+      "points": 8
+    }
+  ]
+}

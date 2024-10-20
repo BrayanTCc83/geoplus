@@ -1,0 +1,33 @@
+{
+  "title": "Zonas geograficas",
+  "id": 1,
+  "game": "game_pe",
+  "questions": [
+    {
+      "type": "paint_once",
+      "question": "Colorea de verde todos los estados cuyo nombre inicia con la letra S",
+      "answer": [ 2, 7, 10 ],
+      "color": 4,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Colorea de verde todos los estados cuyo nombre inicia con la letra D y de azul aquellos que empiecen con la letra N",
+      "answer": {
+        "4": [ 8 ],
+        "2": [ 5, 12 ]
+      },
+      "color": 4,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Colorea de verde los estados atravesados por la sierra madre oriental y de azul los atravesados por la sierra madre occidental",
+      "answer": {
+        "4": [ 4, 5, 6, 10, 16, 22, 15, 21, 23 ],
+        "2": [ 2, 3, 7, 8, 12, 9, 11, 13 ]
+      },
+      "points": 8
+    }
+  ]
+}

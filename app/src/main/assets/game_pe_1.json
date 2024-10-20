@@ -1,0 +1,33 @@
+{
+  "title": "Geographical Zones",
+  "id": 2,
+  "game": "game_pe",
+  "questions": [
+    {
+      "type": "paint_once",
+      "question": "Color all states whose names start with the letter 'B' in green.",
+      "answer": [ 1, 2, 12 ],
+      "color": 3,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states whose names start with the letter 'A' in yellow and those starting with the letter 'S' in blue.",
+      "answer": {
+        "3": [ 10, 11, 13, 17 ],
+        "2": [ 9, 16 ]
+      },
+      "color": 4,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states crossed by the Tropic of Cancer in orange and those crossed by the Tropic of Capricorn in purple.",
+      "answer": {
+        "3": [ 4, 5, 6, 7, 8 ],
+        "2": [ 18, 19, 20, 21, 22 ]
+      },
+      "points": 8
+    }
+  ]
+}

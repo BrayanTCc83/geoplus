@@ -1,0 +1,33 @@
+{
+  "title": "Geographical Zones",
+  "id": 10,
+  "game": "game_pe",
+  "questions": [
+    {
+      "type": "paint_once",
+      "question": "Color all states whose names start with the letter 'E' in emerald.",
+      "answer": [ 9 ],
+      "color": 19,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states whose names start with the letter 'G' in gold and those starting with the letter 'A' in azure.",
+      "answer": {
+        "3": [ 4 ],
+        "4": [ 1, 20 ]
+      },
+      "color": 20,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states that are located on the Gulf of Mexico coast in gray and those located on the Pacific coast in pink.",
+      "answer": {
+        "2": [ 1, 6, 7, 8, 9, 11, 12, 16 ],
+        "4": [ 17, 23, 24, 26 ]
+      },
+      "points": 8
+    }
+  ]
+}

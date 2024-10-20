@@ -1,0 +1,33 @@
+{
+  "title": "Geographical Zones",
+  "id": 7,
+  "game": "game_pe",
+  "questions": [
+    {
+      "type": "paint_once",
+      "question": "Color all states whose names start with the letter 'N' in navy blue.",
+      "answer": [ 11 ],
+      "color": 13,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states whose names start with the letter 'J' in jade and those starting with the letter 'U' in ultramarine.",
+      "answer": {
+        "3": [ 13 ],
+        "2": [ 30 ]
+      },
+      "color": 14,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states that are located on the Pacific coast in periwinkle and those located on the Gulf of Mexico coast in peach.",
+      "answer": {
+        "2": [ 1, 6, 7, 8, 9, 11, 12, 16 ],
+        "4": [ 17, 23, 24, 26 ]
+      },
+      "points": 8
+    }
+  ]
+}

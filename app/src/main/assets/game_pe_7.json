@@ -1,0 +1,33 @@
+{
+  "title": "Geographical Zones",
+  "id": 8,
+  "game": "game_pe",
+  "questions": [
+    {
+      "type": "paint_once",
+      "question": "Color all states whose names start with the letter 'Y' in yellow-green.",
+      "answer": [ 30 ],
+      "color": 15,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states whose names start with the letter 'P' in peach and those starting with the letter 'T' in turquoise.",
+      "answer": {
+        "3": [ 21 ],
+        "4": [ 15, 19 ]
+      },
+      "color": 16,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states that are part of the Gulf of California coastline in gold and those that are part of the Gulf of Mexico coastline in indigo.",
+      "answer": {
+        "2": [ 2, 3, 4, 6, 10, 11, 12, 14 ],
+        "4": [ 17, 23, 24, 26 ]
+      },
+      "points": 8
+    }
+  ]
+}

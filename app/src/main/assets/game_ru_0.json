@@ -1,0 +1,23 @@
+{
+  "title": "Rutas 1",
+  "id": 1,
+  "game": "game_qu",
+  "questions": [
+    {
+      "type": "simple",
+      "question": "Especifica una ruta que inicie en el estado con capital Pachuca y termine en el estado con capital Xalapa.",
+      "start": 16,
+      "end": 23,
+      "points": 2
+    },
+    {
+      "type": "complex",
+      "question": "Especifica una ruta que atraviese los estados de Hidalgo, Queretaro, Michoacan y Yucatan",
+      "start": 10,
+      "end": 30,
+      "nodes": [10, 15, 18, 30],
+      "nodesSize": 4,
+      "points": 4
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Geographical Zones",
+  "id": 5,
+  "game": "game_pe",
+  "questions": [
+    {
+      "type": "paint_once",
+      "question": "Color all states whose names start with the letter 'V' in violet.",
+      "answer": [ 23, 27 ],
+      "color": 9,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states whose names start with the letter 'C' in crimson and those starting with the letter 'O' in olive.",
+      "answer": {
+        "3": [ 7, 8 ],
+        "2": [ 25 ]
+      },
+      "color": 10,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states that have a coastline along the Gulf of California in gold and those with a coastline along the Gulf of Mexico in indigo.",
+      "answer": {
+        "2": [ 2, 3, 4, 6, 10, 11, 12, 14 ],
+        "4": [ 17, 23, 24, 26 ]
+      },
+      "points": 8
+    }
+  ]
+}

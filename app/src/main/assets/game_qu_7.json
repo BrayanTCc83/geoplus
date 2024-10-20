@@ -1,0 +1,76 @@
+{
+  "title": "Geografía Mexicana: Quiz 7",
+  "id": 7,
+  "game": "game_qu",
+  "questions": [
+    {
+      "type": "open",
+      "question": "¿Cuál es la capital de Jalisco?",
+      "answer": "Guadalajara",
+      "tries": 3,
+      "points": 1
+    },
+    {
+      "type": "radio",
+      "question": "¿Cuál de los siguientes estados tiene costas en el Océano Atlántico?",
+      "answer": 0,
+      "options": [
+        "Veracruz",
+        "Tabasco",
+        "Campeche",
+        "Quintana Roo"
+      ],
+      "points": 1
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Cuáles de los siguientes estados tienen costas en el Golfo de México?",
+      "answer": [0, 1, 3],
+      "options": [
+        "Veracruz",
+        "Tamaulipas",
+        "Yucatán",
+        "Campeche"
+      ],
+      "points": 1
+    },
+    {
+      "type": "open",
+      "question": "¿Cuál es el volcán más activo de México?",
+      "answer": "Popocatépetl",
+      "tries": 3,
+      "points": 1
+    },
+    {
+      "type": "radio",
+      "question": "¿Cuál es el estado con la menor cantidad de municipios en México?",
+      "answer": 3,
+      "options": [
+        "Baja California Sur",
+        "Campeche",
+        "Coahuila",
+        "Quintana Roo"
+      ],
+      "points": 1
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Cuáles de los siguientes estados son atravesados por la Sierra Madre Oriental?",
+      "answer": [0, 1, 3],
+      "options": [
+        "Tamaulipas",
+        "San Luis Potosí",
+        "Veracruz",
+        "Puebla"
+      ],
+      "points": 1
+    },
+    {
+      "type": "open",
+      "question": "¿Cuál es el lago más grande de México?",
+      "answer": "Chapala",
+      "tries": 3,
+      "points": 1
+    }
+  ]
+}

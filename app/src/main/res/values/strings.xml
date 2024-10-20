@@ -1,0 +1,56 @@
+<resources>
+    <!-- Global Strings -->
+    <string name="app_name">GeoPlus</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings for buttons -->
+    <string name="button_login">Iniciar sesión</string>
+    <string name="button_register">Crear cuenta</string>
+    <string name="button_exit">Salir</string>
+    <string name="button_next">Siguiente</string>
+    <string name="button_back">Regresar</string>
+    <string name="button_check">Calificar respuesta</string>
+
+    <!-- Strings for input labels -->
+    <string name="label_username">Nombre de usuario:</string>
+    <string name="label_name">Nombre:</string>
+    <string name="label_lastname_pat">Apellido paterno:</string>
+    <string name="label_lastname_mat">Apellido materno:</string>
+    <string name="label_age">Edad:</string>
+    <string name="label_email">Correo:</string>
+    <string name="label_password">Constraseña:</string>
+
+    <!-- Strings for input placeholder -->
+    <string name="input_username">Mi_nick</string>
+    <string name="input_name">Mi nombre</string>
+    <string name="input_lastname_pat">Apellido</string>
+    <string name="input_lastname_mat">Apellido</string>
+    <string name="input_age">10</string>
+    <string name="input_email">example@correo.com</string>
+    <string name="input_password">ThisIsMyPassword</string>
+
+    <!-- Strings for input placeholder -->
+    <string name="card_title">UBÍCATE</string>
+    <string name="card_prom">Prom: 8/10</string>
+    <string name="card_completes">Completos:\n1/10</string>
+
+    <!-- Level results -->
+    <string name="level_number">1</string>
+    <string name="level_value">7/10</string>
+
+    <!-- String for quiz question -->
+    <string name="quiz_question">¿Cuál es el nombre de este país?</string>
+    <string name="input_answer">Respuesta</string>
+    <string name="question_try_fail">Primer error</string>
+    <string name="question_option">Opción 1</string>
+
+    <!-- String for guides -->
+    <string name="guide_title">PISTA</string>
+    <string name="guide_content">Su nombre empieza con J</string>
+
+    <!-- String for resume -->
+    <string name="resume_title">QUIZ 1: RESUMEN</string>
+    <string name="resume_error">3 intentos</string>
+    <string name="resume_assert">1 intento</string>
+    <string name="resume_result">5/10</string>
+</resources>

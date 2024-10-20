@@ -1,0 +1,42 @@
+{
+  "title": "Mi bello Mexico",
+  "id": 8,
+  "game": "game_ub",
+  "questions": [
+    {
+      "type": "find_text",
+      "question": "Which city is famous for its pink quarry stone architecture?",
+      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Taxco" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "Identify the colonial-era city known for its well-preserved historic center and vibrant arts scene.",
+      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Oaxaca" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "Which destination is renowned for its laid-back atmosphere and stunning sunsets?",
+      "options": [ "Puerto Vallarta", "Cancun", "Tulum", "Sayulita" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "Which city is famous for its well-preserved historic center and vibrant arts scene?",
+      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Oaxaca" ],
+      "answer": 4,
+      "points": 2
+    },
+    {
+      "type": "find_text",
+      "question": "Identify the picturesque colonial-era town known for its cobblestone streets and traditional crafts.",
+      "options": [ "San Cristobal de las Casas", "Taxco", "Valladolid", "Campeche" ],
+      "answer": 1,
+      "points": 2
+    }
+  ]
+}

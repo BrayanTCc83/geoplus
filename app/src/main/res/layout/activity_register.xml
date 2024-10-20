@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#221E1E"
+    android:backgroundTint="@color/dark_principal"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="262dp"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/geoplus_not_background" />
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_username"
+                        android:textColor="@color/dark_text" />
+
+                    <EditText
+                        android:id="@+id/input_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dark_secondary"
+                        android:backgroundTint="@color/dark_secondary"
+                        android:backgroundTintMode="add"
+                        android:ems="10"
+                        android:foregroundTint="@color/dark_secondary"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:text="@string/input_username"
+                        android:textColor="@color/semitransparent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_name"
+                        android:textColor="@color/dark_text" />
+
+                    <EditText
+                        android:id="@+id/input_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dark_secondary"
+                        android:backgroundTint="@color/dark_secondary"
+                        android:backgroundTintMode="add"
+                        android:ems="10"
+                        android:foregroundTint="@color/dark_secondary"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:text="@string/input_name"
+                        android:textColor="@color/semitransparent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_lastname_pat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_lastname_pat"
+                        android:textColor="@color/dark_text" />
+
+                    <EditText
+                        android:id="@+id/input_lastname_pat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dark_secondary"
+                        android:backgroundTint="@color/dark_secondary"
+                        android:backgroundTintMode="add"
+                        android:ems="10"
+                        android:foregroundTint="@color/dark_secondary"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:text="@string/input_lastname_pat"
+                        android:textColor="@color/semitransparent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_lastname_mat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_lastname_mat"
+                        android:textColor="@color/dark_text" />
+
+                    <EditText
+                        android:id="@+id/input_lastname_mat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dark_secondary"
+                        android:backgroundTint="@color/dark_secondary"
+                        android:backgroundTintMode="add"
+                        android:ems="10"
+                        android:foregroundTint="@color/dark_secondary"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:text="@string/input_lastname_mat"
+                        android:textColor="@color/semitransparent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_age"
+                        android:textColor="@color/dark_text" />
+
+                    <EditText
+                        android:id="@+id/input_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dark_secondary"
+                        android:backgroundTint="@color/dark_secondary"
+                        android:backgroundTintMode="add"
+                        android:ems="10"
+                        android:foregroundTint="@color/dark_secondary"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:text="@string/input_age"
+                        android:textColor="@color/semitransparent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_email"
+                        android:textColor="@color/dark_text" />
+
+                    <EditText
+                        android:id="@+id/input_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dark_secondary"
+                        android:backgroundTint="@color/dark_secondary"
+                        android:backgroundTintMode="add"
+                        android:ems="10"
+                        android:foregroundTint="@color/dark_secondary"
+                        android:inputType="textEmailAddress"
+                        android:padding="8dp"
+                        android:text="@string/input_email"
+                        android:textColor="@color/semitransparent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_password"
+                        android:textColor="@color/dark_text" />
+
+                    <EditText
+                        android:id="@+id/input_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dark_secondary"
+                        android:backgroundTint="@color/dark_secondary"
+                        android:backgroundTintMode="add"
+                        android:ems="10"
+                        android:foregroundTint="@color/dark_secondary"
+                        android:inputType="textPassword"
+                        android:padding="8dp"
+                        android:text="@string/input_password"
+                        android:textColor="@color/semitransparent" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/principal_color"
+                    android:text="@string/button_register"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="@color/secondary_color"
+                    app:strokeWidth="3dp" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/no_color"
+                    android:text="@string/button_login"
+                    android:textColor="@color/principal_color"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="@color/secondary_color"
+                    app:strokeWidth="3dp" />
+
+                <Button
+                    android:id="@+id/btn_exit"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/no_color"
+                    android:text="@string/button_exit"
+                    android:textColor="@color/principal_color"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="@color/secondary_color"
+                    app:strokeWidth="3dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

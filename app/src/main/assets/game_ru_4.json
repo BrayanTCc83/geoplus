@@ -1,0 +1,46 @@
+{
+  "title": "Rutas Turísticas Avanzadas",
+  "id": 4,
+  "game": "game_qu",
+  "questions": [
+    {
+      "type": "simple",
+      "question": "Indica una ruta desde el Templo Mayor hasta la Isla Mujeres.",
+      "start": "Templo Mayor",
+      "end": "Isla Mujeres",
+      "points": 2
+    },
+    {
+      "type": "complex",
+      "question": "Describe una ruta que pase por el Parque Nacional de Tulum, el Museo Frida Kahlo y el Acuario de Veracruz.",
+      "start": "Parque Nacional de Tulum",
+      "end": "Acuario de Veracruz",
+      "nodes": ["Museo Frida Kahlo"],
+      "nodesSize": 1,
+      "points": 4
+    },
+    {
+      "type": "simple",
+      "question": "Especifica un camino desde el Zócalo hasta la Playa del Carmen.",
+      "start": "Zócalo",
+      "end": "Playa del Carmen",
+      "points": 2
+    },
+    {
+      "type": "complex",
+      "question": "Proporciona una ruta que conecte el Ángel de la Independencia, la Zona Arqueológica de Chichen Itzá y el Castillo de Chapultepec.",
+      "start": "Ángel de la Independencia",
+      "end": "Castillo de Chapultepec",
+      "nodes": ["Zona Arqueológica de Chichen Itzá"],
+      "nodesSize": 1,
+      "points": 4
+    },
+    {
+      "type": "simple",
+      "question": "Encuentra una ruta desde la Catedral Metropolitana hasta el Malecón de Puerto Vallarta.",
+      "start": "Catedral Metropolitana",
+      "end": "Malecón de Puerto Vallarta",
+      "points": 2
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Geographical Zones",
+  "id": 9,
+  "game": "game_pe",
+  "questions": [
+    {
+      "type": "paint_once",
+      "question": "Color all states whose names start with the letter 'Q' in aquamarine.",
+      "answer": [ 15 ],
+      "color": 17,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states whose names start with the letter 'O' in olive and those starting with the letter 'M' in magenta.",
+      "answer": {
+        "3": [ 8 ],
+        "4": [ 14, 18 ]
+      },
+      "color": 18,
+      "points": 2
+    },
+    {
+      "type": "paint_obj",
+      "question": "Color all states that are part of the Sierra Madre Oriental in orchid and those that are part of the Sierra Madre Occidental in olive drab.",
+      "answer": {
+        "4": [ 4, 5, 6, 10, 16, 22, 15, 21, 23 ],
+        "2": [ 2, 3, 7, 8, 12, 9, 11, 13 ]
+      },
+      "points": 8
+    }
+  ]
+}

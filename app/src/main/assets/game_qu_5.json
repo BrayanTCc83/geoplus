@@ -1,0 +1,76 @@
+{
+  "title": "Geografía Mexicana: Quiz 5",
+  "id": 5,
+  "game": "game_qu",
+  "questions": [
+    {
+      "type": "open",
+      "question": "¿Cuál es la capital de Nuevo León?",
+      "answer": "Monterrey",
+      "tries": 3,
+      "points": 1
+    },
+    {
+      "type": "radio",
+      "question": "¿Cuál de los siguientes estados tiene costas en el Mar de Cortés?",
+      "answer": 0,
+      "options": [
+        "Baja California",
+        "Baja California Sur",
+        "Sonora",
+        "Sinaloa"
+      ],
+      "points": 1
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Cuáles de los siguientes estados tienen costas en el Golfo de California?",
+      "answer": [1, 2],
+      "options": [
+        "Baja California",
+        "Baja California Sur",
+        "Sonora",
+        "Sinaloa"
+      ],
+      "points": 1
+    },
+    {
+      "type": "open",
+      "question": "¿Cuál es el volcán más alto de México?",
+      "answer": "Pico de Orizaba",
+      "tries": 3,
+      "points": 1
+    },
+    {
+      "type": "radio",
+      "question": "¿Cuál es el estado más poblado de México?",
+      "answer": 0,
+      "options": [
+        "Estado de México",
+        "Veracruz",
+        "Ciudad de México",
+        "Jalisco"
+      ],
+      "points": 1
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Cuáles de los siguientes estados son parte de la Península de Yucatán?",
+      "answer": [0, 3],
+      "options": [
+        "Yucatán",
+        "Quintana Roo",
+        "Campeche",
+        "Chiapas"
+      ],
+      "points": 1
+    },
+    {
+      "type": "open",
+      "question": "¿Cuál es el río más largo de México?",
+      "answer": "Río Bravo (Río Grande)",
+      "tries": 3,
+      "points": 1
+    }
+  ]
+}
