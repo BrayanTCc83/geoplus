@@ -1,108 +1,55 @@
 {
-  "title": "Quiz de Geografía Mexicana 3",
-  "id": 3,
+  "title": "Cuestionario Estados IV",
+  "id": 4,
   "game": "game_qu",
   "questions": [
     {
       "type": "open",
-      "question": "¿Cuál es el estado más poblado de México?",
-      "answer": "Estado de México",
-      "tries": 3,
-      "points": 1
+      "question": "¿Qué estado de México es conocido como 'La Tierra del Tequila'?",
+      "answer": "Jalisco",
+      "tries": 2,
+      "points": 5,
+      "image": "edo_jalisco"
     },
     {
       "type": "radio",
-      "question": "¿Cuál de los siguientes estados tiene costas en el Golfo de México?",
+      "question": "¿En qué estado se encuentran las famosas Grutas de Cacahuamilpa?",
       "answer": 1,
-      "options": [
-        "Chiapas",
-        "Veracruz",
-        "Oaxaca",
-        "Tamaulipas"
-      ],
-      "points": 1
+      "options": ["Chiapas", "Guerrero", "Morelos", "Puebla"],
+      "points": 4,
+      "image": "edo_guerrero"
     },
     {
       "type": "checkbox",
-      "question": "¿Cuáles de los siguientes estados colindan con Estados Unidos?",
-      "answer": [0, 3, 4],
-      "options": [
-        "Chihuahua",
-        "Sonora",
-        "Nuevo León",
-        "Coahuila",
-        "Tamaulipas"
-      ],
-      "points": 1
+      "question": "¿Qué estados tienen volcanes activos?",
+      "answer": [0, 2],
+      "options": ["Colima", "Sonora", "Puebla", "Yucatán"],
+      "points": 6,
+      "image": "edo_colima"
     },
     {
       "type": "open",
-      "question": "¿Cuál es el volcán más joven de México?",
-      "answer": "Paricutín",
-      "tries": 3,
-      "points": 1
+      "question": "¿Cuál es el nombre de la capital del estado de Zacatecas?",
+      "answer": "Zacatecas",
+      "tries": 2,
+      "points": 5,
+      "image": "edo_zacatecas"
     },
     {
       "type": "radio",
-      "question": "¿Cuál es el estado con mayor extensión territorial de México?",
-      "answer": 0,
-      "options": [
-        "Chihuahua",
-        "Sonora",
-        "Durango",
-        "Coahuila"
-      ],
-      "points": 1
+      "question": "¿En qué estado se encuentra el sitio arqueológico de Monte Albán?",
+      "answer": 3,
+      "options": ["Chiapas", "Yucatán", "Veracruz", "Oaxaca"],
+      "points": 4,
+      "image": "edo_oaxaca"
     },
     {
       "type": "checkbox",
-      "question": "¿Cuáles de los siguientes estados tienen costas en el Golfo de California?",
-      "answer": [0, 1, 2],
-      "options": [
-        "Baja California",
-        "Baja California Sur",
-        "Sonora",
-        "Sinaloa"
-      ],
-      "points": 1
-    },
-    {
-      "type": "open",
-      "question": "¿Cuál es el lago más grande de México?",
-      "answer": "Lago de Chapala",
-      "tries": 3,
-      "points": 1
-    },
-    {
-      "type": "radio",
-      "question": "¿Cuál es la capital de Jalisco?",
-      "answer": 1,
-      "options": [
-        "Guadalajara",
-        "Monterrey",
-        "León",
-        "Puebla"
-      ],
-      "points": 1
-    },
-    {
-      "type": "checkbox",
-      "question": "¿Cuáles de los siguientes estados tienen costas en el Océano Atlántico?",
-      "answer": [2, 3],
-      "options": [
-        "Veracruz",
-        "Tabasco",
-        "Campeche",
-        "Quintana Roo"
-      ],
-      "points": 1
-    },
-    {
-      "type": "open",
-      "question": "¿Cuál es el río más caudaloso de México?",
-      "answer": "Usumacinta",
-      "tries": 3,
-      "points": 1
+      "question": "Selecciona los estados que no tienen salida al mar:",
+      "answer": [1, 2, 3],
+      "options": ["Baja California", "Aguascalientes", "Querétaro", "Hidalgo", "Nayarit"],
+      "points": 6,
+      "image": "edo_aguascalientes"
     }
   ]
 }

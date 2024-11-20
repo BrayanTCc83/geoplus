@@ -7,6 +7,8 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.geoplus.databinding.ActivityMainBinding
 import com.example.geoplus.global.Database
+import com.example.geoplus.models.DefaultUser
+import com.example.geoplus.models.User
 import java.io.File
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +25,25 @@ class MainActivity : AppCompatActivity() {
         val context = this
 
         Database.getInstance().tryInit(context)
+
+        try {
+            Database.getInstance().isActiveSession()
+            val sesion = Database.getInstance().session ?: DefaultUser
+            Log.d("LOG_GEOPLUS", "Recuperando sesion ${sesion.nick}")
+
+            val configuration = Database.getInstance().getConfiguration()
+            if(configuration.darkmode) {
+                Log.d("LOG_GEOPLUS", "Modo oscuro activado")
+                setTheme(R.style.GeoPlus_Theme_Dark)
+            } else {
+                Log.d("LOG_GEOPLUS", "Modo claro activado")
+                setTheme(R.style.GeoPlus_Theme)
+            }
+            recreate()
+        } catch(e: Exception) {
+            Log.d("LOG_GEOPLUS", e.message?:"Error")
+        }
+
         timer = object : CountDownTimer(5_000, 1_000) {
             override fun onTick(millisUntilFinished: Long) {
             }

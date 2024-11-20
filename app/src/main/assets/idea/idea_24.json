@@ -1,0 +1,25 @@
+{
+  "country": "Sonora",
+  "places": [
+    {
+      "image": "edo_sonora",
+      "description": "Sonora, en el noroeste de México, es un estado de paisajes áridos y costas bañadas por el Mar de Cortés. Su cultura norteña, su deliciosa carne asada y su música tradicional lo hacen inconfundible."
+    },
+    {
+      "image": "capital_sonora",
+      "description": "Hermosillo, la capital de Sonora, es una ciudad moderna rodeada de desiertos y montañas. Es famosa por su gastronomía basada en la carne y su cálida hospitalidad."
+    },
+    {
+      "image": "sonora_puerto_penasco",
+      "description": "Puerto Peñasco, también conocido como 'Rocky Point', es un destino turístico en el Mar de Cortés. Sus playas, dunas y deportes acuáticos lo convierten en un lugar ideal para disfrutar del sol y el mar."
+    },
+    {
+      "image": "sonora_bahia_kino",
+      "description": "Bahía Kino es un paraíso costero con playas tranquilas y aguas cristalinas. Es perfecto para actividades como el buceo, la pesca y la exploración de la biodiversidad marina del Mar de Cortés."
+    },
+    {
+      "image": "sonora_caborca",
+      "description": "Caborca, una ciudad histórica en Sonora, es conocida por sus misiones jesuitas y su legado indígena. Sus paisajes desérticos y su cercanía al Río Colorado lo hacen un destino único en el norte de México."
+    }
+  ]
+}

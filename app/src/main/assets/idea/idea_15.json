@@ -1,0 +1,25 @@
+{
+  "country": "Nayarit",
+  "places": [
+    {
+      "image": "edo_nayarit",
+      "description": "Nayarit, situado en la costa del Pacífico, es un estado rico en biodiversidad, playas paradisíacas y una mezcla única de tradiciones indígenas y cultura moderna. Es un destino ideal para los amantes de la naturaleza y el ecoturismo."
+    },
+    {
+      "image": "capital_nayarit",
+      "description": "Tepic, la capital de Nayarit, es una ciudad tranquila rodeada de montañas y volcanes. Ofrece sitios históricos como la Catedral de la Purísima Concepción y una rica tradición gastronómica basada en el maíz y los mariscos."
+    },
+    {
+      "image": "nayarit_islas_marietas",
+      "description": "Las Islas Marietas, un grupo de pequeñas islas en el Pacífico, son conocidas por su famosa Playa Escondida y su rica biodiversidad marina. Este lugar es ideal para practicar snorkel, kayak y avistamiento de aves."
+    },
+    {
+      "image": "nayarit_sayulita",
+      "description": "Sayulita, un pintoresco pueblo costero, es el paraíso para los surfistas y los amantes del estilo de vida bohemio. Sus coloridas calles y sus playas vibrantes lo convierten en un destino único en Nayarit."
+    },
+    {
+      "image": "nayarit_san_blass",
+      "description": "San Blas, un puerto histórico, combina hermosas playas, manglares llenos de vida silvestre y un legado colonial. Es famoso por ser inspiración de canciones mexicanas y por su gastronomía basada en el camarón y el pescado."
+    }
+  ]
+}

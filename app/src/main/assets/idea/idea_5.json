@@ -1,0 +1,25 @@
+{
+  "country": "Chihuahua",
+  "places": [
+    {
+      "image": "edo_chihuahua",
+      "description": "Chihuahua, el estado más grande de México, es famoso por su desierto, su historia revolucionaria y las impresionantes Barrancas del Cobre."
+    },
+    {
+      "image": "capital_chihuahua",
+      "description": "La ciudad de Chihuahua, capital del estado, combina historia y modernidad, con atracciones como la Catedral y el Museo de la Revolución Mexicana."
+    },
+    {
+      "image": "chihuahua_barrancas",
+      "description": "Las Barrancas del Cobre, un sistema de cañones más grande y profundo que el Gran Cañón, son un paraíso para el ecoturismo y la aventura."
+    },
+    {
+      "image": "chihuahua_creel",
+      "description": "Creel, un Pueblo Mágico en la Sierra Tarahumara, es la puerta de entrada a las Barrancas del Cobre, con paisajes espectaculares y cultura indígena rica."
+    },
+    {
+      "image": "chihuahua_basaseachic",
+      "description": "La Cascada de Basaseachic, una de las más altas de México, es un destino natural impresionante rodeado de bosques y montañas."
+    }
+  ]
+}

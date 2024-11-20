@@ -1,0 +1,168 @@
+{
+  "title": "Memorama Capitales",
+  "id": 1,
+  "type": "Memorama",
+  "game": "game_me",
+  "cards": [
+    {
+      "id": 1,
+      "image": "capital_aguascalientes",
+      "value": "Aguascalientes"
+    },
+    {
+      "id": 2,
+      "image": "capital_baja_california",
+      "value": "Mexicali"
+    },
+    {
+      "id": 3,
+      "image": "capital_baja_california_sur",
+      "value": "La Paz"
+    },
+    {
+      "id": 4,
+      "image": "capital_campeche",
+      "value": "San Francisco de Campeche"
+    },
+    {
+      "id": 5,
+      "image": "capital_coahuila",
+      "value": "Saltillo"
+    },
+    {
+      "id": 6,
+      "image": "capital_colima",
+      "value": "Colima"
+    },
+    {
+      "id": 7,
+      "image": "capital_chiapas",
+      "value": "Tuxtla Gutiérrez"
+    },
+    {
+      "id": 8,
+      "image": "capital_chihuahua",
+      "value": "Chihuahua"
+    },
+    {
+      "id": 9,
+      "image": "capital_ciudad_de_mexico",
+      "value": "Ciudad de México"
+    },
+    {
+      "id": 10,
+      "image": "capital_durango",
+      "value": "Victoria de Durango"
+    },
+    {
+      "id": 11,
+      "image": "capital_guanajuato",
+      "value": "Guanajuato"
+    },
+    {
+      "id": 12,
+      "image": "capital_guerrero",
+      "value": "Chilpancingo de los Bravo"
+    },
+    {
+      "id": 13,
+      "image": "capital_hidalgo",
+      "value": "Pachuca de Soto"
+    },
+    {
+      "id": 14,
+      "image": "capital_jalisco",
+      "value": "Guadalajara"
+    },
+    {
+      "id": 15,
+      "image": "capital_estado_mexico",
+      "value": "Toluca de Lerdo"
+    },
+    {
+      "id": 16,
+      "image": "capital_michoacan",
+      "value": "Morelia"
+    },
+    {
+      "id": 17,
+      "image": "capital_morelos",
+      "value": "Cuernavaca"
+    },
+    {
+      "id": 18,
+      "image": "capital_nayarit",
+      "value": "Tepic"
+    },
+    {
+      "id": 19,
+      "image": "capital_nuevo_leon",
+      "value": "Monterrey"
+    },
+    {
+      "id": 20,
+      "image": "capital_oaxaca",
+      "value": "Oaxaca de Juárez"
+    },
+    {
+      "id": 21,
+      "image": "capital_puebla",
+      "value": "Puebla de Zaragoza"
+    },
+    {
+      "id": 22,
+      "image": "capital_queretaro",
+      "value": "Santiago de Querétaro"
+    },
+    {
+      "id": 23,
+      "image": "capital_quintana_roo",
+      "value": "Chetumal"
+    },
+    {
+      "id": 24,
+      "image": "capital_san_luis_potosi",
+      "value": "San Luis Potosí"
+    },
+    {
+      "id": 25,
+      "image": "capital_sinaloa",
+      "value": "Culiacán Rosales"
+    },
+    {
+      "id": 26,
+      "image": "capital_sonora",
+      "value": "Hermosillo"
+    },
+    {
+      "id": 27,
+      "image": "capital_tabasco",
+      "value": "Villahermosa"
+    },
+    {
+      "id": 28,
+      "image": "capital_tamaulipas",
+      "value": "Ciudad Victoria"
+    },
+    {
+      "id": 29,
+      "image": "capital_tlaxcala",
+      "value": "Tlaxcala de Xicohténcatl"
+    },
+    {
+      "id": 30,
+      "image": "capital_veracruz",
+      "value": "Xalapa-Enríquez"
+    },
+    {
+      "id": 31,
+      "image": "capital_yucatan",
+      "value": "Mérida"
+    },
+    {
+      "id": 32,
+      "image": "capital_zacatecas",
+      "value": "Zacatecas"
+    }
+  ]
+}

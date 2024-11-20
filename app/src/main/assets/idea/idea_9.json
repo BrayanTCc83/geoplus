@@ -1,0 +1,25 @@
+{
+  "country": "Guanajuato",
+  "places": [
+    {
+      "image": "edo_guanajuato",
+      "description": "El estado de Guanajuato, ubicado en el centro de México, es famoso por su papel crucial en la historia de la independencia, su arquitectura colonial y su rica oferta cultural."
+    },
+    {
+      "image": "capital_guanajuato",
+      "description": "Guanajuato, la capital del estado, es una ciudad Patrimonio de la Humanidad conocida por sus callejones coloridos, túneles subterráneos y eventos como el Festival Internacional Cervantino."
+    },
+    {
+      "image": "guanajuato_san_miguel",
+      "description": "San Miguel de Allende, un Pueblo Mágico y Patrimonio de la Humanidad, destaca por su encanto colonial, galerías de arte y una vibrante vida cultural."
+    },
+    {
+      "image": "guanajuato_dolores_hidalgo",
+      "description": "Dolores Hidalgo, cuna de la independencia mexicana, es conocida por su historia, cerámica artesanal y el legado de Miguel Hidalgo."
+    },
+    {
+      "image": "guanajuato_mina_valenciana",
+      "description": "La Mina de la Valenciana, una de las más ricas de la época colonial, es un sitio histórico que refleja la importancia minera del estado."
+    }
+  ]
+}

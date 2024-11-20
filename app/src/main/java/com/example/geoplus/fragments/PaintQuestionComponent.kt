@@ -50,8 +50,8 @@ val IndexedColors: Array<Color> = arrayOf(
 
 data class Country(val img: Int, val w: Int, val h: Int, val x: Int, val y: Int)
 val PaintCountries: Array<Country> = arrayOf(
-    Country(R.drawable.edo_baja_sur, 105, 105, 200, 70),// "Baja California Sur",      // 0
-    Country(R.drawable.edo_baja_norte, 90, 90, 162, 0),// "Baja California Norte",    // 1
+    Country(R.drawable.edo_baja_california_sur, 105, 105, 200, 70),// "Baja California Sur",      // 0
+    Country(R.drawable.edo_baja_california, 90, 90, 162, 0),// "Baja California Norte",    // 1
     Country(R.drawable.edo_sonora, 128, 128, 190, 0),// "Sonora",                   // 2
     Country(R.drawable.edo_chihuahua, 145, 145, 260, 20),// "Chihuahua",                // 3
     Country(R.drawable.edo_coahuila, 128, 128, 335, 49),// "Coahuila",                 // 4
@@ -60,7 +60,7 @@ val PaintCountries: Array<Country> = arrayOf(
     Country(R.drawable.edo_sinaloa, 100, 100, 261, 100),// "Sinaloa",                  // 7
     Country(R.drawable.edo_durango, 113, 113, 293, 104),// "Durango",                  // 8
     Country(R.drawable.edo_zacatecas, 96, 96, 339, 143),// "Zacatecas",                // 9
-    Country(R.drawable.edo_san_luis, 76, 76, 388, 163),// "San Luis Potosi",          // 10
+    Country(R.drawable.edo_san_luis_potosi, 76, 76, 388, 163),// "San Luis Potosi",          // 10
     Country(R.drawable.edo_aguascalientes, 20, 20, 385, 200),// "Aguascalientes",           // 11
     Country(R.drawable.edo_nayarit, 45, 45, 329, 189),// "Nayarit",                  // 12
     Country(R.drawable.edo_jalisco, 76, 76, 330, 195),// "Jalisco",                  // 13
@@ -73,7 +73,7 @@ val PaintCountries: Array<Country> = arrayOf(
     Country(R.drawable.edo_cdmx, 20, 20, 435, 255),// "Ciudad de Mexico",         // 20
     Country(R.drawable.edo_tlaxcala, 28, 28, 455, 241),// "Tlaxcala",                 // 21
     Country(R.drawable.edo_puebla, 70, 70, 435, 220),// "Puebla",                   // 22
-    Country(R.drawable.edo_verazcruz, 140, 140, 425, 175),// "Veracruz",                 // 23
+    Country(R.drawable.edo_veracruz, 140, 140, 425, 175),// "Veracruz",                 // 23
     Country(R.drawable.edo_morelos, 20, 20, 434, 270),// "Morelos",                  // 24
     Country(R.drawable.edo_guerrero, 80, 80, 380, 260),// "Guerrero",                 // 25
     Country(R.drawable.edo_oaxaca, 80, 80, 450, 260),// "Oaxaca",                   // 26
@@ -84,7 +84,7 @@ val PaintCountries: Array<Country> = arrayOf(
     Country(R.drawable.edo_quintana_roo, 60, 60, 575, 230),// "Quintana Roo"              // 31
 )
 
-fun nextQuestionPaint(score: Float, questions: PintaEstadosModel, questionId: Int) {
+fun nextQuestionPaint(score: Float, questions: PintaEstadosModel, questionId: Int, onEnd: () -> Unit) {
     val globalState: GlobalState = GlobalState.getInstance()
     if(globalState.ctx == null)
         return
@@ -117,19 +117,20 @@ fun nextQuestionPaint(score: Float, questions: PintaEstadosModel, questionId: In
     } else
         intent = Intent(globalState.ctx, ResumeActivity::class.java)
     globalState.ctx!!.startActivity(intent)
+    onEnd()
 }
 
 @Composable
-fun PaintQuestionComponent(questions: PintaEstadosModel, questionId: Int) {
+fun PaintQuestionComponent(questions: PintaEstadosModel, questionId: Int, onEnd: () -> Unit) {
     val question = questions.questions[questionId]
     Log.d("LOG_GEOPLUS", "Rendering [$questionId]: $question")
     when(question) {
         is PaintOnceQuestion -> PaintOnceComponent(question as PaintOnceQuestion, fun(score: Float) {
-            nextQuestionPaint(score, questions, questionId)
-        })
+            nextQuestionPaint(score, questions, questionId, onEnd)
+        }, onEnd)
         is PaintObjectQuestion -> PaintObjectComponent(question as PaintObjectQuestion, fun(score: Float) {
-            nextQuestionPaint(score, questions, questionId)
-        })
+            nextQuestionPaint(score, questions, questionId, onEnd)
+        }, onEnd)
         else -> Column {}
     }
 }
@@ -180,7 +181,7 @@ fun PaintCountries() {
 }
 
 @Composable
-fun PaintOnceComponent(q: PaintOnceQuestion, nextQuestion: (Float) -> Unit) {
+fun PaintOnceComponent(q: PaintOnceQuestion, nextQuestion: (Float) -> Unit, onEnd: () -> Unit) {
     var color by remember { mutableStateOf<Int>(-1) }
     Column {
         Text(
@@ -259,6 +260,7 @@ fun PaintOnceComponent(q: PaintOnceQuestion, nextQuestion: (Float) -> Unit) {
                                 Log.d("LOG_GEOPLUS", "Aciertos: $corrects, Errores: $errors, Requeridos: ${q.answer.size}, Calificacion: ${sc}")
                                 paints.clear()
                                 nextQuestion(sc)
+                                onEnd()
                             },
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
@@ -275,7 +277,7 @@ fun PaintOnceComponent(q: PaintOnceQuestion, nextQuestion: (Float) -> Unit) {
 }
 
 @Composable
-fun PaintObjectComponent(q: PaintObjectQuestion, nextQuestion: (Float) -> Unit) {
+fun PaintObjectComponent(q: PaintObjectQuestion, nextQuestion: (Float) -> Unit, onEnd: () -> Unit) {
     var color by remember { mutableStateOf<Int>(-1) }
     Column {
         Text(
@@ -352,6 +354,7 @@ fun PaintObjectComponent(q: PaintObjectQuestion, nextQuestion: (Float) -> Unit) 
                                 Log.d("LOG_GEOPLUS", "Aciertos: $corrects, Errores: $errors, Requeridos: ${q.answer.size}, Calificacion: ${sc}")
                                 paints.clear()
                                 nextQuestion(sc)
+                                onEnd()
                             },
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {

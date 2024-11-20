@@ -24,6 +24,8 @@ import androidx.compose.ui.unit.sp
 import com.example.geoplus.databinding.ActivityLevelsBinding
 import com.example.geoplus.databinding.ActivityResumeBinding
 import com.example.geoplus.fragments.GetStars
+import com.example.geoplus.fragments.ResumeFragment
+import com.example.geoplus.fragments.ResumeFragmentCardGame
 import com.example.geoplus.global.Database
 import com.example.geoplus.global.GlobalState
 import com.example.geoplus.models.PlayerProgressModel
@@ -41,73 +43,61 @@ class ResumeActivity : AppCompatActivity() {
 
         val globalState: GlobalState = GlobalState.getInstance()
         val title = globalState.questionary?.title?: "Quiz: resumen"
-        binding.title.setText(title.uppercase())
+        binding.title.text = title.uppercase()
 
-        var res: Float = 0.0f
         val composeView = findViewById<ComposeView>(R.id.compose_view)
         composeView.setContent {
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                globalState.results.forEach {
-                    resultModel -> Row {
-                        Image(
-                            painter = painterResource(id = R.drawable.ic_launcer_foreground),
-                            contentDescription = "",
-                            contentScale = ContentScale.Fit,
-                            modifier = Modifier
-                                .padding(4.dp)
-                                .width(50.dp)
-                                .height(50.dp)
-                        )
-                        Column {
-                            Text(
-                                text = "Pregunta ${resultModel.id}: ${resultModel.question}",
-                                color = colorResource(id = R.color.principal_color),
-                                fontSize = 16.sp
-                            )
-                            Text(
-                                text = "Respuesta: ${resultModel.answer}",
-                                color = colorResource(id = R.color.white),
-                                fontSize = 16.sp
-                            )
-                            Text(
-                                text = "Puntuacion: ${resultModel.score}",
-                                color = colorResource(id = R.color.white),
-                                fontSize = 14.sp
-                            )
-                        }
-                    }
+            if(globalState.type == "Memorama")
+                ResumeFragmentCardGame()
+            else
+                ResumeFragment()
+        }
+
+        val buttonNext = findViewById<Button>(R.id.btn_next);
+        buttonNext.setOnClickListener {
+            if(globalState.type == "Memorama") {
+                val progress = Database.getInstance().getProgress(GlobalState.getInstance().type)
+                var completed = progress.completed
+                var scores: MutableList<Float>? = progress.puntuations?.toMutableList()
+                if(scores == null) scores = mutableListOf()
+
+                val result = globalState.getCardResult()
+                val id = (result?.id ?: 0)
+
+                if(completed <= (result?.id ?: 0)) {
+                    completed = id + 1
+                    scores.add(result?.score?:0.0f)
+                } else {
+                    scores[id] = result?.score?:0.0f
                 }
+
+                if(Database.getInstance().saveProgress(GlobalState.getInstance().type, PlayerProgressModel(completed, scores.toFloatArray()))) {
+                    GlobalState.getInstance().clearCardResult()
+                    finish()
+                }
+                return@setOnClickListener
+            }
+
+            try {
+                var res = 0.0f
                 var totpoints = 0
-                globalState.results.forEach {
-                    model -> run {
+                globalState.results.forEach { model ->
+                    run {
                         res += (model.score * model.points)
                         totpoints += model.points
                     }
                 }
                 res /= totpoints
-                GetStars(score = res.toDouble())
-                Text(
-                    text = "Puntuacion final: %.2f".format(res),
-                    color = colorResource(id = R.color.white),
-                    fontSize = 14.sp
-                )
-            }
-        }
 
-        val context = this
-        val buttonNext = findViewById<Button>(R.id.btn_next);
-        buttonNext.setOnClickListener {
-            try {
                 val progress = Database.getInstance().getProgress(GlobalState.getInstance().type)
                 var completed = progress.completed
                 var scores: MutableList<Float>? = progress.puntuations?.toMutableList()
                 if(scores == null) scores = mutableListOf()
                 Log.d("LOG_GEOPLUS", "Questionary ${GlobalState.getInstance().questionary}")
+
                 if(completed < (GlobalState.getInstance().questionary?.id ?: 0)){
                     completed = GlobalState.getInstance().questionary?.id?:0
-                    Log.d("LOG_GEOPLUS", "Levels complete $completed")
+                    Log.d("LOG_GEOPLUS", "Nivel completado $completed")
                     if(scores.size < completed)
                         scores.add(res)
                     else scores[completed - 1] = res
@@ -115,9 +105,8 @@ class ResumeActivity : AppCompatActivity() {
                     scores[completed - 1] = res
 
                 if(Database.getInstance().saveProgress(GlobalState.getInstance().type, PlayerProgressModel(completed, scores.toFloatArray()))) {
-                    GlobalState.getInstance().results.clear()
-                    val intent = Intent(context, HomeActivity::class.java)
-                    startActivity(intent)
+                    GlobalState.getInstance().clearResult()
+                    finish()
                 }
             } catch(e: Exception) {
                 Log.d("LOG_GEOPLUS", e.message?:"")
@@ -126,9 +115,9 @@ class ResumeActivity : AppCompatActivity() {
 
         val buttonBack = findViewById<Button>(R.id.btn_back);
         buttonBack.setOnClickListener {
-            GlobalState.getInstance().results.clear()
-            val intent = Intent(context, HomeActivity::class.java)
-            startActivity(intent)
+            GlobalState.getInstance().clearResult()
+            GlobalState.getInstance().clearCardResult()
+            finish()
         }
     }
 }

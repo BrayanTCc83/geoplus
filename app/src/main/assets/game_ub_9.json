@@ -1,0 +1,45 @@
+{
+  "title": "Explora México",
+  "id": 10,
+  "game": "game_ub",
+  "questions": [
+    {
+      "type": "find_image",
+      "question": "¿En qué estado se encuentra la zona arqueológica de Teotihuacán?",
+      "options": ["México", "Puebla", "Oaxaca", "Yucatán"],
+      "answer": 0,
+      "points": 3,
+      "image": "estado_mexico_teotihuacan"
+    },
+    {
+      "type": "find_text",
+      "question": "¿En qué estado se encuentra la ciudad de Monterrey?",
+      "options": [19, 20, 21, 22],
+      "answer": 19,
+      "points": 2
+    },
+    {
+      "type": "find_image",
+      "question": "¿En qué estado se encuentra la playa de Acapulco?",
+      "options": ["Guerrero", "Oaxaca", "Veracruz", "Sinaloa"],
+      "answer": 0,
+      "points": 3,
+      "image": "guerrero_acapulco"
+    },
+    {
+      "type": "find_text",
+      "question": "¿En qué estado se encuentra la ciudad de Oaxaca, conocida por su rica cultura y gastronomía?",
+      "options": [15, 16, 17, 18],
+      "answer": 15,
+      "points": 2
+    },
+    {
+      "type": "find_image",
+      "question": "¿En qué estado se encuentra la zona arqueológica de Monte Albán?",
+      "options": ["Oaxaca", "Chiapas", "Veracruz", "Hidalgo"],
+      "answer": 0,
+      "points": 3,
+      "image": "oaxaca_monte_alban"
+    }
+  ]
+}

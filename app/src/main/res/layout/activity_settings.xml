@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#221E1E"
+    android:fitsSystemWindows="true"
+    app:flow_horizontalGap="10dp"
+    app:flow_verticalGap="10dp"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="@string/card_title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/geoplus_not_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:dividerPadding="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_email"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:foregroundTint="#FFFFFF"
+                    android:text="@string/label_email"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:layout_anchorGravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/text_email"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundTint="#FFFFFF"
+                    android:text="X"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:layout_anchorGravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_age"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:foregroundTint="#FFFFFF"
+                    android:text="@string/label_age"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:layout_anchorGravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/text_age"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundTint="#FFFFFF"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:layout_anchorGravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_username"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:foregroundTint="#FFFFFF"
+                    android:text="@string/label_username"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:layout_anchorGravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/text_username"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundTint="#FFFFFF"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:layout_anchorGravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:foregroundTint="#FFFFFF"
+                    android:text="@string/label_name"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:layout_anchorGravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundTint="#FFFFFF"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:layout_anchorGravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_lastname_pat"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:foregroundTint="#FFFFFF"
+                    android:text="@string/label_lastname_pat"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:layout_anchorGravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/text_lastname_pat"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundTint="#FFFFFF"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:layout_anchorGravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_lastname_mat"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:foregroundTint="#FFFFFF"
+                    android:text="@string/label_lastname_mat"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:layout_anchorGravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/text_lastname_mat"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundTint="#FFFFFF"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:layout_anchorGravity="center_vertical" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/h2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_darkmode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:padding="0dp" />
+
+                <TextView
+                    android:id="@+id/text_darkmode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/settings_dark_mode" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/principal_color"
+            android:text="@string/button_back"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/secondary_color"
+            app:strokeWidth="3dp" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

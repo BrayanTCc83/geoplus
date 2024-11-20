@@ -1,76 +1,55 @@
 {
-  "title": "Quiz de Geografía Mexicana 4",
-  "id": 4,
+  "title": "Cuestionario Estados V",
+  "id": 5,
   "game": "game_qu",
   "questions": [
     {
       "type": "open",
-      "question": "¿Cuál es el estado más pequeño de México?",
-      "answer": "Tlaxcala",
-      "tries": 3,
-      "points": 1
+      "question": "¿Qué estado es famoso por sus tradiciones mayas y su comida típica como la cochinita pibil?",
+      "answer": "Yucatán",
+      "tries": 2,
+      "points": 5,
+      "image": "edo_yucatan"
     },
     {
       "type": "radio",
-      "question": "¿Cuál de los siguientes estados no tiene costas en ningún océano?",
-      "answer": 2,
-      "options": [
-        "Hidalgo",
-        "Zacatecas",
-        "Querétaro",
-        "Aguascalientes"
-      ],
-      "points": 1
-    },
-    {
-      "type": "checkbox",
-      "question": "¿Cuáles de los siguientes estados tienen frontera con Guatemala?",
-      "answer": [2, 3],
-      "options": [
-        "Chiapas",
-        "Tabasco",
-        "Campeche",
-        "Quintana Roo"
-      ],
-      "points": 1
-    },
-    {
-      "type": "open",
-      "question": "¿Cuál es el cerro más alto de México?",
-      "answer": "Pico de Orizaba",
-      "tries": 3,
-      "points": 1
-    },
-    {
-      "type": "radio",
-      "question": "¿Cuál es el estado con la mayor cantidad de zonas arqueológicas en México?",
+      "question": "¿En qué estado se encuentra el Cañón del Sumidero?",
       "answer": 0,
-      "options": [
-        "Yucatán",
-        "Chiapas",
-        "Oaxaca",
-        "Veracruz"
-      ],
-      "points": 1
+      "options": ["Chiapas", "Tabasco", "Veracruz", "Campeche"],
+      "points": 4,
+      "image": "edo_chiapas"
     },
     {
       "type": "checkbox",
-      "question": "¿Cuáles de los siguientes estados tienen costas en el Golfo de Tehuantepec?",
-      "answer": [1, 2],
-      "options": [
-        "Chiapas",
-        "Oaxaca",
-        "Guerrero",
-        "Michoacán"
-      ],
-      "points": 1
+      "question": "Selecciona los estados que forman parte del Bajío mexicano:",
+      "answer": [0, 1, 3],
+      "options": ["Guanajuato", "Querétaro", "Veracruz", "Aguascalientes"],
+      "points": 6,
+      "image": "edo_guanajuato"
     },
     {
       "type": "open",
-      "question": "¿Cuál es el lago más grande de México?",
-      "answer": "Chapala",
-      "tries": 3,
-      "points": 1
+      "question": "¿Cuál es el nombre de la capital del estado de Baja California Sur?",
+      "answer": "La Paz",
+      "tries": 2,
+      "points": 5,
+      "image": "edo_baja_california_sur"
+    },
+    {
+      "type": "radio",
+      "question": "¿En qué estado se encuentra la ciudad mágica de Real de Catorce?",
+      "answer": 2,
+      "options": ["Zacatecas", "Durango", "San Luis Potosí", "Coahuila"],
+      "points": 4,
+      "image": "edo_san_luis_potosi"
+    },
+    {
+      "type": "checkbox",
+      "question": "Selecciona los estados donde se producen los famosos vinos mexicanos:",
+      "answer": [1, 3],
+      "options": ["Chihuahua", "Baja California", "Tabasco", "Querétaro"],
+      "points": 6,
+      "image": "edo_baja_california"
     }
   ]
 }

@@ -1,0 +1,168 @@
+{
+  "title": "Memorama Zonas Arqueológicas",
+  "id": 2,
+  "type": "Memorama",
+  "game": "game_me",
+  "cards": [
+    {
+      "id": 1,
+      "image": "yucatan_chichen_itza",
+      "value": "Chichén Itzá"
+    },
+    {
+      "id": 2,
+      "image": "estado_mexico_teotihuacan",
+      "value": "Teotihuacán"
+    },
+    {
+      "id": 3,
+      "image": "chiapas_palenque",
+      "value": "Palenque"
+    },
+    {
+      "id": 4,
+      "image": "campeche_edzna",
+      "value": "Edzná"
+    },
+    {
+      "id": 5,
+      "image": "quintana_roo_tulum",
+      "value": "Tulum"
+    },
+    {
+      "id": 6,
+      "image": "oaxaca_monte_alban",
+      "value": "Monte Albán"
+    },
+    {
+      "id": 7,
+      "image": "tabasco_comalcalco",
+      "value": "Comalcalco"
+    },
+    {
+      "id": 8,
+      "image": "puebla_cholula",
+      "value": "Cholula"
+    },
+    {
+      "id": 9,
+      "image": "zacatecas_la_quemada",
+      "value": "La Quemada"
+    },
+    {
+      "id": 10,
+      "image": "veracruz_el_tajin",
+      "value": "El Tajín"
+    },
+    {
+      "id": 11,
+      "image": "michoacan_tzintzuntzan",
+      "value": "Tzintzuntzan"
+    },
+    {
+      "id": 12,
+      "image": "guerrero_iguala",
+      "value": "Teopantecuanitlán"
+    },
+    {
+      "id": 13,
+      "image": "yucatan_uxmal",
+      "value": "Uxmal"
+    },
+    {
+      "id": 14,
+      "image": "queretaro_el_cerrito",
+      "value": "El Cerrito"
+    },
+    {
+      "id": 15,
+      "image": "durango_la_ferreria",
+      "value": "La Ferrería"
+    },
+    {
+      "id": 16,
+      "image": "morelos_xochicalco",
+      "value": "Xochicalco"
+    },
+    {
+      "id": 17,
+      "image": "sonora_cerro_de_trincheras",
+      "value": "Cerro de Trincheras"
+    },
+    {
+      "id": 18,
+      "image": "chiapas_bonampak",
+      "value": "Bonampak"
+    },
+    {
+      "id": 19,
+      "image": "hidalgo_tula",
+      "value": "Tula"
+    },
+    {
+      "id": 20,
+      "image": "guanajuato_plazuelas",
+      "value": "Plazuelas"
+    },
+    {
+      "id": 21,
+      "image": "nuevo_leon_cerralvo",
+      "value": "Cerralvo"
+    },
+    {
+      "id": 22,
+      "image": "quintana_roo_coba",
+      "value": "Cobá"
+    },
+    {
+      "id": 23,
+      "image": "campeche_calakmul",
+      "value": "Calakmul"
+    },
+    {
+      "id": 24,
+      "image": "san_luis_potosi_tamtoc",
+      "value": "Tamtoc"
+    },
+    {
+      "id": 25,
+      "image": "sinaloa_las_labradas",
+      "value": "Las Labradas"
+    },
+    {
+      "id": 26,
+      "image": "chiapas_yaxchilan",
+      "value": "Yaxchilán"
+    },
+    {
+      "id": 27,
+      "image": "oaxaca_mitla",
+      "value": "Mitla"
+    },
+    {
+      "id": 28,
+      "image": "tamaulipas_el_sabalito",
+      "value": "El Sabalito"
+    },
+    {
+      "id": 29,
+      "image": "yucatan_mayapan",
+      "value": "Mayapán"
+    },
+    {
+      "id": 30,
+      "image": "quintana_roo_xel_ha",
+      "value": "Xel-Há"
+    },
+    {
+      "id": 31,
+      "image": "zacatecas_chicomostoc",
+      "value": "Chicomostoc"
+    },
+    {
+      "id": 32,
+      "image": "chiapas_tonina",
+      "value": "Toniná"
+    }
+  ]
+}

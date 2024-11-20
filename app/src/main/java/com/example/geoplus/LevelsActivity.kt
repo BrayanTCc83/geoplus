@@ -1,26 +1,21 @@
 package com.example.geoplus
 
-import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.runtime.snapshots.AutoboxingStateValueProperty
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.platform.ComposeView
-import androidx.compose.ui.unit.dp
 import com.example.geoplus.databinding.ActivityLevelsBinding
-import com.example.geoplus.fragments.GameCardComponent
 import com.example.geoplus.fragments.GetStars
 import com.example.geoplus.models.GameCardModel
 import androidx.compose.ui.Modifier
 import com.example.geoplus.fragments.LevelsButtons
+import com.example.geoplus.global.Database
+import com.example.geoplus.global.GlobalState
 
 class LevelsActivity : AppCompatActivity() {
 
@@ -32,25 +27,44 @@ class LevelsActivity : AppCompatActivity() {
         binding = ActivityLevelsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val id = intent.getIntExtra("id", 0)
         val title = intent.getStringExtra("title")
+        val image = intent.getStringExtra("image")
         val reference = intent.getStringExtra("reference")
         val levels = intent.getIntExtra("levels", 0)
         val score = intent.getDoubleExtra("score", 0.0)
-        binding.gameTitle.setText(title)
+        binding.gameTitle.text = title.toString().uppercase()
+
+        val progress =  Database.getInstance().getProgress(title?:"")
+        Log.d("LOG_GEOPLUS", "Progreso $progress")
 
         val context = this
-        val starsComposeView = findViewById<ComposeView>(R.id.compose_view)
+        val starsComposeView = findViewById<ComposeView>(R.id.description_view)
+        val levelsComposeView = findViewById<ComposeView>(R.id.compose_view)
         starsComposeView.setContent {
             Column(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier.fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 GetStars(score = score)
+            }
+        }
+        levelsComposeView.setContent {
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
                 LevelsButtons(
                     ctx = context,
-                    game = GameCardModel(0, title?:"", levels, reference?:"")
+                    game = GameCardModel(id, image?:"", title?:"", levels, reference?:"", progress = progress)
                 )
             }
+        }
+
+        val btnBack = findViewById<Button>(R.id.btn_back)
+        btnBack.setOnClickListener {
+            finish()
         }
     }
 }

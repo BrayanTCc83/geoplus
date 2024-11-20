@@ -26,13 +26,7 @@ import com.example.geoplus.LevelsActivity
 import com.example.geoplus.models.GameCardModel
 import kotlin.math.roundToInt
 
-fun openGameLevels(ctx: Context, game: GameCardModel) {
-    val score = if(game.progress?.puntuations != null) {
-        game.progress!!.puntuations!!.average()
-    } else {
-        0.0
-    }
-
+fun openGameLevels(ctx: Context, game: GameCardModel, score: Double) {
     val intent = Intent(ctx, LevelsActivity::class.java)
     intent.putExtra("title", game.title)
     intent.putExtra("reference", game.reference)
@@ -45,8 +39,8 @@ fun openGameLevels(ctx: Context, game: GameCardModel) {
 fun PaintImage(score: Double, s: Double) {
     val imageMod = Modifier
         .padding(2.dp)
-        .width(20.dp)
-        .height(20.dp)
+        .width(16.dp)
+        .height(16.dp)
     val icon = if(score >= s)
         R.drawable.star_solid
     else if((s - score) < 2 && (s - score) > 0.5)
@@ -90,9 +84,18 @@ fun GameCardComponent(gameCard: GameCardModel, ctx: Context) {
                 shape = RoundedCornerShape(20.dp)
             )
             .clickable {
-               openGameLevels(ctx = ctx, game = gameCard)
+               openGameLevels(ctx = ctx, game = gameCard, score = score)
             },
     ) {
+        Image(
+            painterResource(id = ctx.resources.getIdentifier(gameCard.image, "drawable", ctx.packageName)),
+            contentDescription = null,
+            contentScale = ContentScale.Fit,
+            modifier = Modifier
+                .padding(5.dp)
+                .width(100.dp)
+                .height(100.dp)
+        )
         Text(
             text = gameCard.title.uppercase(),
             color = colorResource(id = R.color.white),
@@ -103,13 +106,7 @@ fun GameCardComponent(gameCard: GameCardModel, ctx: Context) {
             score = score
         )
         Text(
-            text = "${"%.2f".format(score)}/10",
-            modifier = textMod,
-            color = colorResource(id = R.color.white),
-            fontSize = 14.sp,
-        )
-        Text(
-            text = "Completados: ${gameCard.progress?.completed?:0}/${gameCard.levels}",
+            text = "${gameCard.progress?.completed?:0}/${gameCard.levels}",
             modifier = textMod,
             color = colorResource(id = R.color.white),
             fontSize = 14.sp,

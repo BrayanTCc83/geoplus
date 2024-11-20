@@ -3,6 +3,7 @@ package com.example.geoplus.global
 import android.content.Context
 import androidx.compose.ui.util.fastFilter
 import com.example.geoplus.models.GameModel
+import com.example.geoplus.models.ResultGameCard
 import com.example.geoplus.models.ResultModel
 
 class GlobalState private constructor() {
@@ -22,6 +23,19 @@ class GlobalState private constructor() {
         _results = arrayListOf()
     }
     val results = _results
+
+    private var _resultCards: ResultGameCard? = null
+    fun setCardResult(res: ResultGameCard) {
+        _resultCards = res
+    }
+
+    fun clearCardResult() {
+        _resultCards = null
+    }
+
+    fun getCardResult(): ResultGameCard? {
+        return _resultCards
+    }
 
     companion object {
         @Volatile private var instance: GlobalState? = null

@@ -4,39 +4,42 @@
   "game": "game_ub",
   "questions": [
     {
-      "type": "find_text",
+      "type": "find_image",
       "question": "¿Cuál es el nombre de la ciudad conocida por su arquitectura colonial y su famoso festival de Cervantino?",
-      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Oaxaca" ],
-      "answer": 1,
-      "points": 2
+      "options": ["Guanajuato", "San Miguel de Allende", "Morelia", "Oaxaca"],
+      "answer": 0,
+      "points": 2,
+      "image": "guanajuato_festival_cervantino"
     },
     {
       "type": "find_text",
       "question": "Identifica el destino de playa famoso por sus aguas cristalinas y su arrecife de coral.",
-      "options": [ "Puerto Vallarta", "Cancún", "Playa del Carmen", "Tulum" ],
+      "options": [0, 1, 2, 3],
       "answer": 2,
       "points": 2
     },
     {
-      "type": "find_text",
+      "type": "find_image",
       "question": "¿Cuál ciudad es famosa por su arquitectura barroca y sus edificios de cantera rosa?",
-      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Querétaro" ],
+      "options": ["Guanajuato", "San Miguel de Allende", "Morelia", "Querétaro"],
       "answer": 3,
-      "points": 2
+      "points": 2,
+      "image": "queretaro_canterarosa"
     },
     {
       "type": "find_text",
       "question": "Identifica la ciudad conocida por su ambiente bohemio y su arte callejero.",
-      "options": [ "Puerto Vallarta", "Cancún", "Tulum", "Sayulita" ],
-      "answer": 4,
+      "options": [4, 5, 6, 7],
+      "answer": 3,
       "points": 2
     },
     {
-      "type": "find_text",
+      "type": "find_image",
       "question": "¿Cuál es el nombre del pueblo colonial famoso por sus calles empedradas y su plata?",
-      "options": [ "San Cristóbal de las Casas", "Taxco", "Valladolid", "Campeche" ],
-      "answer": 2,
-      "points": 2
+      "options": ["San Cristóbal de las Casas", "Taxco", "Valladolid", "Campeche"],
+      "answer": 1,
+      "points": 2,
+      "image": "guerrero_taxco"
     }
   ]
 }

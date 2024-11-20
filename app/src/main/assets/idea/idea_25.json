@@ -1,0 +1,25 @@
+{
+  "country": "Tabasco",
+  "places": [
+    {
+      "image": "edo_tabasco",
+      "description": "Tabasco, en el sureste de México, es un estado de exuberante vegetación tropical, ríos y lagunas. Es famoso por su biodiversidad, su clima cálido y húmedo, y por ser cuna del cacao y el chocolate."
+    },
+    {
+      "image": "capital_tabasco",
+      "description": "Villahermosa, la capital del estado, es una ciudad moderna rodeada de naturaleza. Su Parque Tomás Garrido y el Museo de Historia Natural son destinos destacados. Es también un centro importante para la industria petrolera."
+    },
+    {
+      "image": "tabasco_palenque",
+      "description": "Palenque, uno de los sitios arqueológicos más importantes de México, alberga impresionantes ruinas mayas en medio de la selva chiapaneca. Su templo de las Inscripciones y su Palacio son testimonio de la grandeza de la civilización maya."
+    },
+    {
+      "image": "tabasco_campeche_oxolotan",
+      "description": "Oxolotán es un sitio arqueológico que destaca por sus ruinas prehispánicas y su entorno selvático. Su cercanía a la cultura maya y sus estructuras en el medio de la jungla lo hacen un destino misterioso y fascinante."
+    },
+    {
+      "image": "tabasco_rio_usumacinta",
+      "description": "El río Usumacinta, el más caudaloso de México, atraviesa el estado de Tabasco. Este río es ideal para paseos en bote, donde los turistas pueden observar su biodiversidad y la belleza de la región."
+    }
+  ]
+}

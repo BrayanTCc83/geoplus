@@ -1,67 +1,45 @@
 {
-  "title": "Mi bello Mexico",
+  "title": "Aventuras en México",
   "id": 6,
   "game": "game_ub",
   "questions": [
     {
       "type": "find_image",
-      "question": "Identify the image that corresponds to a famous archaeological site located in the state of Oaxaca:",
-      "image": 26,
-      "options": [ "Monte Albán", "Chichen Itza", "Palenque", "Tulum" ],
-      "answer": 1,
-      "points": 2
+      "question": "¿En qué estado se encuentra el Parque Nacional de los Volcanes de Colima?",
+      "options": ["Colima", "Jalisco", "Durango", "Michoacán"],
+      "answer": 0,
+      "points": 3,
+      "image": "colima_volcanes_de_colima"
     },
     {
       "type": "find_text",
-      "question": "This image shows a colonial-era city known for its baroque architecture and pink stone buildings. What is its name?",
-      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Zacatecas" ],
-      "answer": 3,
+      "question": "¿En qué estado se encuentra la famosa ciudad de Mazatlán?",
+      "options": [10, 11, 12, 13],
+      "answer": 10,
       "points": 2
     },
     {
       "type": "find_image",
-      "question": "Which image represents a famous natural landmark located in the state of Veracruz?",
-      "image": 32,
-      "options": [ "Cenote Ik Kil", "Agua Azul Waterfalls", "Pico de Orizaba", "Monte Alban" ],
-      "answer": 3,
-      "points": 2
+      "question": "¿En qué estado se encuentra la Isla Holbox, famosa por sus playas y biodiversidad?",
+      "options": ["Quintana Roo", "Veracruz", "Baja California Sur", "Nayarit"],
+      "answer": 0,
+      "points": 3,
+      "image": "quintana_roo_isla_holbox"
     },
     {
       "type": "find_text",
-      "question": "This image depicts an ancient city famous for its impressive stucco decorations. What is its name?",
-      "options": [ "Monte Albán", "Tajin", "Uxmal", "El Tepozteco" ],
-      "answer": 2,
+      "question": "¿En qué estado se encuentra la famosa ciudad colonial de Puebla?",
+      "options": [14, 15, 16, 17],
+      "answer": 14,
       "points": 2
     },
     {
       "type": "find_image",
-      "question": "Identify the image that corresponds to a famous Mayan archaeological site located in the state of Quintana Roo:",
-      "image": 31,
-      "options": [ "Uxmal", "Chichen Itza", "Palenque", "Tulum" ],
-      "answer": 4,
-      "points": 2
-    },
-    {
-      "type": "find_text",
-      "question": "This image represents a popular beach destination known for its luxury resorts and vibrant nightlife. Which beach is it?",
-      "options": [ "Puerto Vallarta", "Cancun", "Playa del Carmen", "Puerto Escondido" ],
-      "answer": 2,
-      "points": 2
-    },
-    {
-      "type": "find_image",
-      "question": "Which image shows a famous ancient pyramid located in the state of Campeche?",
-      "image": 30,
-      "options": [ "Pyramid of the Sun", "Pyramid of the Moon", "Great Pyramid of Cholula", "Calakmul" ],
-      "answer": 4,
-      "points": 2
-    },
-    {
-      "type": "find_text",
-      "question": "This image represents a colonial-era city known for its well-preserved historic center and colorful buildings. What is its name?",
-      "options": [ "Oaxaca", "Campeche", "Puebla", "Mérida" ],
-      "answer": 1,
-      "points": 2
+      "question": "¿En qué estado se encuentra la Reserva de la Biosfera de Montes Azules?",
+      "options": ["Chiapas", "Oaxaca", "Tabasco", "Campeche"],
+      "answer": 0,
+      "points": 3,
+      "image": "chiapas_montes_azules"
     }
   ]
 }

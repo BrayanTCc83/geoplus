@@ -1,0 +1,25 @@
+{
+  "country": "Tamaulipas",
+  "places": [
+    {
+      "image": "edo_tamaulipas",
+      "description": "Tamaulipas, en el noreste de México, es un estado fronterizo con una rica cultura y una mezcla de montañas, llanuras y playas. Es un destino de gran diversidad natural, desde las costas del Golfo de México hasta sus áreas desérticas."
+    },
+    {
+      "image": "capital_tamaulipas",
+      "description": "Ciudad Victoria, la capital del estado, es una ciudad que combina modernidad y tradición. Es conocida por su clima cálido, su arquitectura colonial y su cercanía a la Sierra Madre Oriental."
+    },
+    {
+      "image": "tamaulipas_miramar",
+      "description": "Playa Miramar, en Ciudad Madero, es uno de los destinos turísticos más populares de Tamaulipas. Con aguas cálidas y arena dorada, es ideal para practicar deportes acuáticos y disfrutar del sol."
+    },
+    {
+      "image": "tamaulipas_quelite",
+      "description": "Quelite, un Pueblo Mágico, es conocido por su arquitectura tradicional y sus coloridas calles. Sus bellos paisajes montañosos y la cercanía a la Sierra Madre Oriental lo convierten en un lugar de gran atractivo turístico."
+    },
+    {
+      "image": "tamaulipas_biosfera_el_cielo",
+      "description": "La Reserva de la Biosfera El Cielo es un paraíso natural en Tamaulipas, declarado Patrimonio de la Humanidad por su biodiversidad. Esta área protegida es hogar de especies endémicas y es un excelente destino para ecoturismo y observación de aves."
+    }
+  ]
+}

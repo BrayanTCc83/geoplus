@@ -1,0 +1,25 @@
+{
+  "country": "Yucatán",
+  "places": [
+    {
+      "image": "edo_yucatan",
+      "description": "Yucatán, ubicado en la península del mismo nombre, es conocido por su rica herencia maya, su arquitectura colonial y sus hermosos cenotes. El estado es un destino turístico popular por sus playas, sitios arqueológicos y su gastronomía única."
+    },
+    {
+      "image": "capital_yucatan",
+      "description": "Mérida, la capital del estado, es una ciudad vibrante que combina el legado colonial con la cultura contemporánea. Famosa por su arquitectura histórica, el Paseo de Montejo y su cercanía a los cenotes y las ruinas mayas."
+    },
+    {
+      "image": "yucatan_chichen_itza",
+      "description": "Chichén Itzá es una de las Nuevas Siete Maravillas del Mundo. Esta antigua ciudad maya, conocida por su imponente pirámide de Kukulkán, es un destino cultural e histórico obligado para los visitantes."
+    },
+    {
+      "image": "yucatan_cenote_sagrado",
+      "description": "El Cenote Sagrado, ubicado cerca de Chichén Itzá, es un impresionante pozo natural que servía para rituales mayas. Es un lugar de gran importancia arqueológica y espiritual, rodeado de historia y belleza natural."
+    },
+    {
+      "image": "yucatan_progreso",
+      "description": "Progreso es una localidad costera famosa por sus playas de arena suave y aguas cálidas. Además de ser un popular destino turístico, ofrece actividades como paseos en bote y la pesca deportiva."
+    }
+  ]
+}

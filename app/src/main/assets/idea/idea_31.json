@@ -1,0 +1,25 @@
+{
+  "country": "Ciudad de México",
+  "places": [
+    {
+      "image": "edo_cdmx",
+      "description": "La Ciudad de México (CDMX) es la capital y el centro cultural, político y económico de México. Es una de las ciudades más grandes y dinámicas del mundo, conocida por su historia, arquitectura colonial y moderna, y una vibrante escena cultural. En la ciudad se encuentran museos de renombre mundial, parques emblemáticos y una vida nocturna diversa."
+    },
+    {
+      "image": "capital_ciudad_de_mexico",
+      "description": "La Ciudad de México es el corazón de la nación, con un centro histórico declarado Patrimonio de la Humanidad por la UNESCO. El Zócalo, la Catedral Metropolitana y el Palacio Nacional son solo algunos de sus puntos más representativos. Además, la ciudad se caracteriza por una mezcla única de tradición y modernidad."
+    },
+    {
+      "image": "ciudad_de_mexico_templo_mayor",
+      "description": "El Templo Mayor, ubicado en el Centro Histórico, fue uno de los principales templos de la antigua Tenochtitlan. Hoy en día, es un sitio arqueológico impresionante que ofrece una visión fascinante de la cultura Mexica. Los visitantes pueden explorar los restos de la estructura original y disfrutar de su museo, que exhibe artefactos y objetos de gran valor histórico."
+    },
+    {
+      "image": "ciudad_de_mexico_paseo_de_la_reforma",
+      "description": "El Paseo de la Reforma es una de las avenidas más emblemáticas de la Ciudad de México, conocida por su belleza y sus monumentos históricos. Desde el Ángel de la Independencia hasta el Bosque de Chapultepec, el Paseo de la Reforma es un punto de referencia cultural y social, además de ser sede de importantes eventos y desfiles."
+    },
+    {
+      "image": "ciudad_de_mexico_bosque_de_chapultepec",
+      "description": "El Bosque de Chapultepec es uno de los parques urbanos más grandes y antiguos de América Latina. En él se encuentran museos de renombre, como el Museo Nacional de Antropología, así como el Castillo de Chapultepec, un histórico palacio que ofrece vistas panorámicas de la ciudad. Este bosque es ideal para caminar, hacer deportes y disfrutar de la naturaleza en medio de la gran urbe."
+    }
+  ]
+}

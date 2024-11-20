@@ -1,0 +1,25 @@
+{
+  "country": "Jalisco",
+  "places": [
+    {
+      "image": "edo_jalisco",
+      "description": "El estado de Jalisco, cuna del mariachi y el tequila, es una región icónica de México que combina cultura, historia y belleza natural."
+    },
+    {
+      "image": "capital_jalisco",
+      "description": "Guadalajara, la capital de Jalisco, es conocida como 'La Perla Tapatía' y destaca por su rica cultura, arquitectura colonial y gastronomía."
+    },
+    {
+      "image": "jalisco_tequila",
+      "description": "El Pueblo Mágico de Tequila, rodeado de campos de agave, es el lugar de origen de la famosa bebida mexicana y un destino lleno de tradición."
+    },
+    {
+      "image": "jalisco_puerto_vallarta",
+      "description": "Puerto Vallarta es un destino turístico en la costa del Pacífico, famoso por sus playas, su malecón y su vibrante vida nocturna."
+    },
+    {
+      "image": "jalisco_chapala",
+      "description": "El Lago de Chapala, el más grande de México, ofrece paisajes espectaculares y es un lugar ideal para disfrutar de la tranquilidad y actividades al aire libre."
+    }
+  ]
+}

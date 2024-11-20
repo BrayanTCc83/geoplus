@@ -1,0 +1,25 @@
+{
+  "country": "Veracruz",
+  "places": [
+    {
+      "image": "edo_veracruz",
+      "description": "Veracruz, en la costa del Golfo de México, es un estado que combina historia, cultura, música y playas. Su puerto es uno de los más importantes del país, y sus tradiciones afrocaribeñas enriquecen la diversidad cultural de la región."
+    },
+    {
+      "image": "capital_veracruz",
+      "description": "Xalapa, la capital de Veracruz, es conocida por su clima templado, su rica vida cultural y su proximidad a las montañas. Su Museo de Antropología y el Jardín Botánico son lugares emblemáticos para los visitantes."
+    },
+    {
+      "image": "veracruz_puerto",
+      "description": "El puerto de Veracruz es un lugar lleno de historia, desde el malecón hasta el Fuerte de San Juan de Ulúa. Es el punto de entrada principal para los viajeros que llegan por mar y uno de los destinos turísticos más importantes del estado."
+    },
+    {
+      "image": "veracruz_cabo_rojo",
+      "description": "Cabo Rojo es una playa de aguas turquesas y arenas blancas que se encuentra en el estado de Veracruz. Es ideal para practicar deportes acuáticos como el snorkel, el kayak y el buceo."
+    },
+    {
+      "image": "veracruz_parque_natural",
+      "description": "El Parque Natural de las Tuxtlas es una reserva ecológica de gran biodiversidad. Sus paisajes selváticos, ríos y cascadas hacen de este lugar un destino perfecto para los amantes de la ecología y el senderismo."
+    }
+  ]
+}

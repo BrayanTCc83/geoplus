@@ -1,0 +1,25 @@
+{
+  "country": "Chiapas",
+  "places": [
+    {
+      "image": "edo_chiapas",
+      "description": "El estado de Chiapas, ubicado en el sureste de México, es conocido por su riqueza cultural, su biodiversidad y su patrimonio arqueológico de la civilización maya."
+    },
+    {
+      "image": "capital_chiapas",
+      "description": "Tuxtla Gutiérrez, capital de Chiapas, es un centro moderno con atracciones naturales como el Cañón del Sumidero y tradiciones culturales que reflejan su diversidad."
+    },
+    {
+      "image": "chiapas_sumidero",
+      "description": "El Parque Nacional Cañón del Sumidero, con sus imponentes acantilados y su río navegable, es uno de los principales atractivos turísticos del estado."
+    },
+    {
+      "image": "chiapas_palenque",
+      "description": "Palenque es una de las ciudades mayas más importantes, reconocida por sus ruinas arqueológicas rodeadas de selva y su importancia histórica."
+    },
+    {
+      "image": "chiapas_san_cristobal",
+      "description": "San Cristóbal de las Casas, un Pueblo Mágico en las montañas de Chiapas, encanta con sus calles empedradas, casas coloniales y rica tradición artesanal."
+    }
+  ]
+}

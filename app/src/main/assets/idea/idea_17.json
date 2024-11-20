@@ -1,0 +1,25 @@
+{
+  "country": "Nuevo León",
+  "places": [
+    {
+      "image": "edo_nuevo_leon",
+      "description": "Nuevo León, un estado del noreste de México, es un importante centro industrial y tecnológico. Con paisajes montañosos, deliciosa carne asada y una mezcla de modernidad e historia, es un lugar destacado en el país."
+    },
+    {
+      "image": "capital_nuevo_leon",
+      "description": "Monterrey, la capital de Nuevo León, es una metrópoli vibrante rodeada de montañas. Con lugares emblemáticos como el Cerro de la Silla, el Paseo Santa Lucía y el Parque Fundidora, es el corazón económico del norte de México."
+    },
+    {
+      "image": "nuevo_leon_santiago",
+      "description": "Santiago, un Pueblo Mágico cercano a Monterrey, ofrece una experiencia relajante con calles coloniales, cascadas naturales como la Cola de Caballo y vistas impresionantes desde la presa La Boca."
+    },
+    {
+      "image": "nuevo_leon_chipinque",
+      "description": "El Parque Ecológico Chipinque, ubicado en la Sierra Madre Oriental, es perfecto para practicar senderismo, ciclismo y disfrutar de vistas panorámicas de Monterrey. Es un refugio natural para los amantes de la montaña."
+    },
+    {
+      "image": "nuevo_leon_grutas_garcia",
+      "description": "Las Grutas de García, un sistema de cuevas con millones de años de antigüedad, ofrecen formaciones rocosas impresionantes y un recorrido único en teleférico que permite admirar la belleza del paisaje."
+    }
+  ]
+}

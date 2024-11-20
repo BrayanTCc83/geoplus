@@ -1,0 +1,25 @@
+{
+  "country": "Morelos",
+  "places": [
+    {
+      "image": "edo_morelos",
+      "description": "Morelos, un pequeño estado en el centro de México, es conocido como 'La Tierra de la Eterna Primavera' por su clima cálido y su abundante vegetación. Es un destino lleno de historia, cultura y belleza natural."
+    },
+    {
+      "image": "capital_morelos",
+      "description": "Cuernavaca, la capital de Morelos, es un lugar de descanso y relajación con jardines botánicos, arquitectura colonial y una vibrante vida cultural. Su Palacio de Cortés y la Catedral son puntos destacados de la ciudad."
+    },
+    {
+      "image": "morelos_tepoztlan",
+      "description": "Tepoztlán, un Pueblo Mágico, es famoso por su montaña del Tepozteco, sus rituales místicos y su tradicional mercado de comida. Sus calles empedradas y su ambiente bohemio lo convierten en un refugio espiritual y cultural."
+    },
+    {
+      "image": "morelos_xochicalco",
+      "description": "Xochicalco, un sitio arqueológico prehispánico, destaca por su Templo de las Serpientes Emplumadas y su observatorio astronómico. Este lugar refleja la grandeza de las culturas que habitaron la región."
+    },
+    {
+      "image": "morelos_jardines_mexico",
+      "description": "Jardines de México, el jardín ornamental más grande del mundo, ofrece una experiencia sensorial única con espacios temáticos que van desde jardines japoneses hasta flores tropicales. Es un lugar ideal para relajarse y disfrutar de la naturaleza."
+    }
+  ]
+}

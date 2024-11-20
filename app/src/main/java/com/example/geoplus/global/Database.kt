@@ -3,6 +3,8 @@ package com.example.geoplus.global
 import android.content.Context
 import android.util.Log
 import android.widget.Toast
+import com.example.geoplus.models.Configuration
+import com.example.geoplus.models.DefaultConfiguration
 import com.example.geoplus.models.PlayerProgressModel
 import com.example.geoplus.models.User
 import com.google.gson.Gson
@@ -11,8 +13,9 @@ import java.io.File
 class Database private constructor() {
     final var folder: File? = null
     final var sesionFile: File? = null
-    final var progressFile: File? = null
+    final lateinit var progressFile: File
     final var usersFile: File? = null
+    final lateinit var configurationFile: File
     var session: User? = null
 
     fun registerUser(ctx: Context, user: User) : Boolean {
@@ -73,7 +76,7 @@ class Database private constructor() {
         return true
     }
 
-    fun isActiveSession() : Boolean {
+        fun isActiveSession() : Boolean {
         var uString = sesionFile?.readText()?:"{}"
         if(uString == "") uString = "{}"
         if(uString == "{}")
@@ -93,17 +96,18 @@ class Database private constructor() {
     fun progressExists(game: String) : Boolean {
         Log.d("LOG_GEOPLUS", "Progress file ${session?.nick?:""}_progress_$game.json")
         progressFile = File(folder, "${session?.nick?:""}_progress_$game.json")
-        return progressFile?.exists()?:false
+        return progressFile.exists()?:false
     }
 
     fun getProgress(game: String) : PlayerProgressModel {
         if(!isActiveSession())
             return PlayerProgressModel(0, floatArrayOf(0f))
         progressFile = File(folder, "${session?.nick}_progress_$game.json")
-        if(!progressFile?.exists()!!)
-            progressFile?.createNewFile()
+        if(!progressFile.exists()) {
+            progressFile.createNewFile()
+        }
 
-        Log.d("LOG_GEOPLUS", "Progress $progressFile: ${progressFile?.readText()?:"Vacio"}")
+        Log.d("LOG_GEOPLUS", "Progress $progressFile: ${progressFile.readText()?:"Vacio"}")
         var uString = progressFile?.readText()?:"{}"
         if(uString == "") uString = "{}"
         val progress: PlayerProgressModel = Gson().fromJson(uString, PlayerProgressModel::class.java)
@@ -115,13 +119,44 @@ class Database private constructor() {
         if(!isActiveSession())
             return false
         progressFile = File(folder, "${session?.nick}_progress_$game.json")
-        if(!progressFile?.exists()!!)
-            progressFile?.createNewFile()
+        if(!progressFile.exists()) {
+            progressFile.createNewFile()
+        }
 
-        Log.d("LOG_GEOPLUS", "Progress $progressFile: ${progressFile?.readText()?:"Vacio"}")
+        Log.d("LOG_GEOPLUS", "Progress $progressFile: ${progressFile.readText()?:"Vacio"}")
         val content = Gson().toJson(progress)
-        progressFile?.createNewFile()
-        progressFile?.writeText(content)
+        progressFile.createNewFile()
+        progressFile.writeText(content)
+        Log.d("LOG_GEOPLUS", content)
+        return true
+    }
+
+    fun getConfiguration(): Configuration {
+        configurationFile = File(folder, "${session?.nick}_configuration.json")
+        Log.d("LOG_GEOPLUS", "${session?.nick}_configuration.json ${configurationFile.exists()}")
+        if(!configurationFile.exists()) {
+            return DefaultConfiguration
+        }
+        val content: String? = configurationFile.readText()
+        Log.d("LOG_GEOPLUS", "Configuration $configurationFile: ${content?:"Vacio"}")
+        if(content.isNullOrEmpty()) {
+            return DefaultConfiguration
+        }
+        val configuration: Configuration = Gson().fromJson(content, Configuration::class.java)
+        Log.d("LOG_GEOPLUS", "Configuracion recuperada $configuration")
+        return configuration
+    }
+
+    fun saveConfiguration(configuration: Configuration): Boolean {
+        Log.d("LOG_GEOPLUS", "${session?.nick}_configuration.json <- $configuration")
+        if(!isActiveSession())
+            return false
+        configurationFile = File(folder, "${session?.nick}_configuration.json")
+        configurationFile.createNewFile()
+
+        Log.d("LOG_GEOPLUS", "Configuration $configurationFile: ${configurationFile?.readText()?:"Vacio"}")
+        val content = Gson().toJson(configuration)
+        configurationFile.writeText(content)
         Log.d("LOG_GEOPLUS", content)
         return true
     }

@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
-    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +21,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GeoPlus"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
@@ -21,7 +28,9 @@
             android:theme="@style/Theme.GeoPlus">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
@@ -50,7 +59,7 @@
         </activity>
         <activity
             android:name=".LevelsActivity"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.GeoPlus">
             <intent-filter>
                 <action android:name="android.intent.action.LEVELS" />
@@ -58,7 +67,7 @@
         </activity>
         <activity
             android:name=".QuestionActivity"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.GeoPlus">
             <intent-filter>
                 <action android:name="android.intent.action.QUESTION" />
@@ -66,11 +75,28 @@
         </activity>
         <activity
             android:name=".ResumeActivity"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.GeoPlus">
             <intent-filter>
                 <action android:name="android.intent.action.RESUME" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.GeoPlus">
+            <intent-filter>
+                <action android:name="android.intent.action.SETTINGS" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IdeaActivity"
+            android:exported="false"
+            android:theme="@style/Theme.GeoPlus">
+            <intent-filter>
+                <action android:name="android.intent.action.IDEA" />
+            </intent-filter>
+        </activity>
     </application>
+
 </manifest>

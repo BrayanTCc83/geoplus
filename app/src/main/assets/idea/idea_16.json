@@ -1,0 +1,25 @@
+{
+  "country": "Hidalgo",
+  "places": [
+    {
+      "image": "edo_hidalgo",
+      "description": "El estado de Hidalgo, ubicado en la región central de México, es conocido por su diversidad cultural, histórica y natural. Fue una cuna importante de la minería durante el periodo colonial y es hogar de varios Pueblos Mágicos, tradiciones gastronómicas como los pastes y paisajes únicos que lo convierten en un destino destacado."
+    },
+    {
+      "image": "capital_hidalgo",
+      "description": "Pachuca de Soto, capital del estado de Hidalgo y conocida como 'La Bella Airosa', es famosa por su emblemático Reloj Monumental construido en el centenario de la independencia de México. Su legado minero y su influencia inglesa se reflejan en su arquitectura y en la introducción de los tradicionales pastes."
+    },
+    {
+      "image": "hidalgo_prismas_basalticos",
+      "description": "Los Prismas Basálticos, localizados en el municipio de Huasca de Ocampo, son impresionantes columnas geométricas de basalto formadas por el enfriamiento de lava hace millones de años. Rodeados de cascadas y vegetación, este sitio es ideal para disfrutar de la naturaleza y actividades al aire libre."
+    },
+    {
+      "image": "hidalgo_real_del_monte",
+      "description": "Real del Monte, un pintoresco Pueblo Mágico en Hidalgo, destaca por su historia minera y su encanto colonial. Sus calles empedradas, arquitectura tradicional y rica gastronomía lo convierten en un lugar inolvidable. Es conocido por ser la cuna de los pastes, un platillo de influencia británica."
+    },
+    {
+      "image": "hidalgo_grutas_tolantongo",
+      "description": "Las Grutas de Tolantongo, situadas en el corazón de Hidalgo, son un paraíso natural que ofrece aguas termales cristalinas, un río de color turquesa, cuevas espectaculares y paisajes montañosos. Este sitio es perfecto para relajarse y conectar con la naturaleza."
+    }
+  ]
+}

@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#221E1E"
-    android:backgroundTint="@color/dark_principal"
     android:fitsSystemWindows="true"
     android:layout_gravity="center"
     tools:context=".HomeActivity">
@@ -18,35 +16,58 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/nick"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
             android:id="@+id/nombre"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            style="@style/TextStyle" />
 
-        <ImageView
-            android:id="@+id/imageView2"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="262dp"
-            android:contentDescription="@string/app_name"
-            app:srcCompat="@drawable/geoplus_not_background" />
+            android:layout_height="154dp">
+
+            <ImageButton
+                android:id="@+id/btnConfiguracion"
+                style="@style/ImageButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnGeografia"
+                style="@style/ImageButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                style="@style/ImageViewStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.compose.ui.platform.ComposeView
             android:id="@+id/compose_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="448dp" />
 
         <Button
             android:id="@+id/btn_logout"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/principal_color"
-            android:text="Cerrar sesion"
-            app:cornerRadius="10dp"
-            app:strokeColor="@color/secondary_color"
-            app:strokeWidth="3dp" />
+            style="@style/ButtonStyle"
+            android:text="@string/button_exit" />
+
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

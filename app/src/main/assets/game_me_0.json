@@ -1,0 +1,168 @@
+{
+  "title": "Memorama Estados",
+  "id": 0 ,
+  "type": "Memorama",
+  "game": "game_me",
+  "cards": [
+    {
+      "id": 1,
+      "image": "edo_aguascalientes",
+      "value": "aguascalientes"
+    },
+    {
+      "id": 2,
+      "image": "edo_baja_california",
+      "value": "baja california"
+    },
+    {
+      "id": 3,
+      "image": "edo_baja_california_sur",
+      "value": "baja california sur"
+    },
+    {
+      "id": 4,
+      "image": "edo_campeche",
+      "value": "campeche"
+    },
+    {
+      "id": 5,
+      "image": "edo_chiapas",
+      "value": "chiapas"
+    },
+    {
+      "id": 6,
+      "image": "edo_chihuahua",
+      "value": "chihuahua"
+    },
+    {
+      "id": 7,
+      "image": "edo_coahuila",
+      "value": "coahuila"
+    },
+    {
+      "id": 8,
+      "image": "edo_colima",
+      "value": "colima"
+    },
+    {
+      "id": 9,
+      "image": "edo_cdmx",
+      "value": "ciudad de méxico"
+    },
+    {
+      "id": 10,
+      "image": "edo_durango",
+      "value": "durango"
+    },
+    {
+      "id": 11,
+      "image": "edo_guanajuato",
+      "value": "guanajuato"
+    },
+    {
+      "id": 12,
+      "image": "edo_guerrero",
+      "value": "guerrero"
+    },
+    {
+      "id": 13,
+      "image": "edo_hidalgo",
+      "value": "hidalgo"
+    },
+    {
+      "id": 14,
+      "image": "edo_jalisco",
+      "value": "jalisco"
+    },
+    {
+      "id": 15,
+      "image": "edo_mexico",
+      "value": "estado de méxico"
+    },
+    {
+      "id": 16,
+      "image": "edo_michoacan",
+      "value": "michoacán"
+    },
+    {
+      "id": 17,
+      "image": "edo_morelos",
+      "value": "morelos"
+    },
+    {
+      "id": 18,
+      "image": "edo_nayarit",
+      "value": "nayarit"
+    },
+    {
+      "id": 19,
+      "image": "edo_nuevo_leon",
+      "value": "nuevo león"
+    },
+    {
+      "id": 20,
+      "image": "edo_oaxaca",
+      "value": "oaxaca"
+    },
+    {
+      "id": 21,
+      "image": "edo_puebla",
+      "value": "puebla"
+    },
+    {
+      "id": 22,
+      "image": "edo_queretaro",
+      "value": "querétaro"
+    },
+    {
+      "id": 23,
+      "image": "edo_quintana_roo",
+      "value": "quintana roo"
+    },
+    {
+      "id": 24,
+      "image": "edo_san_luis_potosi",
+      "value": "san luis potosí"
+    },
+    {
+      "id": 25,
+      "image": "edo_sinaloa",
+      "value": "sinaloa"
+    },
+    {
+      "id": 26,
+      "image": "edo_sonora",
+      "value": "sonora"
+    },
+    {
+      "id": 27,
+      "image": "edo_tabasco",
+      "value": "tabasco"
+    },
+    {
+      "id": 28,
+      "image": "edo_tamaulipas",
+      "value": "tamaulipas"
+    },
+    {
+      "id": 29,
+      "image": "edo_tlaxcala",
+      "value": "tlaxcala"
+    },
+    {
+      "id": 30,
+      "image": "edo_veracruz",
+      "value": "veracruz"
+    },
+    {
+      "id": 31,
+      "image": "edo_yucatan",
+      "value": "yucatán"
+    },
+    {
+      "id": 32,
+      "image": "edo_zacatecas",
+      "value": "zacatecas"
+    }
+  ]
+}

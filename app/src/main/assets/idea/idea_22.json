@@ -1,0 +1,25 @@
+{
+  "country": "San Luis Potosí",
+  "places": [
+    {
+      "image": "edo_san_luis_potosi",
+      "description": "San Luis Potosí, ubicado en el centro-norte de México, destaca por su diversidad geográfica, que incluye desiertos, montañas y selvas. Es un destino ideal para los amantes de la naturaleza, la historia y la aventura."
+    },
+    {
+      "image": "capital_san_luis_potosi",
+      "description": "San Luis Potosí, la capital del estado, es una ciudad colonial con un Centro Histórico lleno de plazas, jardines y arquitectura barroca. Su historia minera y su riqueza cultural la convierten en un lugar lleno de encanto."
+    },
+    {
+      "image": "san_luis_potosi_huasteca",
+      "description": "La Huasteca Potosina es una región de impresionante belleza natural. Sus ríos, cascadas como Tamul y Puente de Dios, y actividades como el rafting y el senderismo hacen de este lugar un paraíso para los aventureros."
+    },
+    {
+      "image": "san_luis_potosi_real_catorce",
+      "description": "Real de Catorce, un antiguo pueblo minero, es un lugar místico rodeado de montañas. Su atmósfera tranquila, calles empedradas y paisajes desérticos lo convierten en un destino único para la introspección y el turismo cultural."
+    },
+    {
+      "image": "san_luis_potosi_xilitla",
+      "description": "Xilitla, un pintoresco pueblo en la Huasteca, alberga el Jardín Surrealista de Edward James. Este lugar combina esculturas fantásticas con exuberante vegetación, creando un escenario mágico y único en el mundo."
+    }
+  ]
+}

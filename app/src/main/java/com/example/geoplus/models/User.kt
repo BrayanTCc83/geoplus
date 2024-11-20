@@ -12,3 +12,13 @@ data class User(
     val email: String,
     val password: String
 )
+
+public val DefaultUser: User = User(
+    "NoUsuario",
+    "No",
+    "Usuario",
+    "Existente",
+    "0",
+    "example@correo",
+    ""
+)

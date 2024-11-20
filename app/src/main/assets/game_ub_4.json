@@ -1,67 +1,45 @@
 {
-  "title": "Mi bello Mexico",
+  "title": "Maravillas Naturales de México",
   "id": 5,
   "game": "game_ub",
   "questions": [
     {
-      "type": "find_text",
-      "question": "Identify the image that corresponds to a famous archaeological site located in the state of Chiapas:",
-      "image": 28,
-      "options": [ "Monte Albán", "Chichen Itza", "Palenque", "Tulum" ],
-      "answer": 3,
-      "points": 2
+      "type": "find_image",
+      "question": "¿En qué estado se encuentra la famosa playa de Acapulco?",
+      "options": ["Guerrero", "Oaxaca", "Veracruz", "Tamaulipas"],
+      "answer": 0,
+      "points": 3,
+      "image": "guerrero_acapulco"
     },
     {
       "type": "find_text",
-      "question": "This image shows a colonial-era city known for its well-preserved historic center. What is its name?",
-      "options": [ "Guanajuato", "San Miguel de Allende", "Queretaro", "Puebla" ],
+      "question": "¿En qué estado se encuentra la Ciudad de Monterrey, famosa por su Cerro de la Silla?",
+      "options": [2, 3, 4, 5],
       "answer": 2,
       "points": 2
     },
     {
-      "type": "find_text",
-      "question": "Which image represents a famous natural wonder located in the state of Chiapas?",
-      "image": 27,
-      "options": [ "Cenote Ik Kil", "Agua Azul Waterfalls", "Sumidero Canyon", "Monte Alban" ],
-      "answer": 3,
-      "points": 2
+      "type": "find_image",
+      "question": "¿Dónde se encuentra la famosa reserva de la biosfera de Sian Ka'an?",
+      "options": ["Quintana Roo", "Chihuahua", "Sonora", "Baja California Sur"],
+      "answer": 0,
+      "points": 3,
+      "image": "quintana_roo_sian_kaan"
     },
     {
       "type": "find_text",
-      "question": "This image depicts a pre-Hispanic city known for its pyramid of the Niches. What is its name?",
-      "options": [ "Monte Albán", "Tajin", "Uxmal", "El Tepozteco" ],
-      "answer": 2,
+      "question": "¿En qué estado se encuentra la capital, Morelia, conocida por su arquitectura colonial?",
+      "options": [6, 7, 8, 9],
+      "answer": 6,
       "points": 2
     },
     {
-      "type": "find_text",
-      "question": "Identify the image that corresponds to a famous Mayan archaeological site located in the Yucatan Peninsula:",
-      "image": 21,
-      "options": [ "Uxmal", "Chichen Itza", "Palenque", "Tulum" ],
-      "answer": 4,
-      "points": 2
-    },
-    {
-      "type": "find_text",
-      "question": "This image represents a famous beach destination known for its pristine beaches and vibrant nightlife. Which beach is it?",
-      "options": [ "Puerto Vallarta", "Cancun", "Playa del Carmen", "Puerto Escondido" ],
-      "answer": 2,
-      "points": 2
-    },
-    {
-      "type": "find_text",
-      "question": "Which image shows a famous ancient pyramid located in the state of Morelos?",
-      "image": 15,
-      "options": [ "Pyramid of the Sun", "Pyramid of the Moon", "Great Pyramid of Cholula", "Tikal Temple" ],
-      "answer": 3,
-      "points": 2
-    },
-    {
-      "type": "find_text",
-      "question": "This image represents a picturesque colonial town famous for its silver mines. What is its name?",
-      "options": [ "Guanajuato", "San Miguel de Allende", "Queretaro", "Taxco" ],
-      "answer": 4,
-      "points": 2
+      "type": "find_image",
+      "question": "¿Dónde se encuentra el Cañón del Sumidero, famoso por su imponente paisaje?",
+      "options": ["Chiapas", "Veracruz", "Durango", "Hidalgo"],
+      "answer": 0,
+      "points": 3,
+      "image": "chiapas_sumidero"
     }
   ]
 }

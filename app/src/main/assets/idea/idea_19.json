@@ -1,0 +1,25 @@
+{
+  "country": "Puebla",
+  "places": [
+    {
+      "image": "edo_puebla",
+      "description": "Puebla, un estado en el centro de México, combina historia, cultura y gastronomía. Es reconocido por su arquitectura colonial, su papel en la historia de la independencia y su deliciosa cocina, como el mole poblano y los chiles en nogada."
+    },
+    {
+      "image": "capital_puebla",
+      "description": "La ciudad de Puebla, conocida como 'Puebla de los Ángeles', es famosa por su Catedral, la Capilla del Rosario y sus calles llenas de azulejos. Es una joya colonial con una rica tradición histórica y cultural."
+    },
+    {
+      "image": "puebla_cholula",
+      "description": "Cholula, hogar de la pirámide más grande del mundo en volumen, combina arqueología y espiritualidad. Sobre su cúspide se encuentra la iglesia de Nuestra Señora de los Remedios, ofreciendo vistas espectaculares del Popocatépetl."
+    },
+    {
+      "image": "puebla_cantona",
+      "description": "Cantona es un sitio arqueológico que destaca por su planificación urbana prehispánica. Sus calles empedradas, patios y juegos de pelota muestran el ingenio de sus antiguos habitantes."
+    },
+    {
+      "image": "puebla_zacatlan",
+      "description": "Zacatlán, un Pueblo Mágico rodeado de neblina y montañas, es conocido por su producción de relojes y manzanas. Su mirador de cristal ofrece vistas impresionantes de la barranca y los paisajes circundantes."
+    }
+  ]
+}

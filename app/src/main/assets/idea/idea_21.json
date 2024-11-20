@@ -1,0 +1,25 @@
+{
+  "country": "Quintana Roo",
+  "places": [
+    {
+      "image": "edo_quintana_roo",
+      "description": "Quintana Roo, en el sureste de México, es famoso por sus playas caribeñas, ruinas mayas y biodiversidad. Es un destino turístico de clase mundial que combina historia, lujo y naturaleza."
+    },
+    {
+      "image": "capital_quintana_roo",
+      "description": "Chetumal, la capital de Quintana Roo, es una ciudad tranquila que combina historia con belleza natural. Su Boulevard Bahía ofrece vistas impresionantes del Caribe, mientras que su Museo de la Cultura Maya destaca por su riqueza histórica."
+    },
+    {
+      "image": "quintana_roo_tulum",
+      "description": "Tulum, un antiguo puerto maya, combina ruinas arqueológicas junto al mar con playas de arena blanca. Es un destino bohemio conocido por su energía mística, sus cenotes y su respeto por la naturaleza."
+    },
+    {
+      "image": "quintana_roo_cancun",
+      "description": "Cancún, un centro turístico de renombre mundial, ofrece resorts de lujo, vida nocturna vibrante y playas de aguas cristalinas. Es la puerta de entrada a la Riviera Maya y un lugar perfecto para relajarse o explorar."
+    },
+    {
+      "image": "quintana_roo_isla_mujeres",
+      "description": "Isla Mujeres, una pequeña isla cerca de Cancún, es famosa por sus aguas turquesas, playas tranquilas y oportunidades de snorkel. Es un lugar ideal para desconectarse y disfrutar del Caribe mexicano."
+    }
+  ]
+}

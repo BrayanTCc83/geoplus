@@ -1,0 +1,25 @@
+{
+  "country": "Guerrero",
+  "places": [
+    {
+      "image": "edo_guerrero",
+      "description": "Guerrero, ubicado en el sur de México, es famoso por su litoral pacífico, sus tradiciones culturales y su influencia histórica en la independencia de México."
+    },
+    {
+      "image": "capital_guerrero",
+      "description": "Chilpancingo de los Bravo, la capital del estado, es una ciudad histórica conocida por ser sede del Congreso de Anáhuac durante la lucha por la independencia."
+    },
+    {
+      "image": "guerrero_acapulco",
+      "description": "Acapulco, uno de los destinos turísticos más icónicos de México, es famoso por sus playas, vida nocturna y su famosa Quebrada."
+    },
+    {
+      "image": "guerrero_taxco",
+      "description": "Taxco de Alarcón, un Pueblo Mágico, destaca por su arquitectura colonial, la producción de plata y sus festividades religiosas."
+    },
+    {
+      "image": "guerrero_iguala",
+      "description": "Iguala de la Independencia es un lugar histórico conocido por ser la cuna de la bandera mexicana y por sus monumentos alusivos."
+    }
+  ]
+}

@@ -7,3 +7,9 @@ data class ResultModel(
     val answer: Comparable<*>,
     val points: Int
 )
+
+data class ResultGameCard(
+    val id: Int,
+    val score: Float,
+    val points: Int
+)

@@ -1,0 +1,25 @@
+{
+  "country": "Querétaro",
+  "places": [
+    {
+      "image": "edo_queretaro",
+      "description": "Querétaro, ubicado en el centro de México, es un estado con una rica historia, ciudades coloniales y paisajes naturales. Es conocido por su papel en la independencia y su desarrollo moderno como centro industrial."
+    },
+    {
+      "image": "capital_queretaro",
+      "description": "Santiago de Querétaro, la capital del estado, es una ciudad Patrimonio de la Humanidad. Su Centro Histórico, con templos barrocos y el icónico acueducto, refleja su importancia en la historia de México."
+    },
+    {
+      "image": "queretaro_pena_bernal",
+      "description": "La Peña de Bernal, uno de los monolitos más grandes del mundo, es un destino para los amantes del senderismo y la escalada. En su base se encuentra el Pueblo Mágico de Bernal, con calles pintorescas y rica gastronomía."
+    },
+    {
+      "image": "queretaro_biosfera_sierra_gorda",
+      "description": "La Reserva de la Biosfera Sierra Gorda es un paraíso natural que alberga una biodiversidad impresionante. Sus cascadas, grutas y misiones franciscanas son ideales para quienes buscan aventura y tranquilidad."
+    },
+    {
+      "image": "queretaro_tequisquiapan",
+      "description": "Tequisquiapan, un Pueblo Mágico conocido por su arquitectura colonial y aguas termales, es ideal para relajarse. Su feria del vino y el queso lo convierten en un destino culinario destacado."
+    }
+  ]
+}

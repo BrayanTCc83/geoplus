@@ -1,0 +1,25 @@
+{
+  "country": "Baja California",
+  "places": [
+    {
+      "image": "edo_baja_california",
+      "description": "Baja California, situada en el noroeste de México, es conocida por su frontera con Estados Unidos, el turismo en Tijuana y sus rutas vinícolas en el Valle de Guadalupe."
+    },
+    {
+      "image": "capital_baja_california",
+      "description": "Mexicali, capital de Baja California, es famosa por su gastronomía, especialmente la comida china, y su importancia como centro industrial y agrícola."
+    },
+    {
+      "image": "baja_california_valle_guadalupe",
+      "description": "El Valle de Guadalupe es la región vinícola más importante de México, famosa por sus viñedos, paisajes y experiencias enoturísticas de clase mundial."
+    },
+    {
+      "image": "baja_california_playa_rosarito",
+      "description": "Rosarito, con sus playas doradas y vibrante vida nocturna, es un destino popular para surfistas y turistas que buscan relajarse frente al Pacífico."
+    },
+    {
+      "image": "baja_california_ensenada",
+      "description": "Ensenada, conocida como 'La Cenicienta del Pacífico', ofrece mariscos frescos, paisajes costeros y atracciones como la Bufadora, un géiser marino natural."
+    }
+  ]
+}

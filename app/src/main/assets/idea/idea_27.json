@@ -1,0 +1,25 @@
+{
+  "country": "Tlaxcala",
+  "places": [
+    {
+      "image": "edo_tlaxcala",
+      "description": "Tlaxcala, el estado más pequeño de México, es conocido por su rica historia, su tradición cultural y su cercanía a la Ciudad de México. Sus festivales y arquitectura colonial son uno de sus mayores atractivos."
+    },
+    {
+      "image": "capital_tlaxcala",
+      "description": "Tlaxcala, la capital del estado, es una pequeña pero encantadora ciudad que conserva su arquitectura colonial y su ambiente tranquilo. Es famosa por su Plaza de la Constitución y el Museo de la Memoria."
+    },
+    {
+      "image": "tlaxcala_xochimilco",
+      "description": "Xochimilco es uno de los pueblos más emblemáticos de Tlaxcala. Famoso por su arquitectura colonial y su proximidad a las ruinas prehispánicas, ofrece a los visitantes una mezcla de historia, cultura y naturaleza."
+    },
+    {
+      "image": "tlaxcala_san_pablo_del_monte",
+      "description": "San Pablo del Monte, un Pueblo Mágico, es conocido por su cercanía con las grandes zonas arqueológicas y su deliciosa gastronomía tradicional. Es ideal para los amantes de la historia y la cultura."
+    },
+    {
+      "image": "tlaxcala_tecali",
+      "description": "Tecali es una pequeña comunidad en Tlaxcala conocida por sus hermosas piedras de cantera. La región es famosa por sus tradiciones de tallado de piedra y su cercanía a varios sitios arqueológicos."
+    }
+  ]
+}

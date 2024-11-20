@@ -29,7 +29,6 @@
         android:foregroundTint="#FFFFFF"
         android:text="Creado por\nDREAM TEAM"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
         app:layout_anchor="@+id/imageView2"
         app:layout_anchorGravity="bottom|center" />
 

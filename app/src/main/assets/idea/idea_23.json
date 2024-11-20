@@ -1,0 +1,25 @@
+{
+  "country": "Sinaloa",
+  "places": [
+    {
+      "image": "edo_sinaloa",
+      "description": "Sinaloa, ubicado en la costa del Pacífico, es conocido por su rica tradición musical, su deliciosa gastronomía y su importante papel como productor agrícola. Es un estado vibrante y lleno de contrastes."
+    },
+    {
+      "image": "capital_sinaloa",
+      "description": "Culiacán, la capital de Sinaloa, es una ciudad moderna con una mezcla de historia y desarrollo. Es conocida por su gastronomía, parques urbanos y su tradición cultural, como la música de banda."
+    },
+    {
+      "image": "sinaloa_mazatlan",
+      "description": "Mazatlán, conocido como 'La Perla del Pacífico', es un destino costero con playas espectaculares, un malecón extenso y un centro histórico lleno de color. Es famoso por su carnaval, uno de los más grandes de México."
+    },
+    {
+      "image": "sinaloa_el_fuerte",
+      "description": "El Fuerte, un Pueblo Mágico, es la puerta de entrada al famoso tren Chepe que recorre las Barrancas del Cobre. Su arquitectura colonial y su rica historia lo convierten en un destino lleno de encanto."
+    },
+    {
+      "image": "sinaloa_islas_marias",
+      "description": "Las Islas Marías, recientemente abiertas al turismo, son un tesoro natural en el Pacífico. Estas islas protegidas ofrecen paisajes vírgenes, biodiversidad marina y la oportunidad de conocer un lugar único en México."
+    }
+  ]
+}

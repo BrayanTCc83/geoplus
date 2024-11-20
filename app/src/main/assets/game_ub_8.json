@@ -1,42 +1,45 @@
 {
-  "title": "Mi bello México",
+  "title": "Descubre México",
   "id": 9,
   "game": "game_ub",
   "questions": [
     {
-      "type": "find_text",
-      "question": "Identifica la ciudad conocida por su centro histórico bien conservado y su icónico acueducto.",
-      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Querétaro" ],
-      "answer": 4,
-      "points": 2
+      "type": "find_image",
+      "question": "¿En qué estado se encuentra la zona arqueológica de Chichen Itzá?",
+      "options": ["Yucatán", "Chiapas", "Oaxaca", "Veracruz"],
+      "answer": 0,
+      "points": 3,
+      "image": "yucatan_chichen_itza"
     },
     {
       "type": "find_text",
-      "question": "¿Cuál destino de playa es famoso por sus playas vírgenes y su vibrante vida nocturna?",
-      "options": [ "Puerto Vallarta", "Cancún", "Playa del Carmen", "Puerto Escondido" ],
-      "answer": 3,
+      "question": "¿En qué estado se encuentra la ciudad de Guadalajara, famosa por su tequila?",
+      "options": [14, 15, 16, 17],
+      "answer": 14,
       "points": 2
     },
     {
-      "type": "find_text",
-      "question": "Identifica la ciudad colonial famosa por su arquitectura de cantera rosa.",
-      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Taxco" ],
-      "answer": 4,
-      "points": 2
+      "type": "find_image",
+      "question": "¿En qué estado se encuentra la playa de Mazatlán?",
+      "options": ["Sinaloa", "Sonora", "Baja California Sur", "Jalisco"],
+      "answer": 0,
+      "points": 3,
+      "image": "sinaloa_mazatlan"
     },
     {
       "type": "find_text",
-      "question": "¿Qué ciudad es famosa por su ambiente relajado y sus impresionantes atardeceres?",
-      "options": [ "Puerto Vallarta", "Cancún", "Tulum", "Sayulita" ],
-      "answer": 4,
+      "question": "¿En qué estado se encuentra la ciudad de Puebla, conocida por su historia colonial?",
+      "options": [11, 12, 13, 14],
+      "answer": 11,
       "points": 2
     },
     {
-      "type": "find_text",
-      "question": "Identifica el pintoresco pueblo colonial conocido por sus calles empedradas y sus artesanías tradicionales.",
-      "options": [ "San Cristóbal de las Casas", "Taxco", "Valladolid", "Campeche" ],
+      "type": "find_image",
+      "question": "¿En qué estado se encuentra el parque nacional de Barranca del Cobre?",
+      "options": ["Durango", "Chihuahua", "Coahuila", "Zacatecas"],
       "answer": 1,
-      "points": 2
+      "points": 3,
+      "image": "chihuahua_barranca_del_cobre"
     }
   ]
 }

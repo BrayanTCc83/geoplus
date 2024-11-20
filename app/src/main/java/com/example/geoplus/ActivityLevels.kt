@@ -33,7 +33,7 @@ class ActivityLevels : AppCompatActivity() {
         val buttonExit = findViewById<Button>(R.id.btn_exit);
         buttonExit.setOnClickListener {
             this.finish();
-            System.exit(0);
         }
+        System.exit(0);
     }
 }

@@ -1,0 +1,55 @@
+{
+  "title": "Cuestionario Estados III",
+  "id": 3,
+  "game": "game_qu",
+  "questions": [
+    {
+      "type": "open",
+      "question": "¿En qué estado se encuentra el famoso Cerro de la Silla?",
+      "answer": "Nuevo León",
+      "tries": 2,
+      "points": 5,
+      "image": "edo_nuevo_leon"
+    },
+    {
+      "type": "radio",
+      "question": "¿Cuál de estos estados es conocido como 'La Cuna de la Independencia'?",
+      "answer": 2,
+      "options": ["Jalisco", "Querétaro", "Guanajuato", "Michoacán"],
+      "points": 4,
+      "image": "edo_guanajuato"
+    },
+    {
+      "type": "checkbox",
+      "question": "¿Cuáles de estos estados tienen costas en el Océano Pacífico?",
+      "answer": [0, 1, 3],
+      "options": ["Guerrero", "Colima", "Hidalgo", "Oaxaca", "Tlaxcala"],
+      "points": 6,
+      "image": "edo_guerrero"
+    },
+    {
+      "type": "open",
+      "question": "¿Cómo se llama la capital del estado de Chihuahua?",
+      "answer": "Chihuahua",
+      "tries": 2,
+      "points": 5,
+      "image": "edo_chihuahua"
+    },
+    {
+      "type": "radio",
+      "question": "¿En qué estado se celebra la famosa Guelaguetza?",
+      "answer": 3,
+      "options": ["Puebla", "Veracruz", "Tabasco", "Oaxaca"],
+      "points": 4,
+      "image": "edo_oaxaca"
+    },
+    {
+      "type": "checkbox",
+      "question": "Selecciona los estados que tienen frontera con Estados Unidos:",
+      "answer": [0, 1, 3, 4],
+      "options": ["Sonora", "Chihuahua", "Querétaro", "Coahuila", "Tamaulipas"],
+      "points": 6,
+      "image": "edo_sonora"
+    }
+  ]
+}

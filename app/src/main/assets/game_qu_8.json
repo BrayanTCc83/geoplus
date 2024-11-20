@@ -1,76 +1,47 @@
 {
-  "title": "Geografía de México: Quiz 8",
-  "id": 8,
+  "title": "Cuestionario Playas I",
+  "id": 9,
   "game": "game_qu",
   "questions": [
     {
       "type": "open",
-      "question": "¿Cuál es el estado con la mayor cantidad de zonas arqueológicas en México?",
-      "answer": "Yucatán",
-      "tries": 3,
-      "points": 1
+      "question": "¿Cómo se llama la playa famosa por sus aguas claras y arena blanca en el estado de Quintana Roo?",
+      "answer": "Playa del Carmen",
+      "tries": 2,
+      "points": 5,
+      "image": "quintana_roo_playa_del_carmen"
     },
     {
       "type": "radio",
-      "question": "¿Cuál de los siguientes estados no tiene costas en el Golfo de California?",
-      "answer": 3,
-      "options": [
-        "Sonora",
-        "Baja California",
-        "Baja California Sur",
-        "Sinaloa"
-      ],
-      "points": 1
-    },
-    {
-      "type": "checkbox",
-      "question": "¿Cuáles de los siguientes estados colindan con el Océano Pacífico?",
-      "answer": [0, 2, 3],
-      "options": [
-        "Sinaloa",
-        "Nayarit",
-        "Jalisco",
-        "Colima"
-      ],
-      "points": 1
-    },
-    {
-      "type": "open",
-      "question": "¿Cuál es el estado con el mayor número de islas en México?",
-      "answer": "Baja California Sur",
-      "tries": 3,
-      "points": 1
-    },
-    {
-      "type": "radio",
-      "question": "¿Cuál es la capital de Quintana Roo?",
+      "question": "¿En qué estado se encuentra la playa de Puerto Escondido?",
       "answer": 1,
-      "options": [
-        "Mérida",
-        "Chetumal",
-        "Cancún",
-        "Playa del Carmen"
-      ],
-      "points": 1
+      "options": ["Veracruz", "Oaxaca", "Chiapas", "Guerrero"],
+      "points": 4,
+      "image": "oaxaca_puerto_escondido"
     },
     {
       "type": "checkbox",
-      "question": "¿Cuáles de los siguientes estados tienen frontera con Guatemala?",
-      "answer": [0, 3],
-      "options": [
-        "Chiapas",
-        "Tabasco",
-        "Campeche",
-        "Quintana Roo"
-      ],
-      "points": 1
+      "question": "Selecciona las playas que se encuentran en el estado de Baja California:",
+      "answer": [0, 2],
+      "options": ["Playa Los Cerritos", "Playa Mazatlán", "Playa Ensenada", "Playa Baja"],
+      "points": 6,
+      "image": "baja_california_playa_los_cerritos"
     },
     {
       "type": "open",
-      "question": "¿Cuál es el río más largo de México?",
-      "answer": "Usumacinta",
-      "tries": 3,
-      "points": 1
+      "question": "¿Cómo se llama la playa ubicada en el estado de Jalisco, conocida por su ambiente relajado y vistas impresionantes?",
+      "answer": "Puerto Vallarta",
+      "tries": 2,
+      "points": 5,
+      "image": "jalisco_puerto_vallarta"
+    },
+    {
+      "type": "radio",
+      "question": "¿En qué estado se encuentra la playa de Acapulco?",
+      "answer": 0,
+      "options": ["Guerrero", "Veracruz", "Oaxaca", "Sinaloa"],
+      "points": 4,
+      "image": "guerrero_acapulco"
     }
   ]
 }

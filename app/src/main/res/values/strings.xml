@@ -10,6 +10,7 @@
     <string name="button_next">Siguiente</string>
     <string name="button_back">Regresar</string>
     <string name="button_check">Calificar respuesta</string>
+    <string name="button_save">Guardar</string>
 
     <!-- Strings for input labels -->
     <string name="label_username">Nombre de usuario:</string>
@@ -53,4 +54,13 @@
     <string name="resume_error">3 intentos</string>
     <string name="resume_assert">1 intento</string>
     <string name="resume_result">5/10</string>
+
+    <!-- String for settings -->
+    <string name="settings_title">CONFIGURACIÓN</string>
+    <string name="settings_dark_mode">Modo oscuro</string>
+    <string name="settings_en_lang">Inglés</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
 </resources>

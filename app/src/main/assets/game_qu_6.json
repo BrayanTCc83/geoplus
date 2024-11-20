@@ -1,76 +1,55 @@
 {
-  "title": "Geografía de México: Quiz 6",
-  "id": 6,
+  "title": "Cuestionario Zonas Arqueológicas II",
+  "id": 7,
   "game": "game_qu",
   "questions": [
     {
       "type": "open",
-      "question": "¿Cuál es el estado con la mayor extensión territorial de México?",
-      "answer": "Chihuahua",
-      "tries": 3,
-      "points": 1
+      "question": "¿Cómo se llama la zona arqueológica ubicada en el estado de Chiapas que fue un importante centro de la cultura Maya?",
+      "answer": "Palenque",
+      "tries": 2,
+      "points": 5,
+      "image": "chiapas_palenque"
     },
     {
       "type": "radio",
-      "question": "¿Cuál de los siguientes estados tiene frontera con Estados Unidos?",
-      "answer": 0,
-      "options": [
-        "Chihuahua",
-        "Sonora",
-        "Nuevo León",
-        "Coahuila"
-      ],
-      "points": 1
-    },
-    {
-      "type": "checkbox",
-      "question": "¿Cuáles de los siguientes estados tienen costas en el Océano Pacífico?",
-      "answer": [0, 1, 3],
-      "options": [
-        "Baja California",
-        "Sinaloa",
-        "Nayarit",
-        "Michoacán"
-      ],
-      "points": 1
-    },
-    {
-      "type": "open",
-      "question": "¿Cuál es el estado con la mayor extensión de litoral en México?",
-      "answer": "Baja California Sur",
-      "tries": 3,
-      "points": 1
-    },
-    {
-      "type": "radio",
-      "question": "¿Cuál de los siguientes estados no colinda con el Golfo de México?",
+      "question": "¿En qué estado se encuentra la zona arqueológica de Uxmal?",
       "answer": 1,
-      "options": [
-        "Veracruz",
-        "Jalisco",
-        "Tamaulipas",
-        "Tabasco"
-      ],
-      "points": 1
+      "options": ["Campeche", "Yucatán", "Chihuahua", "Veracruz"],
+      "points": 4,
+      "image": "yucatan_uxmal"
     },
     {
       "type": "checkbox",
-      "question": "¿Cuáles de los siguientes estados son parte de la Sierra Madre Occidental?",
-      "answer": [0, 1, 2],
-      "options": [
-        "Sonora",
-        "Sinaloa",
-        "Durango",
-        "Chihuahua"
-      ],
-      "points": 1
+      "question": "Selecciona las zonas arqueológicas que se encuentran en el estado de Guerrero:",
+      "answer": [0, 1],
+      "options": ["Tehuacalco", "Xochicalco", "Monte Albán", "Tula"],
+      "points": 6,
+      "image": "guerrero_tehuacalco"
     },
     {
       "type": "open",
-      "question": "¿Cuál es el volcán más alto de México?",
-      "answer": "Pico de Orizaba",
-      "tries": 3,
-      "points": 1
+      "question": "¿Qué zona arqueológica en el estado de Veracruz es famosa por su arquitectura totonaca y sus pirámides?",
+      "answer": "El Tajín",
+      "tries": 2,
+      "points": 5,
+      "image": "veracruz_el_tajin"
+    },
+    {
+      "type": "radio",
+      "question": "¿En qué estado se encuentra la zona arqueológica de Tulum?",
+      "answer": 0,
+      "options": ["Quintana Roo", "Yucatán", "Campeche", "Veracruz"],
+      "points": 4,
+      "image": "quintana_roo_tulum"
+    },
+    {
+      "type": "checkbox",
+      "question": "Selecciona las zonas arqueológicas que están asociadas con la cultura Tolteca:",
+      "answer": [0, 1],
+      "options": ["Tula", "Teotihuacan", "Palenque", "El Tajín"],
+      "points": 6,
+      "image": "hidalgo_tula"
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "country": "Baja California Sur",
+  "places": [
+    {
+      "image": "edo_baja_california_sur",
+      "description": "Baja California Sur, un estado lleno de belleza natural, es famoso por sus playas, paisajes desérticos y actividades acuáticas, especialmente en Los Cabos y La Paz."
+    },
+    {
+      "image": "capital_baja_california_sur",
+      "description": "La Paz, capital de Baja California Sur, es conocida por su tranquilidad, sus playas con aguas cristalinas y ser un destino privilegiado para el avistamiento de ballenas."
+    },
+    {
+      "image": "baja_california_sur_arco_cabo",
+      "description": "El Arco de Cabo San Lucas es un ícono de Baja California Sur, donde el Mar de Cortés se encuentra con el Océano Pacífico, ofreciendo vistas impresionantes."
+    },
+    {
+      "image": "baja_california_sur_balandra",
+      "description": "La playa Balandra, cerca de La Paz, es famosa por su arena blanca, aguas turquesas y el icónico hongo de roca natural que adorna el paisaje."
+    },
+    {
+      "image": "baja_california_sur_loreto",
+      "description": "Loreto, un tranquilo pueblo costero, combina historia misional, actividades acuáticas y paisajes montañosos únicos."
+    }
+  ]
+}

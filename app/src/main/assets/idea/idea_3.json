@@ -1,0 +1,25 @@
+{
+  "country": "Campeche",
+  "places": [
+    {
+      "image": "edo_campeche",
+      "description": "El estado de Campeche, situado en la península de Yucatán, es conocido por su rica historia maya, su arquitectura colonial bien conservada y su papel en la producción de petróleo en México."
+    },
+    {
+      "image": "capital_campeche",
+      "description": "San Francisco de Campeche, la capital del estado, es una ciudad amurallada declarada Patrimonio de la Humanidad por la UNESCO, famosa por sus coloridas calles, fortalezas coloniales y deliciosa gastronomía."
+    },
+    {
+      "image": "campeche_edzna",
+      "description": "Edzná es una antigua ciudad maya que destaca por su impresionante arquitectura y su sistema hidráulico avanzado, ubicado a pocos kilómetros de la capital."
+    },
+    {
+      "image": "campeche_calakmul",
+      "description": "La Reserva de la Biosfera de Calakmul alberga una de las mayores ciudades mayas descubiertas y es un santuario natural con una biodiversidad excepcional."
+    },
+    {
+      "image": "campeche_malpais",
+      "description": "El Malecón de Campeche, con sus vistas al Golfo de México, es ideal para pasear, disfrutar de los atardeceres y conocer la cultura local."
+    }
+  ]
+}

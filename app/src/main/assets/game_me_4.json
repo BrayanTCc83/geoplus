@@ -1,0 +1,168 @@
+{
+  "title": "Memorama Pueblos Mágicos",
+  "id": 4,
+  "type": "Memorama",
+  "game": "game_me",
+  "cards": [
+    {
+      "id": 1,
+      "image": "puebla_cholula",
+      "value": "Cholula"
+    },
+    {
+      "id": 2,
+      "image": "puebla_tlacotalpan",
+      "value": "Tlacotalpan"
+    },
+    {
+      "id": 3,
+      "image": "jalisco_tequila",
+      "value": "Tequila"
+    },
+    {
+      "id": 4,
+      "image": "jalisco_tlaquepaque",
+      "value": "Tlaquepaque"
+    },
+    {
+      "id": 5,
+      "image": "oaxaca_capulalpam",
+      "value": "Capulálpam"
+    },
+    {
+      "id": 6,
+      "image": "oaxaca_huatulco",
+      "value": "Huatulco"
+    },
+    {
+      "id": 7,
+      "image": "guerrero_taxco",
+      "value": "Taxco"
+    },
+    {
+      "id": 8,
+      "image": "guanajuato_san_miguel",
+      "value": "San Miguel de Allende"
+    },
+    {
+      "id": 9,
+      "image": "guanajuato_dolores_hidalgo",
+      "value": "Dolores Hidalgo"
+    },
+    {
+      "id": 10,
+      "image": "estado_mexico_malinalco",
+      "value": "Malinalco"
+    },
+    {
+      "id": 11,
+      "image": "estado_mexico_valle_bravo",
+      "value": "Valle de Bravo"
+    },
+    {
+      "id": 12,
+      "image": "queretaro_pena_bernal",
+      "value": "Peña de Bernal"
+    },
+    {
+      "id": 13,
+      "image": "queretaro_tequisquiapan",
+      "value": "Tequisquiapan"
+    },
+    {
+      "id": 14,
+      "image": "chiapas_san_cristobal",
+      "value": "San Cristóbal de las Casas"
+    },
+    {
+      "id": 15,
+      "image": "chiapas_comitan",
+      "value": "Comitán"
+    },
+    {
+      "id": 16,
+      "image": "yucatan_valladolid",
+      "value": "Valladolid"
+    },
+    {
+      "id": 17,
+      "image": "yucatan_izamal",
+      "value": "Izamal"
+    },
+    {
+      "id": 18,
+      "image": "quintana_roo_bacalar",
+      "value": "Bacalar"
+    },
+    {
+      "id": 19,
+      "image": "quintana_roo_tulum",
+      "value": "Tulum"
+    },
+    {
+      "id": 20,
+      "image": "veracruz_coatepec",
+      "value": "Coatepec"
+    },
+    {
+      "id": 21,
+      "image": "veracruz_papantla",
+      "value": "Papantla"
+    },
+    {
+      "id": 22,
+      "image": "san_luis_potosi_real_catorce",
+      "value": "Real de Catorce"
+    },
+    {
+      "id": 23,
+      "image": "nuevo_leon_santiago",
+      "value": "Santiago"
+    },
+    {
+      "id": 24,
+      "image": "michoacan_patzcuaro",
+      "value": "Pátzcuaro"
+    },
+    {
+      "id": 25,
+      "image": "michoacan_tlalpujahua",
+      "value": "Tlalpujahua"
+    },
+    {
+      "id": 26,
+      "image": "zacatecas_jerez",
+      "value": "Jerez"
+    },
+    {
+      "id": 27,
+      "image": "zacatecas_somprero",
+      "value": "Sombrerete"
+    },
+    {
+      "id": 28,
+      "image": "baja_california_sur_loreto",
+      "value": "Loreto"
+    },
+    {
+      "id": 29,
+      "image": "sinaloa_cosala",
+      "value": "Cosalá"
+    },
+    {
+      "id": 30,
+      "image": "durango_mapimi",
+      "value": "Mapimí"
+    },
+    {
+      "id": 31,
+      "image": "campeche_palizada",
+      "value": "Palizada"
+    },
+    {
+      "id": 32,
+      "image": "hidalgo_huasca_de_ocampo",
+      "value": "Huasca de Ocampo"
+    }
+  ]
+}

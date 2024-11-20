@@ -1,23 +1,25 @@
 package com.example.geoplus
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.layout.Column
 import androidx.compose.ui.platform.ComposeView
 import com.example.geoplus.databinding.ActivityQuestionBinding
 import com.example.geoplus.fragments.FindQuestionComponent
+import com.example.geoplus.fragments.MemoramaQuestionComponent
 import com.example.geoplus.fragments.PaintQuestionComponent
 import com.example.geoplus.fragments.QuizQuestionComponent
-import com.example.geoplus.fragments.RouteQuestionComponent
 import com.example.geoplus.global.GlobalState
-import com.example.geoplus.models.ComplexRutaQuestion
 import com.example.geoplus.models.FindByDescriptionQuestion
 import com.example.geoplus.models.FindByImageQuestion
 import com.example.geoplus.models.FindQuestion
 import com.example.geoplus.models.FindYourselfModel
 import com.example.geoplus.models.GameModel
+import com.example.geoplus.models.MemoramaModel
 import com.example.geoplus.models.PaintContryQuestion
 import com.example.geoplus.models.PaintObjectQuestion
 import com.example.geoplus.models.PaintOnceQuestion
@@ -27,9 +29,6 @@ import com.example.geoplus.models.QuizModel
 import com.example.geoplus.models.QuizOpenQuestionModel
 import com.example.geoplus.models.QuizQuestionModel
 import com.example.geoplus.models.QuizRadioQuestionModel
-import com.example.geoplus.models.RutaQuestion
-import com.example.geoplus.models.RutasModel
-import com.example.geoplus.models.SimpleRutaQuestion
 import com.example.geoplus.utils.ReadJSONFromAssets
 import com.example.geoplus.utils.RuntimeTypeAdapterFactory
 import com.google.gson.Gson
@@ -40,6 +39,7 @@ class QuestionActivity : AppCompatActivity() {
     final val TYPE_UBICATE = "Ubícate"
     final val TYPE_QUIZ = "Quiz"
     final val TYPE_PINTA_ESTADOS = "Pinta estados"
+    final val TYPE_MEMORAMA = "Memorama"
     final val TYPE_RUTAS = "Rutas"
 
     final val FIELD_TYPE = "type"
@@ -87,6 +87,11 @@ class QuestionActivity : AppCompatActivity() {
 
         globalState.ctx = this
 
+        val btnBack = findViewById<Button>(R.id.btn_back)
+        btnBack.setOnClickListener {
+            finish()
+        }
+
         try {
             var game: GameModel? = null
             if(globalState.questionary != null)
@@ -99,9 +104,8 @@ class QuestionActivity : AppCompatActivity() {
                     .registerSubtype(QuizCheckboxQuestionModel::class.java, TYPE_CHECKBOX)
                     .registerSubtype(QuizRadioQuestionModel::class.java, TYPE_RADIO)
                 val adapterRoutes = RuntimeTypeAdapterFactory
-                    .of(RutaQuestion::class.java, FIELD_TYPE)
-                    .registerSubtype(SimpleRutaQuestion::class.java, TYPE_SIMPLE)
-                    .registerSubtype(ComplexRutaQuestion::class.java, TYPE_COMPLEX)
+                    .of(MemoramaModel::class.java, FIELD_TYPE)
+                    .registerSubtype(MemoramaModel::class.java, TYPE_MEMORAMA)
                 val adapterPaint = RuntimeTypeAdapterFactory
                     .of(PaintContryQuestion::class.java, FIELD_TYPE)
                     .registerSubtype(PaintOnceQuestion::class.java, TYPE_ONCE)
@@ -121,19 +125,30 @@ class QuestionActivity : AppCompatActivity() {
                     TYPE_UBICATE -> gson.fromJson(jsonString, FindYourselfModel::class.java)
                     TYPE_QUIZ -> gson.fromJson(jsonString, QuizModel::class.java)
                     TYPE_PINTA_ESTADOS -> gson.fromJson(jsonString, PintaEstadosModel::class.java)
-                    TYPE_RUTAS -> gson.fromJson(jsonString, RutasModel::class.java)
+                    TYPE_MEMORAMA -> gson.fromJson(jsonString, MemoramaModel::class.java)
                     else -> null
                 }
                 globalState.questionary = game
             }
 
+            val textTitle = findViewById<TextView>(R.id.text_title)
+            textTitle.text = globalState.questionary?.title?:"No titulo"
+
             val composeView = findViewById<ComposeView>(R.id.compose_view)
             composeView.setContent {
                 when(type) {
-                    TYPE_UBICATE -> FindQuestionComponent(questions = game as FindYourselfModel, questionId = questionId)
-                    TYPE_QUIZ -> QuizQuestionComponent(questions = game as QuizModel, questionId = questionId)
-                    TYPE_PINTA_ESTADOS -> PaintQuestionComponent(questions = game as PintaEstadosModel, questionId = questionId)
-                    TYPE_RUTAS -> RouteQuestionComponent(questions = game as RutasModel, questionId = questionId)
+                    TYPE_UBICATE -> FindQuestionComponent(questions = game as FindYourselfModel, questionId = questionId, onEnd = {
+                        finish()
+                    })
+                    TYPE_QUIZ -> QuizQuestionComponent(questions = game as QuizModel, questionId = questionId, onEnd = {
+                        finish()
+                    })
+                    TYPE_PINTA_ESTADOS -> PaintQuestionComponent(questions = game as PintaEstadosModel, questionId = questionId, onEnd = {
+                        finish()
+                    })
+                    TYPE_MEMORAMA -> MemoramaQuestionComponent(questions = game as MemoramaModel, ctx = this.baseContext, onEnd = {
+                        finish()
+                    })
                     else -> Column {}
                 }
             }

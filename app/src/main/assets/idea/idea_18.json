@@ -1,0 +1,25 @@
+{
+  "country": "Oaxaca",
+  "places": [
+    {
+      "image": "edo_oaxaca",
+      "description": "Oaxaca, un estado en el sur de México, es reconocido por su vasta riqueza cultural, tradiciones indígenas, y su gastronomía inigualable. Es un lugar donde la historia, el arte y la naturaleza se unen de manera única."
+    },
+    {
+      "image": "capital_oaxaca",
+      "description": "La ciudad de Oaxaca de Juárez, capital del estado, es Patrimonio de la Humanidad por su arquitectura colonial, sitios históricos como el Templo de Santo Domingo y su vibrante mercado de artesanías y comida tradicional."
+    },
+    {
+      "image": "oaxaca_monte_alban",
+      "description": "Monte Albán, un sitio arqueológico zapoteca, ofrece vistas espectaculares y una ventana al pasado prehispánico. Sus pirámides y terrazas muestran la grandeza de esta civilización antigua."
+    },
+    {
+      "image": "oaxaca_hierve_agua",
+      "description": "Hierve el Agua, una maravilla natural de cascadas petrificadas, es un lugar ideal para nadar en sus pozas naturales y admirar paisajes únicos. Este sitio combina la tranquilidad con el asombro de la naturaleza."
+    },
+    {
+      "image": "oaxaca_teotitlan_valle",
+      "description": "Teotitlán del Valle es famoso por sus textiles hechos a mano con tintes naturales. Este pueblo zapoteca combina tradiciones artesanales con una cálida hospitalidad de sus habitantes."
+    }
+  ]
+}

@@ -9,13 +9,11 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageButton
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.material3.Text
 import com.example.geoplus.databinding.ActivityHomeBinding
 import com.example.geoplus.models.GameCardModel
 import com.example.geoplus.utils.ReadJSONFromAssets
@@ -24,13 +22,15 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.platform.ComposeView
 import com.example.geoplus.fragments.GameCardComponent
 import com.example.geoplus.global.Database
-import com.example.geoplus.global.GlobalState
+import com.example.geoplus.models.DefaultUser
+import com.example.geoplus.models.User
 import java.io.File
 
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityHomeBinding
+    private lateinit var sesion: User
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,21 +39,23 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         try {
-            val sesion = Database.getInstance().session
-            binding.nick.setText(sesion?.nick?:"No user")
-            binding.nombre.setText((sesion?.name + " " + sesion?.lastname1 + " " + sesion?.lastname2)?:"No nombre")
+            sesion = Database.getInstance().session ?: DefaultUser
         } catch(e: Exception) {
-            Log.d("LOG_GEOPLUS", e.message?:"")
+            Log.d("LOG_GEOPLUS", e.message?:"Error")
         }
+
+        binding.nombre.text = "${sesion.name} ${sesion.lastname1} ${sesion.lastname2}" ?: "NoUsuario"
 
         binding.btnLogout.setOnClickListener {
             if(Database.getInstance().logout()) {
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
+                finish()
             }
         }
 
         val jsonString = ReadJSONFromAssets(baseContext, "Games.json")
+        Log.d("LOG_GEOPLUS", jsonString)
         val cards: MutableList<GameCardModel> = Gson().fromJson(jsonString, Array<GameCardModel>::class.java).toMutableList()
         cards.forEachIndexed { index, game ->
             if(Database.getInstance().progressExists(game.title)) {
@@ -76,6 +78,18 @@ class HomeActivity : AppCompatActivity() {
                     card -> GameCardComponent(gameCard = card, ctx = context)
                 }
             }
+        }
+
+        val configurationBtn = findViewById<ImageButton>(R.id.btnConfiguracion)
+        configurationBtn.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnIdea = findViewById<ImageButton>(R.id.btnGeografia)
+        btnIdea.setOnClickListener {
+            val intent = Intent(this, IdeaActivity::class.java)
+            startActivity(intent)
         }
     }
 

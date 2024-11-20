@@ -1,5 +1,6 @@
 package com.example.geoplus.fragments
 
+import android.content.Context
 import android.content.Intent
 import android.util.Log
 import androidx.compose.foundation.Image
@@ -30,6 +31,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
@@ -48,12 +51,27 @@ import com.example.geoplus.models.ResultModel
 
 val selected = mutableStateListOf<Int>()
 @Composable
-fun QuestionCheckbox(question: QuizCheckboxQuestionModel, nextQuestion: (score: Float) -> Any) {
+fun QuestionCheckbox(question: QuizCheckboxQuestionModel, nextQuestion: (score: Float) -> Any, onEnd: () -> Unit) {
     Log.d("LOG_GEOPLUS", "Checkbox Question rendering")
+    val ctx: Context? = GlobalState.getInstance().ctx
 
     LazyColumn(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        item {
+            Image(
+                painterResource(id = (ctx?.resources?.getIdentifier(
+                    question.image ?: "",
+                    "drawable",
+                    ctx.packageName
+                ))?:0),
+                contentDescription = null,
+                contentScale = ContentScale.Fit,
+                modifier = Modifier
+                    .width(300.dp)
+                    .border(1.dp, Color.Black, RoundedCornerShape(10.dp))
+            )
+        }
         item {
             Text(
                 text = question.question,
@@ -131,13 +149,28 @@ fun QuestionCheckbox(question: QuizCheckboxQuestionModel, nextQuestion: (score: 
 }
 
 @Composable
-fun QuestionRadio(question: QuizRadioQuestionModel, nextQuestion: (score: Float) -> Any) {
+fun QuestionRadio(question: QuizRadioQuestionModel, nextQuestion: (score: Float) -> Any, onEnd: () -> Unit) {
     Log.d("LOG_GEOPLUS", "Radio Question rendering")
+    val ctx: Context? = GlobalState.getInstance().ctx
 
     var selected by remember { mutableStateOf<Int>(-1) }
     LazyColumn(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        item {
+            Image(
+                painterResource(id = (ctx?.resources?.getIdentifier(
+                    question.image ?: "",
+                    "drawable",
+                    ctx.packageName
+                ))?:0),
+                contentDescription = null,
+                contentScale = ContentScale.Fit,
+                modifier = Modifier
+                    .width(300.dp)
+                    .clip(RoundedCornerShape(10.dp))
+            )
+        }
         item {
             Text(
                 text = question.question,
@@ -196,14 +229,29 @@ fun QuestionRadio(question: QuizRadioQuestionModel, nextQuestion: (score: Float)
 
 val tries = mutableStateListOf<String>()
 @Composable
-fun QuestionOpen(question: QuizOpenQuestionModel, nextQuestion: (score: Float) -> Any) {
+fun QuestionOpen(question: QuizOpenQuestionModel, nextQuestion: (score: Float) -> Any, onEnd: () -> Unit) {
     Log.d("LOG_GEOPLUS", "Open Question rendering")
+    val ctx: Context? = GlobalState.getInstance().ctx
     var currentValue by remember { mutableStateOf(value = "") }
     LazyColumn(
         modifier = Modifier
             .width(350.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        item {
+            Image(
+                painterResource(id = (ctx?.resources?.getIdentifier(
+                    question.image ?: "",
+                    "drawable",
+                    ctx.packageName
+                ))?:0),
+                contentDescription = null,
+                contentScale = ContentScale.Fit,
+                modifier = Modifier
+                    .width(300.dp)
+                    .border(1.dp, Color.Black, RoundedCornerShape(10.dp))
+            )
+        }
         item {
             Text(
                 modifier = Modifier.width(350.dp),
@@ -289,7 +337,7 @@ fun QuestionOpen(question: QuizOpenQuestionModel, nextQuestion: (score: Float) -
     }
 }
 
-fun nextQuestion(score: Float, questions: QuizModel, questionId: Int) {
+fun nextQuestion(score: Float, questions: QuizModel, questionId: Int, onEnd: () -> Unit) {
     val globalState: GlobalState = GlobalState.getInstance()
     if(globalState.ctx == null)
         return
@@ -308,6 +356,7 @@ fun nextQuestion(score: Float, questions: QuizModel, questionId: Int) {
             },
             points = q.points
         ))
+        onEnd()
     }
 
     val intent: Intent
@@ -320,19 +369,19 @@ fun nextQuestion(score: Float, questions: QuizModel, questionId: Int) {
 }
 
 @Composable
-fun QuizQuestionComponent(questions: QuizModel, questionId: Int) {
+fun QuizQuestionComponent(questions: QuizModel, questionId: Int, onEnd: () -> Unit) {
     val question = questions.questions[questionId]
     Log.d("LOG_GEOPLUS", "Rendering [$questionId]: $question")
     when(question) {
         is QuizOpenQuestionModel -> QuestionOpen(question as QuizOpenQuestionModel, fun(score: Float) {
-            nextQuestion(score, questions, questionId)
-        })
+            nextQuestion(score, questions, questionId, onEnd)
+        }, onEnd)
         is QuizRadioQuestionModel -> QuestionRadio(question as QuizRadioQuestionModel, fun(score: Float) {
-            nextQuestion(score, questions, questionId)
-        })
+            nextQuestion(score, questions, questionId, onEnd)
+        }, onEnd)
         is QuizCheckboxQuestionModel -> QuestionCheckbox(question as QuizCheckboxQuestionModel, fun(score: Float) {
-            nextQuestion(score, questions, questionId)
-        })
+            nextQuestion(score, questions, questionId, onEnd)
+        }, onEnd)
         else -> Column {}
     }
 }

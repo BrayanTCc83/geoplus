@@ -1,0 +1,168 @@
+{
+  "title": "Memorama Playas",
+  "id": 3,
+  "type": "Memorama",
+  "game": "game_me",
+  "cards": [
+    {
+      "id": 1,
+      "image": "quintana_roo_cancun",
+      "value": "Cancún"
+    },
+    {
+      "id": 2,
+      "image": "quintana_roo_tulum",
+      "value": "Tulum"
+    },
+    {
+      "id": 3,
+      "image": "guerrero_acapulco",
+      "value": "Acapulco"
+    },
+    {
+      "id": 4,
+      "image": "guerrero_zihuatanejo",
+      "value": "Zihuatanejo"
+    },
+    {
+      "id": 5,
+      "image": "baja_california_sur_los_cabos",
+      "value": "Los Cabos"
+    },
+    {
+      "id": 6,
+      "image": "capital_baja_california_sur",
+      "value": "La Paz"
+    },
+    {
+      "id": 7,
+      "image": "jalisco_puerto_vallarta",
+      "value": "Puerto Vallarta"
+    },
+    {
+      "id": 8,
+      "image": "jalisco_costalegre",
+      "value": "Costalegre"
+    },
+    {
+      "id": 9,
+      "image": "nayarit_riviera_nayarita",
+      "value": "Riviera Nayarita"
+    },
+    {
+      "id": 10,
+      "image": "nayarit_sayulita",
+      "value": "Sayulita"
+    },
+    {
+      "id": 11,
+      "image": "oaxaca_huatulco",
+      "value": "Huatulco"
+    },
+    {
+      "id": 12,
+      "image": "oaxaca_zipolite",
+      "value": "Zipolite"
+    },
+    {
+      "id": 13,
+      "image": "oaxaca_puerto_escondido",
+      "value": "Puerto Escondido"
+    },
+    {
+      "id": 14,
+      "image": "veracruz_chachalacas",
+      "value": "Chachalacas"
+    },
+    {
+      "id": 15,
+      "image": "veracruz_boca_del_rio",
+      "value": "Boca del Río"
+    },
+    {
+      "id": 16,
+      "image": "sinaloa_mazatlan",
+      "value": "Mazatlán"
+    },
+    {
+      "id": 17,
+      "image": "colima_manzanillo",
+      "value": "Manzanillo"
+    },
+    {
+      "id": 18,
+      "image": "yucatan_progreso",
+      "value": "Progreso"
+    },
+    {
+      "id": 19,
+      "image": "yucatan_celestun",
+      "value": "Celestún"
+    },
+    {
+      "id": 20,
+      "image": "campeche_champoton",
+      "value": "Champotón"
+    },
+    {
+      "id": 21,
+      "image": "campeche_san_lorenzo",
+      "value": "San Lorenzo"
+    },
+    {
+      "id": 22,
+      "image": "tabasco_paraiso",
+      "value": "Paraíso"
+    },
+    {
+      "id": 23,
+      "image": "tabasco_francisco_garcia",
+      "value": "Francisco García"
+    },
+    {
+      "id": 24,
+      "image": "tamaulipas_miramar",
+      "value": "Playa Miramar"
+    },
+    {
+      "id": 25,
+      "image": "tamaulipas_bagdad",
+      "value": "Playa Bagdad"
+    },
+    {
+      "id": 26,
+      "image": "sonora_san_carlos",
+      "value": "San Carlos"
+    },
+    {
+      "id": 27,
+      "image": "sonora_bahia_kino",
+      "value": "Bahía de Kino"
+    },
+    {
+      "id": 28,
+      "image": "chiapas_puerto_arista",
+      "value": "Puerto Arista"
+    },
+    {
+      "id": 29,
+      "image": "baja_california_rosarito",
+      "value": "Rosarito"
+    },
+    {
+      "id": 30,
+      "image": "baja_california_ensenada",
+      "value": "Ensenada"
+    },
+    {
+      "id": 31,
+      "image": "quintana_roo_isla_mujeres",
+      "value": "Isla Mujeres"
+    },
+    {
+      "id": 32,
+      "image": "quintana_roo_cozumel",
+      "value": "Cozumel"
+    }
+  ]
+}

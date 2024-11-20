@@ -1,0 +1,25 @@
+{
+  "country": "Zacatecas",
+  "places": [
+    {
+      "image": "edo_zacatecas",
+      "description": "Zacatecas, un estado montañoso en el norte de México, es conocido por su rica historia minera y su arquitectura colonial. La ciudad de Zacatecas es famosa por su Plaza de Armas, su Cerro de la Bufa y sus calles empedradas."
+    },
+    {
+      "image": "capital_zacatecas",
+      "description": "La ciudad de Zacatecas, patrimonio mundial de la humanidad, destaca por su impresionante arquitectura barroca, la Catedral de Zacatecas y el Museo Rafael Coronel. Además, la vista desde el teleférico que cruza el Cerro de la Bufa es espectacular."
+    },
+    {
+      "image": "zacatecas_mazapil",
+      "description": "Mazapil, en el norte de Zacatecas, es conocido por su actividad minera y por la proximidad al imponente yacimiento de plata de Peñasquito. Además, es una puerta de acceso a la región desértica del estado."
+    },
+    {
+      "image": "zacatecas_plaza_mayor",
+      "description": "La Plaza Mayor de Zacatecas es un bello espacio rodeado de edificios históricos y monumentos. Este lugar es ideal para recorrer y disfrutar de su arquitectura colonial, restaurantes y tiendas locales."
+    },
+    {
+      "image": "zacatecas_la_bufa",
+      "description": "El Cerro de la Bufa, ubicado en las afueras de la ciudad de Zacatecas, es un lugar lleno de historia, tanto por su valor cultural como por las vistas panorámicas de la ciudad que ofrece a los visitantes. El teleférico que conecta el cerro con la ciudad es uno de los atractivos más populares."
+    }
+  ]
+}

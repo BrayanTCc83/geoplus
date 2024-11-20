@@ -1,0 +1,25 @@
+{
+  "country": "Michoacán",
+  "places": [
+    {
+      "image": "edo_michoacan",
+      "description": "Michoacán, situado en la región occidental de México, es conocido por su riqueza cultural, sus tradiciones artesanales y su papel en la historia de la independencia. Es una tierra que combina belleza natural, gastronomía y festividades únicas."
+    },
+    {
+      "image": "capital_michoacan",
+      "description": "Morelia, la capital de Michoacán, es una ciudad colonial declarada Patrimonio de la Humanidad. Su catedral de cantera rosa, sus acueductos y su arquitectura barroca la convierten en un destino de gran valor histórico y cultural."
+    },
+    {
+      "image": "michoacan_patzcuaro",
+      "description": "Pátzcuaro, un Pueblo Mágico a orillas del lago que lleva su nombre, es famoso por sus tradiciones purépechas, sus mercados de artesanías y la celebración del Día de Muertos, donde la Isla de Janitzio se ilumina con ofrendas y velas."
+    },
+    {
+      "image": "michoacan_mariposa_monarca",
+      "description": "La Reserva de la Biosfera de la Mariposa Monarca es un fenómeno natural extraordinario. Cada año, millones de mariposas migran desde Canadá para refugiarse en los bosques de oyamel de Michoacán, creando un espectáculo inolvidable."
+    },
+    {
+      "image": "michoacan_tzintzuntzan",
+      "description": "Tzintzuntzan, antigua capital del imperio purépecha, alberga yácatas prehispánicas y una tradición artesanal en cestería. Es un lugar que mezcla arqueología e historia con un entorno tranquilo y pintoresco."
+    }
+  ]
+}

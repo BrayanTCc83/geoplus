@@ -1,0 +1,25 @@
+{
+  "country": "Durango",
+  "places": [
+    {
+      "image": "edo_durango",
+      "description": "Durango, conocido como 'La Tierra del Cine', es un estado rico en historia, cultura y paisajes desérticos que han sido escenario de muchas películas."
+    },
+    {
+      "image": "capital_durango",
+      "description": "La ciudad de Durango, capital del estado, destaca por su arquitectura barroca, su historia minera y sus festividades tradicionales."
+    },
+    {
+      "image": "durango_puente_baluarte",
+      "description": "El Puente Baluarte es una obra maestra de la ingeniería que conecta Durango con Sinaloa, siendo uno de los puentes más altos del mundo."
+    },
+    {
+      "image": "durango_zona_silenciosa",
+      "description": "La Zona del Silencio, ubicada en el Bolsón de Mapimí, es un lugar enigmático conocido por fenómenos electromagnéticos y su misticismo."
+    },
+    {
+      "image": "durango_sierra_organos",
+      "description": "El Parque Nacional Sierra de Órganos ofrece paisajes únicos con formaciones rocosas que parecen órganos de una catedral, ideal para senderismo y campismo."
+    }
+  ]
+}

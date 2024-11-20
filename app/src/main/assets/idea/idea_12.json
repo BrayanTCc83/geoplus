@@ -1,0 +1,25 @@
+{
+  "country": "Estado de México",
+  "places": [
+    {
+      "image": "edo_mexico",
+      "description": "El Estado de México, ubicado en el corazón de México, es un territorio lleno de contrastes que combina modernas ciudades, pueblos tradicionales, sitios arqueológicos y reservas naturales. Es una región clave en la historia y economía del país."
+    },
+    {
+      "image": "capital_estado_mexico",
+      "description": "Toluca de Lerdo, la capital del Estado de México, es conocida por su imponente Cosmovitral, un jardín botánico adornado con vitrales únicos. Su gastronomía, como los chorizos y las tradicionales tortas de la vaquita, la hacen un destino especial."
+    },
+    {
+      "image": "estado_mexico_teotihuacan",
+      "description": "Teotihuacán, conocida como la 'Ciudad de los Dioses', es un sitio arqueológico declarado Patrimonio de la Humanidad. Sus icónicas Pirámides del Sol y la Luna, junto con la Calzada de los Muertos, ofrecen una experiencia mística e histórica única."
+    },
+    {
+      "image": "estado_mexico_valle_bravo",
+      "description": "Valle de Bravo, un Pueblo Mágico rodeado de montañas y un lago cristalino, es ideal para quienes buscan deportes acuáticos, parapente o simplemente relajarse en un ambiente pintoresco. Su arquitectura colonial y su iglesia de San Francisco son emblemáticas."
+    },
+    {
+      "image": "estado_mexico_nevado_toluca",
+      "description": "El Nevado de Toluca, un volcán extinto, es un parque nacional que ofrece paisajes espectaculares, lagunas en su cráter y senderos ideales para el montañismo y la fotografía. Su majestuosidad lo convierte en un destino imperdible."
+    }
+  ]
+}

@@ -1,67 +1,46 @@
 {
-  "title": "Mi bello Mexico",
+  "title": "Explorando México",
   "id": 4,
   "game": "game_ub",
   "questions": [
     {
       "type": "find_image",
-      "question": "Identify the image that corresponds to a famous archaeological site located in the state of Yucatan:",
-      "image": 19,
-      "options": [ "Uxmal", "Chichen Itza", "Palenque", "Tulum" ],
+      "question": "¿En qué estado se encuentra la famosa playa de Playa del Carmen?",
+      "options": ["Quintana Roo", "Veracruz", "Baja California", "Jalisco"],
+      "answer": 0,
+      "points": 3,
+      "image": "quintana_roo_playa_del_carmen"
+    },
+    {
+      "type": "find_text",
+      "question": "¿En qué estado se encuentra la ciudad de Guadalajara, famosa por su mariachi?",
+      "options": [1, 2, 3, 4],
       "answer": 1,
       "points": 2
     },
     {
-      "type": "find_text",
-      "question": "This image shows a colonial-era city known for its well-preserved historic center. What is its name?",
-      "options": [ "Guanajuato", "San Miguel de Allende", "Queretaro", "Puebla" ],
-      "answer": 2,
-      "points": 2
-    },
-    {
       "type": "find_image",
-      "question": "Which image represents a famous natural wonder located in the state of Chiapas?",
-      "image": 27,
-      "options": [ "Cenote Ik Kil", "Agua Azul Waterfalls", "Sumidero Canyon", "Monte Alban" ],
+      "question": "¿Dónde se encuentra el complejo arqueológico de Teotihuacán?",
+      "options": ["Chihuahua", "Sonora", "Puebla", "Estado de México"],
       "answer": 3,
-      "points": 2
+      "points": 3,
+      "image": "estado_mexico_teotihuacan"
     },
     {
       "type": "find_text",
-      "question": "This image depicts a pre-Hispanic city known for its pyramid of the Niches. What is its name?",
-      "options": [ "Monte Albán", "Tajin", "Uxmal", "El Tepozteco" ],
-      "answer": 2,
+      "question": "¿En qué estado se encuentra la zona arqueológica de Monte Albán?",
+      "options": [5, 6, 7, 8],
+      "answer": 5,
       "points": 2
     },
     {
       "type": "find_image",
-      "question": "Identify the image that corresponds to a famous Mayan archaeological site located in the Yucatan Peninsula:",
-      "image": 21,
-      "options": [ "Uxmal", "Chichen Itza", "Palenque", "Tulum" ],
-      "answer": 4,
-      "points": 2
-    },
-    {
-      "type": "find_text",
-      "question": "This image represents a famous beach destination known for its pristine beaches and vibrant nightlife. Which beach is it?",
-      "options": [ "Puerto Vallarta", "Cancun", "Playa del Carmen", "Puerto Escondido" ],
-      "answer": 2,
-      "points": 2
-    },
-    {
-      "type": "find_image",
-      "question": "Which image shows a famous ancient pyramid located in the state of Morelos?",
-      "image": 15,
-      "options": [ "Pyramid of the Sun", "Pyramid of the Moon", "Great Pyramid of Cholula", "Tikal Temple" ],
-      "answer": 3,
-      "points": 2
-    },
-    {
-      "type": "find_text",
-      "question": "This image represents a picturesque colonial town famous for its silver mines. What is its name?",
-      "options": [ "Guanajuato", "San Miguel de Allende", "Queretaro", "Taxco" ],
-      "answer": 4,
-      "points": 2
+      "question": "¿En qué estado se encuentra el Pueblo Mágico de Valle de Bravo, conocido por sus paisajes?",
+      "options": ["Estado de México", "Jalisco", "Puebla", "Querétaro"],
+      "answer": 0,
+      "points": 3,
+      "image": "estado_mexico_valle_bravo"
     }
   ]
 }
+

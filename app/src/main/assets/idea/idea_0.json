@@ -1,0 +1,25 @@
+{
+  "country": "Aguascalientes",
+  "places": [
+    {
+      "image": "edo_aguascalientes",
+      "description": "El estado de Aguascalientes, ubicado en la región del Bajío, es reconocido por su pujante industria, historia colonial y la Feria Nacional de San Marcos, una de las festividades más importantes de México."
+    },
+    {
+      "image": "capital_aguascalientes",
+      "description": "La ciudad de Aguascalientes, capital del estado, destaca por su arquitectura colonial, jardines y plazas llenas de vida, además de ser un centro cultural e industrial de la región."
+    },
+    {
+      "image": "aguascalientes_calvillo",
+      "description": "Calvillo, un Pueblo Mágico conocido como la 'Capital Mundial de la Guayaba', ofrece paisajes espectaculares, tradiciones rurales y deliciosa gastronomía típica."
+    },
+    {
+      "image": "aguascalientes_museo_nacional",
+      "description": "El Museo Nacional de la Muerte en la ciudad capital es un lugar único dedicado al simbolismo y las tradiciones mexicanas relacionadas con la muerte."
+    },
+    {
+      "image": "aguascalientes_real_de_asientos",
+      "description": "Real de Asientos, un Pueblo Mágico lleno de historia minera, ofrece calles empedradas, túneles antiguos y una atmósfera encantadora."
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 package com.example.geoplus.fragments
 
+import android.content.Context
 import android.content.Intent
 import android.util.Log
 import androidx.compose.foundation.Image
@@ -77,7 +78,7 @@ val ImagesIndexed: Array<Int> = arrayOf(
     R.drawable.c_3_zapotes,
 )
 
-fun nextQuestionFind(score: Float, questions: FindYourselfModel, questionId: Int) {
+fun nextQuestionFind(score: Float, questions: FindYourselfModel, questionId: Int, onEnd: () -> Unit) {
     val globalState: GlobalState = GlobalState.getInstance()
     if(globalState.ctx == null)
         return
@@ -97,6 +98,7 @@ fun nextQuestionFind(score: Float, questions: FindYourselfModel, questionId: Int
                 points = q.points
             )
         )
+        onEnd()
     }
 
     val intent: Intent
@@ -106,26 +108,28 @@ fun nextQuestionFind(score: Float, questions: FindYourselfModel, questionId: Int
     } else
         intent = Intent(globalState.ctx, ResumeActivity::class.java)
     globalState.ctx!!.startActivity(intent)
+    onEnd()
 }
 
 @Composable
-fun FindQuestionComponent(questions: FindYourselfModel, questionId: Int) {
+fun FindQuestionComponent(questions: FindYourselfModel, questionId: Int, onEnd: () -> Unit) {
     val question = questions.questions[questionId]
     Log.d("LOG_GEOPLUS", "Rendering [$questionId]: $question")
     when(question) {
         is FindByImageQuestion -> FindOnceComponent(question as FindByImageQuestion, fun(score: Float) {
-            nextQuestionFind(score, questions, questionId)
-        })
+            nextQuestionFind(score, questions, questionId, onEnd)
+        }, onEnd)
         is FindByDescriptionQuestion -> FindObjectComponent(question as FindByDescriptionQuestion, fun(score: Float) {
-            nextQuestionFind(score, questions, questionId)
-        })
+            nextQuestionFind(score, questions, questionId, onEnd)
+        }, onEnd)
         else -> Column {}
     }
 }
 
 @Composable
-fun FindOnceComponent(q: FindByImageQuestion, nextQuestion: (Float) -> Unit) {
+fun FindOnceComponent(q: FindByImageQuestion, nextQuestion: (Float) -> Unit, onEnd: () -> Unit) {
     Log.d("LOG_GEOPLUS", "Radio Question rendering")
+    val ctx: Context? = GlobalState.getInstance().ctx
 
     var selected by remember { mutableStateOf<Int>(-1) }
     LazyColumn(
@@ -139,8 +143,10 @@ fun FindOnceComponent(q: FindByImageQuestion, nextQuestion: (Float) -> Unit) {
             )
         }
         item {
+            val id = (ctx?.resources?.getIdentifier(q.image ?: "", "drawable", ctx.packageName))?:0
+            Log.d("LOG_GEOPLUS", "Imagen ${q.image} -> $id")
             Image(
-                painter = painterResource(id = ImagesIndexed[q.image]),
+                painter = painterResource(id = id),
                 contentDescription = null,
                 modifier = Modifier.width(400.dp).height(400.dp),
                 contentScale = ContentScale.Fit
@@ -196,8 +202,9 @@ fun FindOnceComponent(q: FindByImageQuestion, nextQuestion: (Float) -> Unit) {
 }
 
 @Composable
-fun FindObjectComponent(q: FindByDescriptionQuestion, nextQuestion: (Float) -> Unit) {
+fun FindObjectComponent(q: FindByDescriptionQuestion, nextQuestion: (Float) -> Unit, onEnd: () -> Unit) {
     Log.d("LOG_GEOPLUS", "Radio Question rendering")
+    val ctx: Context? = GlobalState.getInstance().ctx
 
     var selected by remember { mutableStateOf<Int>(-1) }
     LazyColumn(
@@ -249,7 +256,9 @@ fun FindObjectComponent(q: FindByDescriptionQuestion, nextQuestion: (Float) -> U
                         shape = RoundedCornerShape(10.dp)
                     )
                     .padding(16.dp)
-                    .clickable { nextQuestion((10.0f / if (q.answer == selected) 1 else 2)) },
+                    .clickable {
+                        nextQuestion((10.0f / if (q.answer == selected) 1 else 2))
+                   },
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(

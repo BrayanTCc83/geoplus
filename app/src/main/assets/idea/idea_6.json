@@ -1,0 +1,25 @@
+{
+  "country": "Coahuila",
+  "places": [
+    {
+      "image": "edo_coahuila",
+      "description": "El estado de Coahuila, situado en el norte de México, es conocido por su vasta extensión desértica, sus viñedos y su importancia industrial y minera."
+    },
+    {
+      "image": "capital_coahuila",
+      "description": "Saltillo, la capital de Coahuila, es famosa por sus sarapes, su arquitectura colonial y su papel como un centro industrial y cultural en la región."
+    },
+    {
+      "image": "coahuila_parras",
+      "description": "Parras de la Fuente, un Pueblo Mágico, es reconocido por ser la cuna de la viticultura en América y por sus paisajes llenos de historia."
+    },
+    {
+      "image": "coahuila_dunas_yeso",
+      "description": "Las Dunas de Yeso en Cuatrociénegas son un espectacular paisaje blanco formado por cristales de yeso, único en el mundo."
+    },
+    {
+      "image": "coahuila_sierra_zapata",
+      "description": "La Sierra de Zapalinamé ofrece una belleza natural excepcional, con áreas ideales para senderismo y avistamiento de fauna."
+    }
+  ]
+}

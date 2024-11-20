@@ -1,0 +1,25 @@
+{
+  "country": "Colima",
+  "places": [
+    {
+      "image": "edo_colima",
+      "description": "El estado de Colima, en la costa del Pacífico, es el segundo estado más pequeño de México, conocido por sus volcanes y playas paradisíacas."
+    },
+    {
+      "image": "capital_colima",
+      "description": "La ciudad de Colima, capital del estado, destaca por su tranquilidad, sus plazas y jardines, así como su cercanía con el Volcán de Colima."
+    },
+    {
+      "image": "colima_manzanillo",
+      "description": "Manzanillo, conocido como la 'Capital Mundial del Pez Vela', es un importante puerto marítimo y un destino turístico con playas de ensueño."
+    },
+    {
+      "image": "colima_comala",
+      "description": "Comala, un Pueblo Mágico, encanta con sus calles blancas, su deliciosa gastronomía y la calidez de su gente."
+    },
+    {
+      "image": "colima_volcan",
+      "description": "El Volcán de Colima, uno de los más activos de México, es un espectáculo natural que atrae a visitantes de todo el mundo."
+    }
+  ]
+}

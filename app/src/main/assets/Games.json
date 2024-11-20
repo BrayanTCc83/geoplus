@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "image": "ubicacion",
     "title": "Ubícate",
     "levels": 10,
     "reference": "game_ub_",
@@ -11,6 +12,7 @@
   },
   {
     "id": 2,
+    "image": "libro",
     "title": "Quiz",
     "levels": 10,
     "reference": "game_qu_",
@@ -21,6 +23,7 @@
   },
   {
     "id": 3,
+    "image": "mapa",
     "title": "Pinta estados",
     "levels": 10,
     "reference": "game_pe_",
@@ -31,9 +34,10 @@
   },
   {
     "id": 4,
-    "title": "Rutas",
-    "levels": 10,
-    "reference": "game_ru_",
+    "image": "memorama",
+    "title": "Memorama",
+    "levels": 5,
+    "reference": "game_me_",
     "progress": {
       "completed": 0,
       "puntuations": null

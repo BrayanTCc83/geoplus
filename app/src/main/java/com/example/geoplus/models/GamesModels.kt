@@ -12,6 +12,7 @@ interface QuizQuestionModel {
     val question: String
     val type: String
     val points: Int
+    val image: String
 };
 
 @Serializable
@@ -19,6 +20,7 @@ data class QuizCheckboxQuestionModel(
     override val question: String,
     override val type: String,
     override val points: Int,
+    override val image: String,
     val answer: Array<Int>,
     val options: Array<String>
 ): QuizQuestionModel
@@ -28,6 +30,7 @@ data class QuizRadioQuestionModel(
     override val question: String,
     override val type: String,
     override val points: Int,
+    override val image: String,
     val answer: Int,
     val options: Array<String>,
 ): QuizQuestionModel
@@ -37,6 +40,7 @@ data class QuizOpenQuestionModel(
     override val question: String,
     override val type: String,
     override val points: Int,
+    override val image: String,
     val answer: String,
     val tries: Int
 ): QuizQuestionModel
@@ -129,7 +133,7 @@ data class FindByImageQuestion(
     override val question: String,
     override val points: Int,
     override val answer: Int,
-    val image: Int,
+    val image: String,
     val options: Array<String>
 ): FindQuestion
 
@@ -148,4 +152,14 @@ data class FindYourselfModel(
     override val game: String,
     override val id: Int,
     val questions: Array<FindQuestion>
+): GameModel
+
+
+@Serializable
+data class MemoramaModel (
+    override val title: String,
+    override val game: String,
+    override val id: Int,
+    val type: String,
+    val cards: Array<CardMemo>
 ): GameModel

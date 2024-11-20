@@ -1,42 +1,45 @@
 {
-  "title": "Mi bello Mexico",
+  "title": "Explora México",
   "id": 8,
   "game": "game_ub",
   "questions": [
     {
-      "type": "find_text",
-      "question": "Which city is famous for its pink quarry stone architecture?",
-      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Taxco" ],
-      "answer": 4,
-      "points": 2
+      "type": "find_image",
+      "question": "¿En qué estado se encuentra la famosa zona arqueológica de Teotihuacán?",
+      "options": ["Chihuahua", "Puebla", "Estado de México", "Jalisco"],
+      "answer": 2,
+      "points": 3,
+      "image": "estado_mexico_teotihuacan"
     },
     {
       "type": "find_text",
-      "question": "Identify the colonial-era city known for its well-preserved historic center and vibrant arts scene.",
-      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Oaxaca" ],
-      "answer": 4,
+      "question": "¿En qué estado se encuentra la ciudad de Monterrey, conocida por su industrialización?",
+      "options": [18, 19, 20, 21],
+      "answer": 18,
       "points": 2
     },
     {
-      "type": "find_text",
-      "question": "Which destination is renowned for its laid-back atmosphere and stunning sunsets?",
-      "options": [ "Puerto Vallarta", "Cancun", "Tulum", "Sayulita" ],
-      "answer": 4,
-      "points": 2
+      "type": "find_image",
+      "question": "¿En qué estado se encuentra el balneario de Acapulco?",
+      "options": ["Oaxaca", "Chihuahua", "Guerrero", "Veracruz"],
+      "answer": 2,
+      "points": 3,
+      "image": "guerrero_acapulco"
     },
     {
       "type": "find_text",
-      "question": "Which city is famous for its well-preserved historic center and vibrant arts scene?",
-      "options": [ "Guanajuato", "San Miguel de Allende", "Morelia", "Oaxaca" ],
-      "answer": 4,
+      "question": "¿En qué estado se encuentra la ciudad de Oaxaca, famosa por su gastronomía y arquitectura?",
+      "options": [10, 11, 12, 13],
+      "answer": 10,
       "points": 2
     },
     {
-      "type": "find_text",
-      "question": "Identify the picturesque colonial-era town known for its cobblestone streets and traditional crafts.",
-      "options": [ "San Cristobal de las Casas", "Taxco", "Valladolid", "Campeche" ],
+      "type": "find_image",
+      "question": "¿En qué estado se encuentra la isla de Holbox, famosa por sus playas paradisíacas?",
+      "options": ["Baja California", "Quintana Roo", "Sinaloa", "Tamaulipas"],
       "answer": 1,
-      "points": 2
+      "points": 3,
+      "image": "quintana_roo_isla_holbox"
     }
   ]
 }
