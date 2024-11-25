@@ -36,7 +36,6 @@ class LevelsActivity : AppCompatActivity() {
         binding.gameTitle.text = title.toString().uppercase()
 
         val progress =  Database.getInstance().getProgress(title?:"")
-        Log.d("LOG_GEOPLUS", "Progreso $progress")
 
         val context = this
         val starsComposeView = findViewById<ComposeView>(R.id.description_view)
@@ -62,6 +61,7 @@ class LevelsActivity : AppCompatActivity() {
             }
         }
 
+        GlobalState.getInstance().reset()
         val btnBack = findViewById<Button>(R.id.btn_back)
         btnBack.setOnClickListener {
             finish()

@@ -55,16 +55,13 @@ class HomeActivity : AppCompatActivity() {
         }
 
         val jsonString = ReadJSONFromAssets(baseContext, "Games.json")
-        Log.d("LOG_GEOPLUS", jsonString)
         val cards: MutableList<GameCardModel> = Gson().fromJson(jsonString, Array<GameCardModel>::class.java).toMutableList()
         cards.forEachIndexed { index, game ->
             if(Database.getInstance().progressExists(game.title)) {
                 val progress = Database.getInstance().getProgress(game.title)
-                Log.d("LOG_GEOPLUS", "Progress ${progress}")
                 cards[index].progress = progress
             }
         }
-        Log.d("LOG_GEOPLUS", "Games ${cards}")
 
         val context = this
         val composeView = findViewById<ComposeView>(R.id.compose_view)

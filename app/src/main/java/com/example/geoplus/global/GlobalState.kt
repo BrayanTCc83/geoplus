@@ -37,6 +37,17 @@ class GlobalState private constructor() {
         return _resultCards
     }
 
+    fun reset() {
+        type = ""
+        fileName = ""
+        questionary = null
+        questionId = 0
+        ctx = null
+        clearResult()
+        clearCardResult()
+
+    }
+
     companion object {
         @Volatile private var instance: GlobalState? = null
         fun getInstance() =

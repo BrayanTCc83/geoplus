@@ -28,18 +28,6 @@ class MainActivity : AppCompatActivity() {
 
         try {
             Database.getInstance().isActiveSession()
-            val sesion = Database.getInstance().session ?: DefaultUser
-            Log.d("LOG_GEOPLUS", "Recuperando sesion ${sesion.nick}")
-
-            val configuration = Database.getInstance().getConfiguration()
-            if(configuration.darkmode) {
-                Log.d("LOG_GEOPLUS", "Modo oscuro activado")
-                setTheme(R.style.GeoPlus_Theme_Dark)
-            } else {
-                Log.d("LOG_GEOPLUS", "Modo claro activado")
-                setTheme(R.style.GeoPlus_Theme)
-            }
-            recreate()
         } catch(e: Exception) {
             Log.d("LOG_GEOPLUS", e.message?:"Error")
         }

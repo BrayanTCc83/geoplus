@@ -93,11 +93,9 @@ class ResumeActivity : AppCompatActivity() {
                 var completed = progress.completed
                 var scores: MutableList<Float>? = progress.puntuations?.toMutableList()
                 if(scores == null) scores = mutableListOf()
-                Log.d("LOG_GEOPLUS", "Questionary ${GlobalState.getInstance().questionary}")
 
                 if(completed < (GlobalState.getInstance().questionary?.id ?: 0)){
                     completed = GlobalState.getInstance().questionary?.id?:0
-                    Log.d("LOG_GEOPLUS", "Nivel completado $completed")
                     if(scores.size < completed)
                         scores.add(res)
                     else scores[completed - 1] = res

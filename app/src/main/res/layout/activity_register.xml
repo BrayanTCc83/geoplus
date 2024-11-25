@@ -69,7 +69,6 @@
                         android:foregroundTint="@color/dark_secondary"
                         android:inputType="text"
                         android:padding="8dp"
-                        android:text="@string/input_username"
                         android:textColor="@color/semitransparent" />
                 </LinearLayout>
 
@@ -97,7 +96,6 @@
                         android:foregroundTint="@color/dark_secondary"
                         android:inputType="text"
                         android:padding="8dp"
-                        android:text="@string/input_name"
                         android:textColor="@color/semitransparent" />
                 </LinearLayout>
 
@@ -125,7 +123,6 @@
                         android:foregroundTint="@color/dark_secondary"
                         android:inputType="text"
                         android:padding="8dp"
-                        android:text="@string/input_lastname_pat"
                         android:textColor="@color/semitransparent" />
                 </LinearLayout>
 
@@ -153,7 +150,6 @@
                         android:foregroundTint="@color/dark_secondary"
                         android:inputType="text"
                         android:padding="8dp"
-                        android:text="@string/input_lastname_mat"
                         android:textColor="@color/semitransparent" />
                 </LinearLayout>
 
@@ -181,7 +177,6 @@
                         android:foregroundTint="@color/dark_secondary"
                         android:inputType="number"
                         android:padding="8dp"
-                        android:text="@string/input_age"
                         android:textColor="@color/semitransparent" />
                 </LinearLayout>
 
@@ -209,7 +204,6 @@
                         android:foregroundTint="@color/dark_secondary"
                         android:inputType="textEmailAddress"
                         android:padding="8dp"
-                        android:text="@string/input_email"
                         android:textColor="@color/semitransparent" />
                 </LinearLayout>
 
@@ -237,7 +231,6 @@
                         android:foregroundTint="@color/dark_secondary"
                         android:inputType="textPassword"
                         android:padding="8dp"
-                        android:text="@string/input_password"
                         android:textColor="@color/semitransparent" />
                 </LinearLayout>
 

@@ -21,11 +21,7 @@ class Database private constructor() {
     fun registerUser(ctx: Context, user: User) : Boolean {
         var uString = usersFile?.readText()?:"[]"
         if(uString == "") uString = "[]"
-        Log.d("LOG_GEOPLUS", uString)
         val users: MutableList<User> = Gson().fromJson(uString, Array<User>::class.java).toMutableList()
-        users.forEach {
-            u -> Log.d("LOG_GEOPLUS", "Login ${u.nick}")
-        }
         if(users.find { u: User -> u.nick == user.nick || u.email == user.email } != null) {
             Toast.makeText(
                 ctx,
@@ -46,11 +42,7 @@ class Database private constructor() {
     fun loginUser(ctx: Context, user: User) : Boolean {
         var uString = usersFile?.readText()?:"[]"
         if(uString == "") uString = "[]"
-        Log.d("LOG_GEOPLUS", uString)
         val users: List<User> = Gson().fromJson(uString, Array<User>::class.java).toList()
-        users.forEach {
-            u -> Log.d("LOG_GEOPLUS", "Login ${u.nick}")
-        }
         val user = users.find { u: User -> u.nick == user.nick && u.password == user.password }
         if(user == null) {
             Toast.makeText(
@@ -65,14 +57,12 @@ class Database private constructor() {
         val content = Gson().toJson(user)
         sesionFile?.createNewFile()
         sesionFile?.writeText(content)
-        Log.d("LOG_GEOPLUS", "Login $content")
         return true
     }
 
     fun logout(): Boolean {
         sesionFile?.createNewFile()
         sesionFile?.writeText("")
-        Log.d("LOG_GEOPLUS", "Logout")
         return true
     }
 
@@ -81,20 +71,13 @@ class Database private constructor() {
         if(uString == "") uString = "{}"
         if(uString == "{}")
             return false
-        Log.d("LOG_GEOPLUS", uString)
-        val user: User? = Gson().fromJson(uString, User::class.java)
-        if(user == null) {
-            Log.d("LOG_GEOPLUS", "Sin sesion")
-            return false
-        }
+        val user: User = Gson().fromJson(uString, User::class.java) ?: return false
 
-        session = user
-        Log.d("LOG_GEOPLUS", "Sesion activa")
+            session = user
         return true
     }
 
     fun progressExists(game: String) : Boolean {
-        Log.d("LOG_GEOPLUS", "Progress file ${session?.nick?:""}_progress_$game.json")
         progressFile = File(folder, "${session?.nick?:""}_progress_$game.json")
         return progressFile.exists()?:false
     }
@@ -107,7 +90,6 @@ class Database private constructor() {
             progressFile.createNewFile()
         }
 
-        Log.d("LOG_GEOPLUS", "Progress $progressFile: ${progressFile.readText()?:"Vacio"}")
         var uString = progressFile?.readText()?:"{}"
         if(uString == "") uString = "{}"
         val progress: PlayerProgressModel = Gson().fromJson(uString, PlayerProgressModel::class.java)
@@ -115,7 +97,6 @@ class Database private constructor() {
     }
 
     fun saveProgress(game: String, progress: PlayerProgressModel) : Boolean {
-        Log.d("LOG_GEOPLUS", "${session?.nick}_progress_$game.json <- $progress")
         if(!isActiveSession())
             return false
         progressFile = File(folder, "${session?.nick}_progress_$game.json")
@@ -123,41 +104,33 @@ class Database private constructor() {
             progressFile.createNewFile()
         }
 
-        Log.d("LOG_GEOPLUS", "Progress $progressFile: ${progressFile.readText()?:"Vacio"}")
         val content = Gson().toJson(progress)
         progressFile.createNewFile()
         progressFile.writeText(content)
-        Log.d("LOG_GEOPLUS", content)
         return true
     }
 
     fun getConfiguration(): Configuration {
         configurationFile = File(folder, "${session?.nick}_configuration.json")
-        Log.d("LOG_GEOPLUS", "${session?.nick}_configuration.json ${configurationFile.exists()}")
         if(!configurationFile.exists()) {
             return DefaultConfiguration
         }
         val content: String? = configurationFile.readText()
-        Log.d("LOG_GEOPLUS", "Configuration $configurationFile: ${content?:"Vacio"}")
         if(content.isNullOrEmpty()) {
             return DefaultConfiguration
         }
         val configuration: Configuration = Gson().fromJson(content, Configuration::class.java)
-        Log.d("LOG_GEOPLUS", "Configuracion recuperada $configuration")
         return configuration
     }
 
     fun saveConfiguration(configuration: Configuration): Boolean {
-        Log.d("LOG_GEOPLUS", "${session?.nick}_configuration.json <- $configuration")
         if(!isActiveSession())
             return false
         configurationFile = File(folder, "${session?.nick}_configuration.json")
         configurationFile.createNewFile()
 
-        Log.d("LOG_GEOPLUS", "Configuration $configurationFile: ${configurationFile?.readText()?:"Vacio"}")
         val content = Gson().toJson(configuration)
         configurationFile.writeText(content)
-        Log.d("LOG_GEOPLUS", content)
         return true
     }
 
@@ -175,12 +148,6 @@ class Database private constructor() {
                 sesionFile?.createNewFile()
             if(!usersFile?.exists()!!)
                 usersFile?.createNewFile()
-
-            Log.d("LOG_GEOPLUS", "Folder $path exists: ${folder?.exists()}")
-            val sesionFile = File(folder, "sesion.json")
-            Log.d("LOG_GEOPLUS", "Sesion $sesionFile: ${sesionFile.readText()}")
-            val usersFile = File(folder, "users.json")
-            Log.d("LOG_GEOPLUS", "Sesion $usersFile: ${usersFile.readText()}")
         } catch(e: Exception) {
             Log.d("LOG_GEOPLUS", e.message?:"Error inesperado")
         }

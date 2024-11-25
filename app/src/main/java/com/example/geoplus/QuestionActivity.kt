@@ -120,7 +120,6 @@ class QuestionActivity : AppCompatActivity() {
                     .registerTypeAdapterFactory(adapterPaint)
                     .registerTypeAdapterFactory(adapterFind)
                     .create()
-                Log.d("LOG_GEOPLUS", jsonString)
                 game = when(type) {
                     TYPE_UBICATE -> gson.fromJson(jsonString, FindYourselfModel::class.java)
                     TYPE_QUIZ -> gson.fromJson(jsonString, QuizModel::class.java)

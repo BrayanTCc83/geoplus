@@ -52,7 +52,6 @@ import com.example.geoplus.models.ResultModel
 val selected = mutableStateListOf<Int>()
 @Composable
 fun QuestionCheckbox(question: QuizCheckboxQuestionModel, nextQuestion: (score: Float) -> Any, onEnd: () -> Unit) {
-    Log.d("LOG_GEOPLUS", "Checkbox Question rendering")
     val ctx: Context? = GlobalState.getInstance().ctx
 
     LazyColumn(
@@ -117,22 +116,21 @@ fun QuestionCheckbox(question: QuizCheckboxQuestionModel, nextQuestion: (score: 
         item {
             Column(
                 modifier = Modifier
-                    .width(200.dp)
+                    .width(300.dp)
                     .background(
                         color = colorResource(id = R.color.principal_color),
                         shape = RoundedCornerShape(10.dp)
                     )
                     .border(
-                        width = 3.dp,
+                        width = 1.dp,
                         color = colorResource(id = R.color.secondary_color),
                         shape = RoundedCornerShape(10.dp)
                     )
-                    .padding(16.dp)
+                    .padding(10.dp)
                     .clickable {
                         val errors = question.answer.filter { a -> !selected.contains(a) }.size
                         val corrects = question.answer.filter { a -> selected.contains(a) }.size
                         val sc: Float = ((corrects - errors).toFloat() / question.answer.size.toFloat()) * 10.0f
-                        Log.d("LOG_GEOPLUS", "Aciertos: $corrects, Errores: $errors, Requeridos: ${question.answer.size}, Calificacion: ${sc}")
                         selected.clear()
                         nextQuestion(sc)
                     },
@@ -150,7 +148,6 @@ fun QuestionCheckbox(question: QuizCheckboxQuestionModel, nextQuestion: (score: 
 
 @Composable
 fun QuestionRadio(question: QuizRadioQuestionModel, nextQuestion: (score: Float) -> Any, onEnd: () -> Unit) {
-    Log.d("LOG_GEOPLUS", "Radio Question rendering")
     val ctx: Context? = GlobalState.getInstance().ctx
 
     var selected by remember { mutableStateOf<Int>(-1) }
@@ -203,17 +200,17 @@ fun QuestionRadio(question: QuizRadioQuestionModel, nextQuestion: (score: Float)
         item {
             Column(
                 modifier = Modifier
-                    .width(200.dp)
+                    .width(300.dp)
                     .background(
                         color = colorResource(id = R.color.principal_color),
                         shape = RoundedCornerShape(10.dp)
                     )
                     .border(
-                        width = 3.dp,
+                        width = 1.dp,
                         color = colorResource(id = R.color.secondary_color),
                         shape = RoundedCornerShape(10.dp)
                     )
-                    .padding(16.dp)
+                    .padding(10.dp)
                     .clickable { nextQuestion((10.0f / if (question.answer == selected) 1 else 2)) },
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
@@ -230,12 +227,9 @@ fun QuestionRadio(question: QuizRadioQuestionModel, nextQuestion: (score: Float)
 val tries = mutableStateListOf<String>()
 @Composable
 fun QuestionOpen(question: QuizOpenQuestionModel, nextQuestion: (score: Float) -> Any, onEnd: () -> Unit) {
-    Log.d("LOG_GEOPLUS", "Open Question rendering")
     val ctx: Context? = GlobalState.getInstance().ctx
     var currentValue by remember { mutableStateOf(value = "") }
     LazyColumn(
-        modifier = Modifier
-            .width(350.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         item {
@@ -297,7 +291,7 @@ fun QuestionOpen(question: QuizOpenQuestionModel, nextQuestion: (score: Float) -
         item {
             Column(
                 modifier = Modifier
-                    .width(200.dp)
+                    .width(300.dp)
                     .background(
                         color = colorResource(id = R.color.principal_color),
                         shape = RoundedCornerShape(10.dp)
@@ -307,7 +301,7 @@ fun QuestionOpen(question: QuizOpenQuestionModel, nextQuestion: (score: Float) -
                         color = colorResource(id = R.color.secondary_color),
                         shape = RoundedCornerShape(10.dp)
                     )
-                    .padding(16.dp)
+                    .padding(10.dp)
                     .clickable {
                         if (currentValue.isNotEmpty() && currentValue.isNotBlank()) {
                             if (question.answer.lowercase() == currentValue.lowercase()) {
@@ -318,7 +312,6 @@ fun QuestionOpen(question: QuizOpenQuestionModel, nextQuestion: (score: Float) -
                                 tries.clear()
                                 nextQuestion(0.0f)
                             } else {
-                                Log.d("LOG_GEOPLUS", "Adding Trying: $currentValue")
                                 tries.add(currentValue)
                                 print(tries)
                                 currentValue = ""
@@ -371,7 +364,6 @@ fun nextQuestion(score: Float, questions: QuizModel, questionId: Int, onEnd: () 
 @Composable
 fun QuizQuestionComponent(questions: QuizModel, questionId: Int, onEnd: () -> Unit) {
     val question = questions.questions[questionId]
-    Log.d("LOG_GEOPLUS", "Rendering [$questionId]: $question")
     when(question) {
         is QuizOpenQuestionModel -> QuestionOpen(question as QuizOpenQuestionModel, fun(score: Float) {
             nextQuestion(score, questions, questionId, onEnd)

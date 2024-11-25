@@ -9,7 +9,6 @@ import com.example.geoplus.databinding.ActivityLoginBinding
 
 class ActivityLevels : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

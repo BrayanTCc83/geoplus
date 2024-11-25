@@ -24,10 +24,7 @@ class IdeaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_idea)
 
         val indexFile = Random.nextInt(0, 32)
-        Log.d("LOG_GEOPLUS", "Archivo a abrir: idea/idea_$indexFile.json")
-
         val jsonString = ReadJSONFromAssets(baseContext, "idea/idea_$indexFile.json")
-        Log.d("LOG_GEOPLUS", "Archivo idea_$indexFile: $jsonString")
         val content: Idea = Gson().fromJson(jsonString, Idea::class.java)
 
         val textTitle = findViewById<TextView>(R.id.text_title)

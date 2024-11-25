@@ -8,6 +8,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -114,7 +115,6 @@ fun nextQuestionFind(score: Float, questions: FindYourselfModel, questionId: Int
 @Composable
 fun FindQuestionComponent(questions: FindYourselfModel, questionId: Int, onEnd: () -> Unit) {
     val question = questions.questions[questionId]
-    Log.d("LOG_GEOPLUS", "Rendering [$questionId]: $question")
     when(question) {
         is FindByImageQuestion -> FindOnceComponent(question as FindByImageQuestion, fun(score: Float) {
             nextQuestionFind(score, questions, questionId, onEnd)
@@ -128,12 +128,12 @@ fun FindQuestionComponent(questions: FindYourselfModel, questionId: Int, onEnd: 
 
 @Composable
 fun FindOnceComponent(q: FindByImageQuestion, nextQuestion: (Float) -> Unit, onEnd: () -> Unit) {
-    Log.d("LOG_GEOPLUS", "Radio Question rendering")
     val ctx: Context? = GlobalState.getInstance().ctx
 
     var selected by remember { mutableStateOf<Int>(-1) }
     LazyColumn(
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+        contentPadding = PaddingValues(20.dp)
     ) {
         item {
             Text(
@@ -144,11 +144,10 @@ fun FindOnceComponent(q: FindByImageQuestion, nextQuestion: (Float) -> Unit, onE
         }
         item {
             val id = (ctx?.resources?.getIdentifier(q.image ?: "", "drawable", ctx.packageName))?:0
-            Log.d("LOG_GEOPLUS", "Imagen ${q.image} -> $id")
             Image(
                 painter = painterResource(id = id),
                 contentDescription = null,
-                modifier = Modifier.width(400.dp).height(400.dp),
+                modifier = Modifier.width(300.dp),
                 contentScale = ContentScale.Fit
             )
         }
@@ -177,17 +176,17 @@ fun FindOnceComponent(q: FindByImageQuestion, nextQuestion: (Float) -> Unit, onE
         item {
             Column(
                 modifier = Modifier
-                    .width(200.dp)
+                    .width(300.dp)
                     .background(
                         color = colorResource(id = R.color.principal_color),
                         shape = RoundedCornerShape(10.dp)
                     )
                     .border(
-                        width = 3.dp,
+                        width = 1.dp,
                         color = colorResource(id = R.color.secondary_color),
                         shape = RoundedCornerShape(10.dp)
                     )
-                    .padding(16.dp)
+                    .padding(10.dp)
                     .clickable { nextQuestion((10.0f / if (q.answer == selected) 1 else 2)) },
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
@@ -203,12 +202,12 @@ fun FindOnceComponent(q: FindByImageQuestion, nextQuestion: (Float) -> Unit, onE
 
 @Composable
 fun FindObjectComponent(q: FindByDescriptionQuestion, nextQuestion: (Float) -> Unit, onEnd: () -> Unit) {
-    Log.d("LOG_GEOPLUS", "Radio Question rendering")
     val ctx: Context? = GlobalState.getInstance().ctx
 
     var selected by remember { mutableStateOf<Int>(-1) }
     LazyColumn(
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+        contentPadding = PaddingValues(20.dp)
     ) {
         item {
             Text(
@@ -245,17 +244,17 @@ fun FindObjectComponent(q: FindByDescriptionQuestion, nextQuestion: (Float) -> U
         item {
             Column(
                 modifier = Modifier
-                    .width(200.dp)
+                    .width(300.dp)
                     .background(
                         color = colorResource(id = R.color.principal_color),
                         shape = RoundedCornerShape(10.dp)
                     )
                     .border(
-                        width = 3.dp,
+                        width = 1.dp,
                         color = colorResource(id = R.color.secondary_color),
                         shape = RoundedCornerShape(10.dp)
                     )
-                    .padding(16.dp)
+                    .padding(10.dp)
                     .clickable {
                         nextQuestion((10.0f / if (q.answer == selected) 1 else 2))
                    },

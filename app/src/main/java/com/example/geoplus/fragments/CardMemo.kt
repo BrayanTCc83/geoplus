@@ -61,12 +61,9 @@ fun CardMemoComponent(index: Int, card: CardMemo, ctx: Context, text: Boolean, c
                 .clickable {
                     if (opens.size == 2 || card.id in completes)
                         return@clickable
-
-                    Log.d("LOG_GEOPLUS", "Open card [${card.id}]: ${completes.toString()}")
                     onClick(index, card)
                     if (text) {
                         resTexto.value = true
-                        Log.d("LOG_GEOPLUS", "Open card [${card.id}]: ${card.value ?: ""}")
                     } else {
                         resImage.value =
                             ctx.resources.getIdentifier(
@@ -74,7 +71,6 @@ fun CardMemoComponent(index: Int, card: CardMemo, ctx: Context, text: Boolean, c
                                 "drawable",
                                 ctx.packageName
                             )
-                        Log.d("LOG_GEOPLUS", "Open card [${card.id}]: ${resImage}")
                     }
                 },
             horizontalAlignment = Alignment.CenterHorizontally,

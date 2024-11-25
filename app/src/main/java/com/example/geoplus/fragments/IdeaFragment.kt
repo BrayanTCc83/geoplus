@@ -28,7 +28,6 @@ fun RenderizeIdea(places: Array<Place>, ctx: Context) {
             .padding(16.dp)
     ) {
         items(places) { place ->
-            Log.d("LOG_GEOPLUS", "Lugar: ${place.description}, Imagen: ${place.image} -> ${ctx.resources.getIdentifier(place.image, "drawable", ctx.packageName)}")
             Image(
                 painter = painterResource(ctx.resources.getIdentifier(place.image, "drawable", ctx.packageName)),
                 contentDescription = null,

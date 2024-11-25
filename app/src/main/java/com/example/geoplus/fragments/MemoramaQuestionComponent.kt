@@ -39,7 +39,6 @@ data class CardContext(
 
 @Composable
 fun MemoramaQuestionComponent(questions: MemoramaModel, ctx: Context, onEnd: () -> Unit) {
-    Log.d("LOG_GEOPLUS", "Rendering memorama ${questions.title}")
     val selected = remember { generateUniqueRandomNumbers() }
     val itemList = remember { mutableListOf<CardContext>() }
     val opens = remember { mutableSetOf<Pair<Int, Int>>() }
@@ -47,7 +46,6 @@ fun MemoramaQuestionComponent(questions: MemoramaModel, ctx: Context, onEnd: () 
     val tries = remember { mutableStateOf(0) }
 
     if(itemList.size == 0) {
-        Log.d("LOG_GEOPLUS", "Agregando cartas")
         selected.forEach { i ->
             itemList.add(CardContext(questions.cards[i], ctx, false, false))
             itemList.add(CardContext(questions.cards[i], ctx, true, false))
@@ -84,17 +82,12 @@ fun MemoramaQuestionComponent(questions: MemoramaModel, ctx: Context, onEnd: () 
                         if(item.isCompleted || opens.size == 2)
                             return@CardMemoComponent
 
-                        Log.d("LOG_GEOPLUS", "Open Card [$i]: Card with id = ${card.id}")
-
                         if(opens.indexOf(Pair(i, card.id)) == -1)
                             opens.add(Pair(i, card.id))
-                        Log.d("LOG_GEOPLUS", "Opened cards: ${opens.toString()}")
                         if(opens.first().first != i && opens.first().second == card.id) {
                             completes.add(card.id)
                             opens.clear()
                             if(completes.size == itemList.size/2) {
-                                Log.d("LOG_GEOPLUS", "Juego terminado, Intentos: ${tries.value} ${completes.size} ${itemList.size}")
-
                                 val globalState = GlobalState.getInstance()
                                 globalState.clearResult()
                                 globalState.setCardResult(ResultGameCard(
@@ -110,7 +103,6 @@ fun MemoramaQuestionComponent(questions: MemoramaModel, ctx: Context, onEnd: () 
                         }
                     },
                     onClose = { i: Int, card: CardMemo ->
-                        Log.d("LOG_GEOPLUS", "Eliminando carta $i ${card.id}")
                         opens.remove(Pair(i, card.id))
                         tries.value += 1
                     }

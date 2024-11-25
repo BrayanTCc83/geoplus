@@ -123,7 +123,6 @@ fun nextQuestionPaint(score: Float, questions: PintaEstadosModel, questionId: In
 @Composable
 fun PaintQuestionComponent(questions: PintaEstadosModel, questionId: Int, onEnd: () -> Unit) {
     val question = questions.questions[questionId]
-    Log.d("LOG_GEOPLUS", "Rendering [$questionId]: $question")
     when(question) {
         is PaintOnceQuestion -> PaintOnceComponent(question as PaintOnceQuestion, fun(score: Float) {
             nextQuestionPaint(score, questions, questionId, onEnd)
@@ -211,10 +210,7 @@ fun PaintOnceComponent(q: PaintOnceQuestion, nextQuestion: (Float) -> Unit, onEn
                             color = colorResource(id = R.color.secondary_color),
                             shape = CircleShape
                         )
-                        .clickable {
-                            Log.d("LOG_GEOPLUS", "Click a color: ${IndexedColors[i]}")
-                            color = i
-                        }
+                        .clickable { color = i }
                 )
             }
         }
@@ -233,7 +229,6 @@ fun PaintOnceComponent(q: PaintOnceQuestion, nextQuestion: (Float) -> Unit, onEn
                                 Toast.makeText(GlobalState.getInstance().ctx, "No has seleccionado ningun color.", Toast.LENGTH_LONG).show()
                                 return
                             }
-                            Log.d("LOG_GEOPLUS", "Click a estado: ${IndexedStates[i]}")
                             if(paints.any { p -> p.second == i })
                                 paints.remove(paints.find { p -> p.second == i })
                             else
@@ -307,10 +302,7 @@ fun PaintObjectComponent(q: PaintObjectQuestion, nextQuestion: (Float) -> Unit, 
                             color = colorResource(id = R.color.secondary_color),
                             shape = CircleShape
                         )
-                        .clickable {
-                            Log.d("LOG_GEOPLUS", "Click a color: ${IndexedColors[i]}")
-                            color = i
-                        }
+                        .clickable { color = i }
                 )
             }
         }
@@ -327,7 +319,6 @@ fun PaintObjectComponent(q: PaintObjectQuestion, nextQuestion: (Float) -> Unit, 
                                 Toast.makeText(GlobalState.getInstance().ctx, "No has seleccionado ningun color.", Toast.LENGTH_LONG).show()
                                 return
                             }
-                            Log.d("LOG_GEOPLUS", "Click a estado: ${IndexedStates[i]}")
                             if(paints.any { p -> p.second == i })
                                 paints.remove(paints.find { p -> p.second == i })
                             else
@@ -351,7 +342,6 @@ fun PaintObjectComponent(q: PaintObjectQuestion, nextQuestion: (Float) -> Unit, 
                                 val errors = paints.filter { pair -> (q.answer["${pair.first}"]?.contains(pair.second))?:true }.size
                                 val corrects = paints.filter { pair -> (q.answer["${pair.first}"]?.contains(pair.second))?:false }.size
                                 val sc: Float = ((corrects - errors).toFloat() / q.answer.size.toFloat()) * 10.0f
-                                Log.d("LOG_GEOPLUS", "Aciertos: $corrects, Errores: $errors, Requeridos: ${q.answer.size}, Calificacion: ${sc}")
                                 paints.clear()
                                 nextQuestion(sc)
                                 onEnd()

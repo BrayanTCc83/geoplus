@@ -143,7 +143,6 @@ fun SimpleRoute(q: SimpleRutaQuestion, nextQuestion: (score: Float) -> Any) {
                     )
                     botonesEstados.forEachIndexed {
                         i, pair -> FixedButton(x = pair.first+30, y = pair.second + 70, i == start || i == end, fun() {
-                            Log.d("LOG_GEOPLUS", "Click a estado: ${IndexedStates[i]}")
                             if(start == -1) {
                                 start = i
                             } else if(start == i) {
@@ -254,7 +253,6 @@ fun ComplexRoute(q: ComplexRutaQuestion, nextQuestion: (score: Float) -> Any) {
                     )
                     botonesEstados.forEachIndexed {
                         i, pair -> FixedButton(x = pair.first, y = pair.second, nodes.contains(i), fun() {
-                            Log.d("LOG_GEOPLUS", "Click a estado: ${IndexedStates[i]}")
                             if(nodes.contains(i)) nodes.remove(i)
                             else nodes.add(i)
                         })
@@ -314,7 +312,6 @@ fun ComplexRoute(q: ComplexRutaQuestion, nextQuestion: (score: Float) -> Any) {
                                 val errors = nodes.filter { a -> !q.nodes.contains(a) }.size
                                 val corrects = nodes.filter { a -> q.nodes.contains(a) }.size
                                 val sc: Float = ((corrects - errors).toFloat() / q.nodes.size.toFloat()) * 10.0f
-                                Log.d("LOG_GEOPLUS", "Aciertos: $corrects, Errores: $errors, Requeridos: ${q.nodes.size}, Calificacion: ${sc}")
                                 nodes.clear()
                                 nextQuestion(sc)
                             },
@@ -366,7 +363,6 @@ fun nextQuestionRoute(score: Float, questions: RutasModel, questionId: Int) {
 @Composable
 fun RouteQuestionComponent(questions: RutasModel, questionId: Int) {
     val question = questions.questions[questionId]
-    Log.d("LOG_GEOPLUS", "Rendering [$questionId]: $question")
     when(question) {
         is SimpleRutaQuestion -> SimpleRoute(question as SimpleRutaQuestion, fun(score: Float) {
             nextQuestionRoute(score, questions, questionId)
