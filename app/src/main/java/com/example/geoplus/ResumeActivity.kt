@@ -49,8 +49,9 @@ class ResumeActivity : AppCompatActivity() {
         composeView.setContent {
             if(globalState.type == "Memorama")
                 ResumeFragmentCardGame()
-            else
+            else {
                 ResumeFragment()
+            }
         }
 
         val buttonNext = findViewById<Button>(R.id.btn_next);
@@ -81,11 +82,9 @@ class ResumeActivity : AppCompatActivity() {
             try {
                 var res = 0.0f
                 var totpoints = 0
-                globalState.results.forEach { model ->
-                    run {
-                        res += (model.score * model.points)
-                        totpoints += model.points
-                    }
+                globalState.getResults().forEach { model ->
+                    res += (model.score * model.points)
+                    totpoints += model.points
                 }
                 res /= totpoints
 

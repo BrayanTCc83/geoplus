@@ -1,5 +1,6 @@
 package com.example.geoplus.fragments
 
+import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -27,10 +28,10 @@ fun ResumeFragment() {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        globalState.results.forEach { resultModel ->
+        globalState.getResults().forEach { resultModel ->
             Row {
                 var totpoints = 0
-                globalState.results.forEach { model ->
+                globalState.getResults().forEach { model ->
                     run {
                         res += (model.score * model.points)
                         totpoints += model.points

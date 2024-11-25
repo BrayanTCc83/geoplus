@@ -37,6 +37,7 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        Database.getInstance().observar(this)
 
         try {
             sesion = Database.getInstance().session ?: DefaultUser

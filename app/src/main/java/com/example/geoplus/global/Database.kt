@@ -3,6 +3,7 @@ package com.example.geoplus.global
 import android.content.Context
 import android.util.Log
 import android.widget.Toast
+import com.example.geoplus.HomeActivity
 import com.example.geoplus.models.Configuration
 import com.example.geoplus.models.DefaultConfiguration
 import com.example.geoplus.models.PlayerProgressModel
@@ -17,6 +18,15 @@ class Database private constructor() {
     final var usersFile: File? = null
     final lateinit var configurationFile: File
     var session: User? = null
+    var observer: HomeActivity? = null
+
+    fun observar(o: HomeActivity) {
+        observer = o
+    }
+
+    private fun notificar() {
+        observer?.recreate()
+    }
 
     fun registerUser(ctx: Context, user: User) : Boolean {
         var uString = usersFile?.readText()?:"[]"
@@ -100,13 +110,10 @@ class Database private constructor() {
         if(!isActiveSession())
             return false
         progressFile = File(folder, "${session?.nick}_progress_$game.json")
-        if(!progressFile.exists()) {
-            progressFile.createNewFile()
-        }
-
         val content = Gson().toJson(progress)
         progressFile.createNewFile()
         progressFile.writeText(content)
+        notificar()
         return true
     }
 

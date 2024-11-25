@@ -22,7 +22,10 @@ class GlobalState private constructor() {
     fun clearResult() {
         _results = arrayListOf()
     }
-    val results = _results
+
+    fun getResults(): ArrayList<ResultModel> {
+        return _results
+    }
 
     private var _resultCards: ResultGameCard? = null
     fun setCardResult(res: ResultGameCard) {
